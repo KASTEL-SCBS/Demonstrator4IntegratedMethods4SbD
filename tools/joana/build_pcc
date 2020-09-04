@@ -1,0 +1,44 @@
+#!/bin/sh
+
+DIRNAME="$(dirname "$0")"
+
+. "$DIRNAME/util.sh"
+
+if [ "$#" -ne 2 ] ; then
+  echo "Usage: ./build_pcc FOLDER_WITH_STUBS_WITH_ANNOTATIONS BUILD_FOLDER"
+  echo "Copies the pcc-webservice to the build folder (that it removes and recreates), transfers the annotations and builds the project"
+  exit 1
+fi
+
+correct_java_version()
+
+GEN="$1"
+BUILD="$2"
+CUR_DIR=`pwd`
+SRC="$DIRNAME/../../pcc-imp-webservice"
+
+if ! [ -f "$SRC/target/pcc-service-1.0-SNAPSHOT-jar-with-dependencies.jar" ] ; then
+  CUR2=`pwd`
+  cd "$SRC"
+  echo "Building pcc-imp-webservice"
+  mvn clean install -Dmaven.test.skip=true package > /dev/null
+  cd "$CUR2"
+fi
+
+echo "Removing $BUILD/pcc-imp-webservice/src"
+rm -fr "$BUILD/pcc-imp-webservice/src"
+mkdir -p "$BUILD"
+
+echo "Copying code"
+cp -r "$SRC" "$BUILD"
+
+echo "Finding annotations"
+sh tools/joana/annotation_adder find "$GEN" --out "$BUILD/config.yaml"
+cat "$BUILD/config.yaml"
+echo "Adding annotations"
+sh tools/joana/annotation_adder add "$BUILD/pcc-imp-webservice/src" --out "$BUILD/pcc-imp-webservice/src/main/java" --config "$BUILD/config.yaml"
+
+echo "Building the annotated pcc-imp-webservice"
+cd "$BUILD/pcc-imp-webservice"
+mvn clean install -Dmaven.test.skip=true package > /dev/null
+cd "$CUR_DIR"

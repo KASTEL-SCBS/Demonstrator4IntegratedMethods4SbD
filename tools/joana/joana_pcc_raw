@@ -1,0 +1,16 @@
+#! /bin/sh
+DIRNAME="$(dirname "$0")"
+
+. "$DIRNAME/util.sh"
+
+if [ "$#" != 2 ] ; then
+  echo "Usage: ./joana BUILD_FOLDER COMMAND"
+  echo "BUILD_FOLDER has to contain the annotated and build project, with a sub folder `pcc-imp-webservice`"
+  exit 1
+fi
+
+correct_java_version()
+echo $# > /dev/null
+
+BUILD_FOLDER=$1
+sh "$DIRNAME/joana_raw" "$BUILD_FOLDER/pcc-imp-webservice/target/pcc-service-1.0-SNAPSHOT-jar-with-dependencies.jar" "$2"

@@ -1,0 +1,3 @@
+#! /bin/sh
+export DIRNAME="$(dirname "$0")"
+java  -cp "$DIRNAME/annotation_adder.jar:$DIRNAME/../../pcc-imp-webservice/target/pcc-service-1.0-SNAPSHOT-jar-with-dependencies.jar" adder.Main --ignorePackages --ignoreParameterTypes $@

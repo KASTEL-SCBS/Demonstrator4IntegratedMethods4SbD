@@ -1,0 +1,305 @@
+
+/** BEGIN system, ID: '370', NAME: 'AndroidClient' */
+description(370,'AndroidClient','system').
+system(370).
+assemblyContexts(370,[371,372,373,374,375,376,377,378,379,380,381]).
+connectors(370,[382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398]).
+providedRoles(370,[399,400,401,402,403]).
+requiredRoles(370,[404,405,406]).
+
+/** BEGIN assemblyContext, ID: '371', NAME: 'Assembly_VideoNetworkAdapter' */
+description(371,'Assembly_VideoNetworkAdapter','assemblyContext').
+assemblyContext(371).
+encapsulatedComponent(371,[107]).
+/** END assemblyContext, ID: '371', NAME: 'Assembly_VideoNetworkAdapter' */
+
+
+/** BEGIN assemblyContext, ID: '372', NAME: 'Assembly_JavaRSA+AESFileEncryptor' */
+description(372,'Assembly_JavaRSA+AESFileEncryptor','assemblyContext').
+assemblyContext(372).
+encapsulatedComponent(372,[]).
+/** END assemblyContext, ID: '372', NAME: 'Assembly_JavaRSA+AESFileEncryptor' */
+
+
+/** BEGIN assemblyContext, ID: '373', NAME: 'Assembly_UserNetworkAdapter' */
+description(373,'Assembly_UserNetworkAdapter','assemblyContext').
+assemblyContext(373).
+encapsulatedComponent(373,[106]).
+/** END assemblyContext, ID: '373', NAME: 'Assembly_UserNetworkAdapter' */
+
+
+/** BEGIN assemblyContext, ID: '374', NAME: 'Assembly_FileSystemManager' */
+description(374,'Assembly_FileSystemManager','assemblyContext').
+assemblyContext(374).
+encapsulatedComponent(374,[109]).
+/** END assemblyContext, ID: '374', NAME: 'Assembly_FileSystemManager' */
+
+
+/** BEGIN assemblyContext, ID: '375', NAME: 'Assembly_SessionManager' */
+description(375,'Assembly_SessionManager','assemblyContext').
+assemblyContext(375).
+encapsulatedComponent(375,[105]).
+/** END assemblyContext, ID: '375', NAME: 'Assembly_SessionManager' */
+
+
+/** BEGIN assemblyContext, ID: '376', NAME: 'Assembly_PreferencesStorage' */
+description(376,'Assembly_PreferencesStorage','assemblyContext').
+assemblyContext(376).
+encapsulatedComponent(376,[108]).
+/** END assemblyContext, ID: '376', NAME: 'Assembly_PreferencesStorage' */
+
+
+/** BEGIN assemblyContext, ID: '377', NAME: 'Assembly_SettingsManager' */
+description(377,'Assembly_SettingsManager','assemblyContext').
+assemblyContext(377).
+encapsulatedComponent(377,[94]).
+/** END assemblyContext, ID: '377', NAME: 'Assembly_SettingsManager' */
+
+
+/** BEGIN assemblyContext, ID: '378', NAME: 'Assembly_LocalVideoManager' */
+description(378,'Assembly_LocalVideoManager','assemblyContext').
+assemblyContext(378).
+encapsulatedComponent(378,[111]).
+/** END assemblyContext, ID: '378', NAME: 'Assembly_LocalVideoManager' */
+
+
+/** BEGIN assemblyContext, ID: '379', NAME: 'Assembly_TemporaryFileManager' */
+description(379,'Assembly_TemporaryFileManager','assemblyContext').
+assemblyContext(379).
+encapsulatedComponent(379,[109]).
+/** END assemblyContext, ID: '379', NAME: 'Assembly_TemporaryFileManager' */
+
+
+/** BEGIN assemblyContext, ID: '380', NAME: 'Assembly_VideoUploadWrapper' */
+description(380,'Assembly_VideoUploadWrapper','assemblyContext').
+assemblyContext(380).
+encapsulatedComponent(380,[112]).
+/** END assemblyContext, ID: '380', NAME: 'Assembly_VideoUploadWrapper' */
+
+
+/** BEGIN assemblyContext, ID: '381', NAME: 'Assembly_Webinterface' */
+description(381,'Assembly_Webinterface','assemblyContext').
+assemblyContext(381).
+encapsulatedComponent(381,[113]).
+/** END assemblyContext, ID: '381', NAME: 'Assembly_Webinterface' */
+
+
+/** BEGIN requiredDelegationConnector, ID: '382', NAME: 'newRequiredDelegationConnector' */
+description(382,'newRequiredDelegationConnector','requiredDelegationConnector').
+requiredDelegationConnector(382).
+innerRequiredRole(382,[217]).
+outerRequiredRole(382,[406]).
+assemblyContext(382,[371]).
+/** END requiredDelegationConnector, ID: '382', NAME: 'newRequiredDelegationConnector' */
+
+
+/** BEGIN requiredDelegationConnector, ID: '383', NAME: 'newRequiredDelegationConnector' */
+description(383,'newRequiredDelegationConnector','requiredDelegationConnector').
+requiredDelegationConnector(383).
+innerRequiredRole(383,[215]).
+outerRequiredRole(383,[404]).
+assemblyContext(383,[373]).
+/** END requiredDelegationConnector, ID: '383', NAME: 'newRequiredDelegationConnector' */
+
+
+/** BEGIN requiredDelegationConnector, ID: '384', NAME: 'newRequiredDelegationConnector' */
+description(384,'newRequiredDelegationConnector','requiredDelegationConnector').
+requiredDelegationConnector(384).
+innerRequiredRole(384,[407]).
+outerRequiredRole(384,[405]).
+assemblyContext(384,[372]).
+/** END requiredDelegationConnector, ID: '384', NAME: 'newRequiredDelegationConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '385', NAME: 'newAssemblyConnector' */
+description(385,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(385).
+requiringAssemblyContext(385,[377]).
+providingAssemblyContext(385,[376]).
+providedRole(385,[219]).
+requiredRole(385,[177]).
+/** END assemblyConnector, ID: '385', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '386', NAME: 'newAssemblyConnector' */
+description(386,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(386).
+requiringAssemblyContext(386,[375]).
+providingAssemblyContext(386,[373]).
+providedRole(386,[214]).
+requiredRole(386,[213]).
+/** END assemblyConnector, ID: '386', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN providedDelegationConnector, ID: '387', NAME: 'newProvidedDelegationConnector' */
+description(387,'newProvidedDelegationConnector','providedDelegationConnector').
+providedDelegationConnector(387).
+innerProvidedRole(387,[225]).
+outerProvidedRole(387,[399]).
+assemblyContext(387,[378]).
+/** END providedDelegationConnector, ID: '387', NAME: 'newProvidedDelegationConnector' */
+
+
+/** BEGIN providedDelegationConnector, ID: '388', NAME: 'newProvidedDelegationConnector' */
+description(388,'newProvidedDelegationConnector','providedDelegationConnector').
+providedDelegationConnector(388).
+innerProvidedRole(388,[210]).
+outerProvidedRole(388,[400]).
+assemblyContext(388,[375]).
+/** END providedDelegationConnector, ID: '388', NAME: 'newProvidedDelegationConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '389', NAME: 'newAssemblyConnector' */
+description(389,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(389).
+requiringAssemblyContext(389,[378]).
+providingAssemblyContext(389,[372]).
+providedRole(389,[408]).
+requiredRole(389,[228]).
+/** END assemblyConnector, ID: '389', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '390', NAME: 'newAssemblyConnector' */
+description(390,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(390).
+requiringAssemblyContext(390,[378]).
+providingAssemblyContext(390,[374]).
+providedRole(390,[220]).
+requiredRole(390,[227]).
+/** END assemblyConnector, ID: '390', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '391', NAME: 'newAssemblyConnector' */
+description(391,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(391).
+requiringAssemblyContext(391,[375]).
+providingAssemblyContext(391,[378]).
+providedRole(391,[225]).
+requiredRole(391,[212]).
+/** END assemblyConnector, ID: '391', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '392', NAME: 'newAssemblyConnector' */
+description(392,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(392).
+requiringAssemblyContext(392,[375]).
+providingAssemblyContext(392,[376]).
+providedRole(392,[219]).
+requiredRole(392,[211]).
+/** END assemblyConnector, ID: '392', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '393', NAME: 'newAssemblyConnector' */
+description(393,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(393).
+requiringAssemblyContext(393,[380]).
+providingAssemblyContext(393,[378]).
+providedRole(393,[226]).
+requiredRole(393,[232]).
+/** END assemblyConnector, ID: '393', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '394', NAME: 'newAssemblyConnector' */
+description(394,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(394).
+requiringAssemblyContext(394,[380]).
+providingAssemblyContext(394,[375]).
+providedRole(394,[210]).
+requiredRole(394,[231]).
+/** END assemblyConnector, ID: '394', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '395', NAME: 'newAssemblyConnector' */
+description(395,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(395).
+requiringAssemblyContext(395,[380]).
+providingAssemblyContext(395,[371]).
+providedRole(395,[216]).
+requiredRole(395,[230]).
+/** END assemblyConnector, ID: '395', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN providedDelegationConnector, ID: '396', NAME: 'newProvidedDelegationConnector' */
+description(396,'newProvidedDelegationConnector','providedDelegationConnector').
+providedDelegationConnector(396).
+innerProvidedRole(396,[229]).
+outerProvidedRole(396,[402]).
+assemblyContext(396,[380]).
+/** END providedDelegationConnector, ID: '396', NAME: 'newProvidedDelegationConnector' */
+
+
+/** BEGIN providedDelegationConnector, ID: '397', NAME: 'newProvidedDelegationConnector' */
+description(397,'newProvidedDelegationConnector','providedDelegationConnector').
+providedDelegationConnector(397).
+innerProvidedRole(397,[176]).
+outerProvidedRole(397,[401]).
+assemblyContext(397,[377]).
+/** END providedDelegationConnector, ID: '397', NAME: 'newProvidedDelegationConnector' */
+
+
+/** BEGIN providedDelegationConnector, ID: '398', NAME: 'newProvidedDelegationConnector' */
+description(398,'newProvidedDelegationConnector','providedDelegationConnector').
+providedDelegationConnector(398).
+innerProvidedRole(398,[221]).
+outerProvidedRole(398,[403]).
+assemblyContext(398,[379]).
+/** END providedDelegationConnector, ID: '398', NAME: 'newProvidedDelegationConnector' */
+
+
+/** BEGIN operationProvidedRole, ID: '399', NAME: 'LocalVideoManager' */
+description(399,'LocalVideoManager','operationProvidedRole').
+operationProvidedRole(399).
+providedInterface(399,[138]).
+/** END operationProvidedRole, ID: '399', NAME: 'LocalVideoManager' */
+
+
+/** BEGIN operationProvidedRole, ID: '400', NAME: 'SessionManager' */
+description(400,'SessionManager','operationProvidedRole').
+operationProvidedRole(400).
+providedInterface(400,[124]).
+/** END operationProvidedRole, ID: '400', NAME: 'SessionManager' */
+
+
+/** BEGIN operationProvidedRole, ID: '401', NAME: 'SettingsManager' */
+description(401,'SettingsManager','operationProvidedRole').
+operationProvidedRole(401).
+providedInterface(401,[139]).
+/** END operationProvidedRole, ID: '401', NAME: 'SettingsManager' */
+
+
+/** BEGIN operationProvidedRole, ID: '402', NAME: 'VideoUploadWrapper' */
+description(402,'VideoUploadWrapper','operationProvidedRole').
+operationProvidedRole(402).
+providedInterface(402,[146]).
+/** END operationProvidedRole, ID: '402', NAME: 'VideoUploadWrapper' */
+
+
+/** BEGIN operationProvidedRole, ID: '403', NAME: 'TemporaryFileManager' */
+description(403,'TemporaryFileManager','operationProvidedRole').
+operationProvidedRole(403).
+providedInterface(403,[142]).
+/** END operationProvidedRole, ID: '403', NAME: 'TemporaryFileManager' */
+
+
+/** BEGIN operationRequiredRole, ID: '404', NAME: 'UserManagement' */
+description(404,'UserManagement','operationRequiredRole').
+operationRequiredRole(404).
+requiredInterface(404,[119]).
+/** END operationRequiredRole, ID: '404', NAME: 'UserManagement' */
+
+
+/** BEGIN operationRequiredRole, ID: '405', NAME: 'PublicKeyProvider' */
+description(405,'PublicKeyProvider','operationRequiredRole').
+operationRequiredRole(405).
+requiredInterface(405,[130]).
+/** END operationRequiredRole, ID: '405', NAME: 'PublicKeyProvider' */
+
+
+/** BEGIN operationRequiredRole, ID: '406', NAME: 'WebVideoService' */
+description(406,'WebVideoService','operationRequiredRole').
+operationRequiredRole(406).
+requiredInterface(406,[120]).
+/** END operationRequiredRole, ID: '406', NAME: 'WebVideoService' */
+
+/** END system, ID: '370', NAME: 'AndroidClient' */
+

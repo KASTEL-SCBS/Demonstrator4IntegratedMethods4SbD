@@ -1,0 +1,28 @@
+#! /bin/sh
+DIRNAME="$(dirname "$0")"
+
+. "$DIRNAME/util.sh"
+
+if [ "$#" != 2 ]; then
+  echo "Usage: ./joana CLASS_PATH COMMAND"
+  exit 1
+fi
+
+correct_java_version()
+echo $# > /dev/null
+
+totalMemKB=$(free --kilo |awk '/^Mem:/{print $4}')
+
+# Percentage of memory to use for Java heap
+usagePercent=95
+
+# heap size in KB
+heapKB=$(($totalMemKB*$usagePercent/100))
+
+# heap size in MB
+heapMB=$(($heapKB/1024))
+
+classPath=$1
+java -Xmx${heapMB}m -jar $DIRNAME/joana.jar "classPath $classPath" \
+  "sdgOptions uninitializedFieldTypeRegexp '$JOANA_UNINITIALIZED'" \
+  "$2"

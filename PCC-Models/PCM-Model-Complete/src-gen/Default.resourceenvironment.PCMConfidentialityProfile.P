@@ -1,0 +1,78 @@
+
+/** BEGIN encryption, ID: '503', NAME: 'null' */
+description(503,'null','encryption').
+unencryptedData(503,[]).
+/** END encryption, ID: '503', NAME: 'null' */
+
+
+/** BEGIN locationAndTamperProtection, ID: '503', NAME: 'null' */
+description(503,'null','locationAndTamperProtection').
+locationsAndTamperProtectionsPairs(503,[52]).
+/** END locationAndTamperProtection, ID: '503', NAME: 'null' */
+
+
+/** BEGIN locationAndTamperProtection, ID: '504', NAME: 'null' */
+description(504,'null','locationAndTamperProtection').
+locationsAndTamperProtectionsPairs(504,[49]).
+/** END locationAndTamperProtection, ID: '504', NAME: 'null' */
+
+
+/** BEGIN encryption, ID: '504', NAME: 'null' */
+description(504,'null','encryption').
+unencryptedData(504,[]).
+/** END encryption, ID: '504', NAME: 'null' */
+
+
+/** BEGIN furtherPhysicalConnections, ID: '505', NAME: 'null' */
+description(505,'null','furtherPhysicalConnections').
+connectionType(505,[complete]).
+/** END furtherPhysicalConnections, ID: '505', NAME: 'null' */
+
+
+/** BEGIN locationAndTamperProtection, ID: '505', NAME: 'null' */
+description(505,'null','locationAndTamperProtection').
+locationsAndTamperProtectionsPairs(505,[53]).
+/** END locationAndTamperProtection, ID: '505', NAME: 'null' */
+
+
+/** BEGIN sharing, ID: '505', NAME: 'null' */
+description(505,'null','sharing').
+sharing(505,[exclusive]).
+/** END sharing, ID: '505', NAME: 'null' */
+
+
+/** BEGIN furtherPhysicalConnections, ID: '506', NAME: 'null' */
+description(506,'null','furtherPhysicalConnections').
+connectionType(506,[complete]).
+/** END furtherPhysicalConnections, ID: '506', NAME: 'null' */
+
+
+/** BEGIN locationAndTamperProtection, ID: '506', NAME: 'null' */
+description(506,'null','locationAndTamperProtection').
+locationsAndTamperProtectionsPairs(506,[55]).
+/** END locationAndTamperProtection, ID: '506', NAME: 'null' */
+
+
+/** BEGIN sharing, ID: '506', NAME: 'null' */
+description(506,'null','sharing').
+sharing(506,[exclusive]).
+/** END sharing, ID: '506', NAME: 'null' */
+
+
+/** BEGIN furtherPhysicalConnections, ID: '507', NAME: 'null' */
+description(507,'null','furtherPhysicalConnections').
+connectionType(507,[complete]).
+/** END furtherPhysicalConnections, ID: '507', NAME: 'null' */
+
+
+/** BEGIN locationAndTamperProtection, ID: '507', NAME: 'null' */
+description(507,'null','locationAndTamperProtection').
+locationsAndTamperProtectionsPairs(507,[51]).
+/** END locationAndTamperProtection, ID: '507', NAME: 'null' */
+
+
+/** BEGIN sharing, ID: '507', NAME: 'null' */
+description(507,'null','sharing').
+sharing(507,[exclusive]).
+/** END sharing, ID: '507', NAME: 'null' */
+

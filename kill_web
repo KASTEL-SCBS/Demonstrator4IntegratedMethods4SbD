@@ -1,0 +1,2 @@
+#!/bin/sh
+for p in $(ps -ef | grep -v awk | awk '/java.*(plexus|pcc-service).*/ { print $2 }'); do kill $p ; done

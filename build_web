@@ -1,0 +1,12 @@
+#!/bin/sh
+cd "$(dirname "$0")"
+cd pcc-imp-webinterface
+mvn -Dmaven.test.skip=true package
+cd ..
+cd pcc-imp-webinterface-prosecution
+mvn -Dmaven.test.skip=true package
+cd ..
+cd pcc-imp-webservice
+mvn install:install-file -Dfile=lib/joana.ui.annotations.jar -DgroupId=edu.kit.joana -DartifactId=annotations -Dversion=1.0 -Dpackaging=jar
+mvn clean install -Dmaven.test.skip=true package
+cd ..

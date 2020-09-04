@@ -1,0 +1,251 @@
+
+/** BEGIN system, ID: '421', NAME: 'New System' */
+description(421,'New System','system').
+system(421).
+assemblyContexts(421,[422,423,424,425,426,427,428,429,430]).
+connectors(421,[431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446]).
+providedRoles(421,[447,448,449]).
+requiredRoles(421,[]).
+
+/** BEGIN assemblyContext, ID: '422', NAME: 'Assembly_PersecutionWebinterface <PersecutionWebinterface>' */
+description(422,'Assembly_PersecutionWebinterface <PersecutionWebinterface>','assemblyContext').
+assemblyContext(422).
+encapsulatedComponent(422,[114]).
+/** END assemblyContext, ID: '422', NAME: 'Assembly_PersecutionWebinterface <PersecutionWebinterface>' */
+
+
+/** BEGIN assemblyContext, ID: '423', NAME: 'Assembly_AnonymizationService <AnonymizationService>' */
+description(423,'Assembly_AnonymizationService <AnonymizationService>','assemblyContext').
+assemblyContext(423).
+encapsulatedComponent(423,[93]).
+/** END assemblyContext, ID: '423', NAME: 'Assembly_AnonymizationService <AnonymizationService>' */
+
+
+/** BEGIN assemblyContext, ID: '424', NAME: 'Assembly_UserService <UserService>' */
+description(424,'Assembly_UserService <UserService>','assemblyContext').
+assemblyContext(424).
+encapsulatedComponent(424,[90]).
+/** END assemblyContext, ID: '424', NAME: 'Assembly_UserService <UserService>' */
+
+
+/** BEGIN assemblyContext, ID: '425', NAME: 'Assembly_UserSQLDB <UserSQLDB>' */
+description(425,'Assembly_UserSQLDB <UserSQLDB>','assemblyContext').
+assemblyContext(425).
+encapsulatedComponent(425,[91]).
+/** END assemblyContext, ID: '425', NAME: 'Assembly_UserSQLDB <UserSQLDB>' */
+
+
+/** BEGIN assemblyContext, ID: '426', NAME: 'Assembly_CryptographicHasher <CryptographicHasher>' */
+description(426,'Assembly_CryptographicHasher <CryptographicHasher>','assemblyContext').
+assemblyContext(426).
+encapsulatedComponent(426,[118]).
+/** END assemblyContext, ID: '426', NAME: 'Assembly_CryptographicHasher <CryptographicHasher>' */
+
+
+/** BEGIN assemblyContext, ID: '427', NAME: 'Assembly_PasswordAuthenticator <PasswordAuthenticator>' */
+description(427,'Assembly_PasswordAuthenticator <PasswordAuthenticator>','assemblyContext').
+assemblyContext(427).
+encapsulatedComponent(427,[117]).
+/** END assemblyContext, ID: '427', NAME: 'Assembly_PasswordAuthenticator <PasswordAuthenticator>' */
+
+
+/** BEGIN assemblyContext, ID: '428', NAME: 'Assembly_VideoService <VideoService>' */
+description(428,'Assembly_VideoService <VideoService>','assemblyContext').
+assemblyContext(428).
+encapsulatedComponent(428,[97]).
+/** END assemblyContext, ID: '428', NAME: 'Assembly_VideoService <VideoService>' */
+
+
+/** BEGIN assemblyContext, ID: '429', NAME: 'Assembly_AccessControl <AccessControl>' */
+description(429,'Assembly_AccessControl <AccessControl>','assemblyContext').
+assemblyContext(429).
+encapsulatedComponent(429,[116]).
+/** END assemblyContext, ID: '429', NAME: 'Assembly_AccessControl <AccessControl>' */
+
+
+/** BEGIN assemblyContext, ID: '430', NAME: 'Assembly_FileSystemManager <FileSystemManager>' */
+description(430,'Assembly_FileSystemManager <FileSystemManager>','assemblyContext').
+assemblyContext(430).
+encapsulatedComponent(430,[109]).
+/** END assemblyContext, ID: '430', NAME: 'Assembly_FileSystemManager <FileSystemManager>' */
+
+
+/** BEGIN providedDelegationConnector, ID: '431', NAME: 'ProvDelegation Provided_JudgeAccess -> Provided_JudgeAccess_PersecutionWebinterface' */
+description(431,'ProvDelegation Provided_JudgeAccess -> Provided_JudgeAccess_PersecutionWebinterface','providedDelegationConnector').
+providedDelegationConnector(431).
+innerProvidedRole(431,[234]).
+outerProvidedRole(431,[447]).
+assemblyContext(431,[422]).
+/** END providedDelegationConnector, ID: '431', NAME: 'ProvDelegation Provided_JudgeAccess -> Provided_JudgeAccess_PersecutionWebinterface' */
+
+
+/** BEGIN providedDelegationConnector, ID: '432', NAME: 'ProvDelegation Provided_PersecutionInformationProvision -> Provided_PersecutionInformationProvision_PersecutionWebinterface' */
+description(432,'ProvDelegation Provided_PersecutionInformationProvision -> Provided_PersecutionInformationProvision_PersecutionWebinterface','providedDelegationConnector').
+providedDelegationConnector(432).
+innerProvidedRole(432,[235]).
+outerProvidedRole(432,[448]).
+assemblyContext(432,[422]).
+/** END providedDelegationConnector, ID: '432', NAME: 'ProvDelegation Provided_PersecutionInformationProvision -> Provided_PersecutionInformationProvision_PersecutionWebinterface' */
+
+
+/** BEGIN providedDelegationConnector, ID: '433', NAME: 'ProvDelegation Provided_IUserManagement -> Provided_IUserManagement_PersecutionWebinterface' */
+description(433,'ProvDelegation Provided_IUserManagement -> Provided_IUserManagement_PersecutionWebinterface','providedDelegationConnector').
+providedDelegationConnector(433).
+innerProvidedRole(433,[236]).
+outerProvidedRole(433,[449]).
+assemblyContext(433,[422]).
+/** END providedDelegationConnector, ID: '433', NAME: 'ProvDelegation Provided_IUserManagement -> Provided_IUserManagement_PersecutionWebinterface' */
+
+
+/** BEGIN assemblyConnector, ID: '434', NAME: 'Connector Assembly_PersecutionWebinterface <PersecutionWebinterface> -> Assembly_AnonymizationService <AnonymizationService>' */
+description(434,'Connector Assembly_PersecutionWebinterface <PersecutionWebinterface> -> Assembly_AnonymizationService <AnonymizationService>','assemblyConnector').
+assemblyConnector(434).
+requiringAssemblyContext(434,[422]).
+providingAssemblyContext(434,[423]).
+providedRole(434,[171]).
+requiredRole(434,[239]).
+/** END assemblyConnector, ID: '434', NAME: 'Connector Assembly_PersecutionWebinterface <PersecutionWebinterface> -> Assembly_AnonymizationService <AnonymizationService>' */
+
+
+/** BEGIN assemblyConnector, ID: '435', NAME: 'Connector Assembly_PersecutionWebinterface <PersecutionWebinterface> -> Assembly_AnonymizationService <AnonymizationService>' */
+description(435,'Connector Assembly_PersecutionWebinterface <PersecutionWebinterface> -> Assembly_AnonymizationService <AnonymizationService>','assemblyConnector').
+assemblyConnector(435).
+requiringAssemblyContext(435,[422]).
+providingAssemblyContext(435,[423]).
+providedRole(435,[170]).
+requiredRole(435,[238]).
+/** END assemblyConnector, ID: '435', NAME: 'Connector Assembly_PersecutionWebinterface <PersecutionWebinterface> -> Assembly_AnonymizationService <AnonymizationService>' */
+
+
+/** BEGIN assemblyConnector, ID: '436', NAME: 'Connector Assembly_PersecutionWebinterface <PersecutionWebinterface> -> Assembly_AnonymizationService <AnonymizationService>' */
+description(436,'Connector Assembly_PersecutionWebinterface <PersecutionWebinterface> -> Assembly_AnonymizationService <AnonymizationService>','assemblyConnector').
+assemblyConnector(436).
+requiringAssemblyContext(436,[422]).
+providingAssemblyContext(436,[423]).
+providedRole(436,[169]).
+requiredRole(436,[237]).
+/** END assemblyConnector, ID: '436', NAME: 'Connector Assembly_PersecutionWebinterface <PersecutionWebinterface> -> Assembly_AnonymizationService <AnonymizationService>' */
+
+
+/** BEGIN assemblyConnector, ID: '437', NAME: 'Connector Assembly_UserService <UserService> -> Assembly_UserSQLDB <UserSQLDB>' */
+description(437,'Connector Assembly_UserService <UserService> -> Assembly_UserSQLDB <UserSQLDB>','assemblyConnector').
+assemblyConnector(437).
+requiringAssemblyContext(437,[424]).
+providingAssemblyContext(437,[425]).
+providedRole(437,[159]).
+requiredRole(437,[156]).
+/** END assemblyConnector, ID: '437', NAME: 'Connector Assembly_UserService <UserService> -> Assembly_UserSQLDB <UserSQLDB>' */
+
+
+/** BEGIN assemblyConnector, ID: '438', NAME: 'Connector Assembly_UserService <UserService> -> Assembly_UserSQLDB <UserSQLDB>' */
+description(438,'Connector Assembly_UserService <UserService> -> Assembly_UserSQLDB <UserSQLDB>','assemblyConnector').
+assemblyConnector(438).
+requiringAssemblyContext(438,[424]).
+providingAssemblyContext(438,[425]).
+providedRole(438,[160]).
+requiredRole(438,[157]).
+/** END assemblyConnector, ID: '438', NAME: 'Connector Assembly_UserService <UserService> -> Assembly_UserSQLDB <UserSQLDB>' */
+
+
+/** BEGIN assemblyConnector, ID: '439', NAME: 'Connector Assembly_AnonymizationService <AnonymizationService> -> Assembly_UserService <UserService>' */
+description(439,'Connector Assembly_AnonymizationService <AnonymizationService> -> Assembly_UserService <UserService>','assemblyConnector').
+assemblyConnector(439).
+requiringAssemblyContext(439,[423]).
+providingAssemblyContext(439,[424]).
+providedRole(439,[155]).
+requiredRole(439,[172]).
+/** END assemblyConnector, ID: '439', NAME: 'Connector Assembly_AnonymizationService <AnonymizationService> -> Assembly_UserService <UserService>' */
+
+
+/** BEGIN assemblyConnector, ID: '440', NAME: 'Connector Assembly_AnonymizationService <AnonymizationService> -> Assembly_UserService <UserService>' */
+description(440,'Connector Assembly_AnonymizationService <AnonymizationService> -> Assembly_UserService <UserService>','assemblyConnector').
+assemblyConnector(440).
+requiringAssemblyContext(440,[423]).
+providingAssemblyContext(440,[424]).
+providedRole(440,[154]).
+requiredRole(440,[175]).
+/** END assemblyConnector, ID: '440', NAME: 'Connector Assembly_AnonymizationService <AnonymizationService> -> Assembly_UserService <UserService>' */
+
+
+/** BEGIN assemblyConnector, ID: '441', NAME: 'Connector Assembly_UserSQLDB <UserSQLDB> -> Assembly_CryptographicHasher <CryptographicHasher>' */
+description(441,'Connector Assembly_UserSQLDB <UserSQLDB> -> Assembly_CryptographicHasher <CryptographicHasher>','assemblyConnector').
+assemblyConnector(441).
+requiringAssemblyContext(441,[425]).
+providingAssemblyContext(441,[426]).
+providedRole(441,[243]).
+requiredRole(441,[162]).
+/** END assemblyConnector, ID: '441', NAME: 'Connector Assembly_UserSQLDB <UserSQLDB> -> Assembly_CryptographicHasher <CryptographicHasher>' */
+
+
+/** BEGIN assemblyConnector, ID: '442', NAME: 'Connector Assembly_UserSQLDB <UserSQLDB> -> Assembly_PasswordAuthenticator <PasswordAuthenticator>' */
+description(442,'Connector Assembly_UserSQLDB <UserSQLDB> -> Assembly_PasswordAuthenticator <PasswordAuthenticator>','assemblyConnector').
+assemblyConnector(442).
+requiringAssemblyContext(442,[425]).
+providingAssemblyContext(442,[427]).
+providedRole(442,[242]).
+requiredRole(442,[161]).
+/** END assemblyConnector, ID: '442', NAME: 'Connector Assembly_UserSQLDB <UserSQLDB> -> Assembly_PasswordAuthenticator <PasswordAuthenticator>' */
+
+
+/** BEGIN assemblyConnector, ID: '443', NAME: 'Connector Assembly_AnonymizationService <AnonymizationService> -> Assembly_VideoService <VideoService>' */
+description(443,'Connector Assembly_AnonymizationService <AnonymizationService> -> Assembly_VideoService <VideoService>','assemblyConnector').
+assemblyConnector(443).
+requiringAssemblyContext(443,[423]).
+providingAssemblyContext(443,[428]).
+providedRole(443,[181]).
+requiredRole(443,[173]).
+/** END assemblyConnector, ID: '443', NAME: 'Connector Assembly_AnonymizationService <AnonymizationService> -> Assembly_VideoService <VideoService>' */
+
+
+/** BEGIN assemblyConnector, ID: '444', NAME: 'Connector Assembly_VideoService <VideoService> -> Assembly_AccessControl <AccessControl>' */
+description(444,'Connector Assembly_VideoService <VideoService> -> Assembly_AccessControl <AccessControl>','assemblyConnector').
+assemblyConnector(444).
+requiringAssemblyContext(444,[428]).
+providingAssemblyContext(444,[429]).
+providedRole(444,[241]).
+requiredRole(444,[185]).
+/** END assemblyConnector, ID: '444', NAME: 'Connector Assembly_VideoService <VideoService> -> Assembly_AccessControl <AccessControl>' */
+
+
+/** BEGIN assemblyConnector, ID: '445', NAME: 'Connector Assembly_VideoService <VideoService> -> Assembly_FileSystemManager <FileSystemManager>' */
+description(445,'Connector Assembly_VideoService <VideoService> -> Assembly_FileSystemManager <FileSystemManager>','assemblyConnector').
+assemblyConnector(445).
+requiringAssemblyContext(445,[428]).
+providingAssemblyContext(445,[430]).
+providedRole(445,[221]).
+requiredRole(445,[183]).
+/** END assemblyConnector, ID: '445', NAME: 'Connector Assembly_VideoService <VideoService> -> Assembly_FileSystemManager <FileSystemManager>' */
+
+
+/** BEGIN assemblyConnector, ID: '446', NAME: 'Connector Assembly_VideoService <VideoService> -> Assembly_FileSystemManager <FileSystemManager>' */
+description(446,'Connector Assembly_VideoService <VideoService> -> Assembly_FileSystemManager <FileSystemManager>','assemblyConnector').
+assemblyConnector(446).
+requiringAssemblyContext(446,[428]).
+providingAssemblyContext(446,[430]).
+providedRole(446,[220]).
+requiredRole(446,[184]).
+/** END assemblyConnector, ID: '446', NAME: 'Connector Assembly_VideoService <VideoService> -> Assembly_FileSystemManager <FileSystemManager>' */
+
+
+/** BEGIN operationProvidedRole, ID: '447', NAME: 'Provided_JudgeAccess' */
+description(447,'Provided_JudgeAccess','operationProvidedRole').
+operationProvidedRole(447).
+providedInterface(447,[149]).
+/** END operationProvidedRole, ID: '447', NAME: 'Provided_JudgeAccess' */
+
+
+/** BEGIN operationProvidedRole, ID: '448', NAME: 'Provided_PersecutionInformationProvision' */
+description(448,'Provided_PersecutionInformationProvision','operationProvidedRole').
+operationProvidedRole(448).
+providedInterface(448,[148]).
+/** END operationProvidedRole, ID: '448', NAME: 'Provided_PersecutionInformationProvision' */
+
+
+/** BEGIN operationProvidedRole, ID: '449', NAME: 'Provided_IUserManagement' */
+description(449,'Provided_IUserManagement','operationProvidedRole').
+operationProvidedRole(449).
+providedInterface(449,[119]).
+/** END operationProvidedRole, ID: '449', NAME: 'Provided_IUserManagement' */
+
+/** END system, ID: '421', NAME: 'New System' */
+

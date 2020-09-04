@@ -1,0 +1,11 @@
+# User-specific stuff:
+.idea/
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Mac User
+.DS_Store

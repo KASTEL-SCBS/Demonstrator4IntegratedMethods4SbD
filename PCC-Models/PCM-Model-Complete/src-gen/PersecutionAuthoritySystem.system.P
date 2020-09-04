@@ -1,0 +1,67 @@
+
+/** BEGIN system, ID: '409', NAME: 'PersecutionAuthoritySystem' */
+description(409,'PersecutionAuthoritySystem','system').
+system(409).
+assemblyContexts(409,[410]).
+connectors(409,[411,412,413,414]).
+providedRoles(409,[]).
+requiredRoles(409,[415,416]).
+
+/** BEGIN assemblyContext, ID: '410', NAME: 'Assembly_PersecutionWebinterface' */
+description(410,'Assembly_PersecutionWebinterface','assemblyContext').
+assemblyContext(410).
+encapsulatedComponent(410,[114]).
+/** END assemblyContext, ID: '410', NAME: 'Assembly_PersecutionWebinterface' */
+
+
+/** BEGIN requiredDelegationConnector, ID: '411', NAME: 'ReqDelegation Required_IWebVideoServiceInformation_PersecutionWebinterface -> Required_IWebVideoServiceInformation' */
+description(411,'ReqDelegation Required_IWebVideoServiceInformation_PersecutionWebinterface -> Required_IWebVideoServiceInformation','requiredDelegationConnector').
+requiredDelegationConnector(411).
+innerRequiredRole(411,[417]).
+outerRequiredRole(411,[]).
+assemblyContext(411,[410]).
+/** END requiredDelegationConnector, ID: '411', NAME: 'ReqDelegation Required_IWebVideoServiceInformation_PersecutionWebinterface -> Required_IWebVideoServiceInformation' */
+
+
+/** BEGIN requiredDelegationConnector, ID: '412', NAME: 'ReqDelegation Required_IWebVideoServiceInformationForPersecution_PersecutionWebinterface -> Required_IWebVideoServiceInformationForPersecution' */
+description(412,'ReqDelegation Required_IWebVideoServiceInformationForPersecution_PersecutionWebinterface -> Required_IWebVideoServiceInformationForPersecution','requiredDelegationConnector').
+requiredDelegationConnector(412).
+innerRequiredRole(412,[418]).
+outerRequiredRole(412,[415]).
+assemblyContext(412,[410]).
+/** END requiredDelegationConnector, ID: '412', NAME: 'ReqDelegation Required_IWebVideoServiceInformationForPersecution_PersecutionWebinterface -> Required_IWebVideoServiceInformationForPersecution' */
+
+
+/** BEGIN requiredDelegationConnector, ID: '413', NAME: 'ReqDelegation Required_PersecutionInterface_PersecutionWebinterface -> Required_IWebVideoServiceInformationForPersecution' */
+description(413,'ReqDelegation Required_PersecutionInterface_PersecutionWebinterface -> Required_IWebVideoServiceInformationForPersecution','requiredDelegationConnector').
+requiredDelegationConnector(413).
+innerRequiredRole(413,[237]).
+outerRequiredRole(413,[415]).
+assemblyContext(413,[410]).
+/** END requiredDelegationConnector, ID: '413', NAME: 'ReqDelegation Required_PersecutionInterface_PersecutionWebinterface -> Required_IWebVideoServiceInformationForPersecution' */
+
+
+/** BEGIN requiredDelegationConnector, ID: '414', NAME: 'ReqDelegation Required_JudgeInterface_PersecutionWebinterface -> Required_JudgeInterface' */
+description(414,'ReqDelegation Required_JudgeInterface_PersecutionWebinterface -> Required_JudgeInterface','requiredDelegationConnector').
+requiredDelegationConnector(414).
+innerRequiredRole(414,[238]).
+outerRequiredRole(414,[416]).
+assemblyContext(414,[410]).
+/** END requiredDelegationConnector, ID: '414', NAME: 'ReqDelegation Required_JudgeInterface_PersecutionWebinterface -> Required_JudgeInterface' */
+
+
+/** BEGIN operationRequiredRole, ID: '415', NAME: 'Required_IWebVideoServiceInformationForPersecution' */
+description(415,'Required_IWebVideoServiceInformationForPersecution','operationRequiredRole').
+operationRequiredRole(415).
+requiredInterface(415,[419]).
+/** END operationRequiredRole, ID: '415', NAME: 'Required_IWebVideoServiceInformationForPersecution' */
+
+
+/** BEGIN operationRequiredRole, ID: '416', NAME: 'Required_JudgeInterface' */
+description(416,'Required_JudgeInterface','operationRequiredRole').
+operationRequiredRole(416).
+requiredInterface(416,[420]).
+/** END operationRequiredRole, ID: '416', NAME: 'Required_JudgeInterface' */
+
+/** END system, ID: '409', NAME: 'PersecutionAuthoritySystem' */
+

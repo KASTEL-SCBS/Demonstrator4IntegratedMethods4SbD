@@ -1,0 +1,2754 @@
+
+/** BEGIN repository, ID: '89', NAME: 'PCC' */
+description(89,'PCC','repository').
+repository(89).
+components(89,[90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118]).
+interfaces(89,[119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153]).
+
+/** BEGIN basicComponent, ID: '90', NAME: 'UserService' */
+description(90,'UserService','basicComponent').
+basicComponent(90).
+providedRoles(90,[154,155]).
+requiredRoles(90,[156,157,158]).
+
+/** BEGIN operationProvidedRole, ID: '154', NAME: 'IUserIdProvider' */
+description(154,'IUserIdProvider','operationProvidedRole').
+operationProvidedRole(154).
+providedInterface(154,[121]).
+/** END operationProvidedRole, ID: '154', NAME: 'IUserIdProvider' */
+
+
+/** BEGIN operationProvidedRole, ID: '155', NAME: 'IUserManagement' */
+description(155,'IUserManagement','operationProvidedRole').
+operationProvidedRole(155).
+providedInterface(155,[119]).
+/** END operationProvidedRole, ID: '155', NAME: 'IUserManagement' */
+
+
+/** BEGIN operationRequiredRole, ID: '156', NAME: 'IUserDB' */
+description(156,'IUserDB','operationRequiredRole').
+operationRequiredRole(156).
+requiredInterface(156,[122]).
+/** END operationRequiredRole, ID: '156', NAME: 'IUserDB' */
+
+
+/** BEGIN operationRequiredRole, ID: '157', NAME: 'IUserSessionDB' */
+description(157,'IUserSessionDB','operationRequiredRole').
+operationRequiredRole(157).
+requiredInterface(157,[145]).
+/** END operationRequiredRole, ID: '157', NAME: 'IUserSessionDB' */
+
+
+/** BEGIN operationRequiredRole, ID: '158', NAME: 'Required_SQLSanitizer_UserService' */
+description(158,'Required_SQLSanitizer_UserService','operationRequiredRole').
+operationRequiredRole(158).
+requiredInterface(158,[150]).
+/** END operationRequiredRole, ID: '158', NAME: 'Required_SQLSanitizer_UserService' */
+
+/** END basicComponent, ID: '90', NAME: 'UserService' */
+
+
+/** BEGIN basicComponent, ID: '91', NAME: 'UserSQLDB' */
+description(91,'UserSQLDB','basicComponent').
+basicComponent(91).
+providedRoles(91,[159,160]).
+requiredRoles(91,[161,162]).
+
+/** BEGIN operationProvidedRole, ID: '159', NAME: 'IUserDB' */
+description(159,'IUserDB','operationProvidedRole').
+operationProvidedRole(159).
+providedInterface(159,[122]).
+/** END operationProvidedRole, ID: '159', NAME: 'IUserDB' */
+
+
+/** BEGIN operationProvidedRole, ID: '160', NAME: 'IUserSessionDB' */
+description(160,'IUserSessionDB','operationProvidedRole').
+operationProvidedRole(160).
+providedInterface(160,[145]).
+/** END operationProvidedRole, ID: '160', NAME: 'IUserSessionDB' */
+
+
+/** BEGIN operationRequiredRole, ID: '161', NAME: 'Required_PasswordAuthentication_UserSQLDB' */
+description(161,'Required_PasswordAuthentication_UserSQLDB','operationRequiredRole').
+operationRequiredRole(161).
+requiredInterface(161,[147]).
+/** END operationRequiredRole, ID: '161', NAME: 'Required_PasswordAuthentication_UserSQLDB' */
+
+
+/** BEGIN operationRequiredRole, ID: '162', NAME: 'Required_CryptographicHashing_UserSQLDB' */
+description(162,'Required_CryptographicHashing_UserSQLDB','operationRequiredRole').
+operationRequiredRole(162).
+requiredInterface(162,[153]).
+/** END operationRequiredRole, ID: '162', NAME: 'Required_CryptographicHashing_UserSQLDB' */
+
+/** END basicComponent, ID: '91', NAME: 'UserSQLDB' */
+
+
+/** BEGIN basicComponent, ID: '92', NAME: 'VideoProcessingManager' */
+description(92,'VideoProcessingManager','basicComponent').
+basicComponent(92).
+providedRoles(92,[163]).
+requiredRoles(92,[164,165,166]).
+
+/** BEGIN operationProvidedRole, ID: '163', NAME: 'IAsyncVideoProcessor' */
+description(163,'IAsyncVideoProcessor','operationProvidedRole').
+operationProvidedRole(163).
+providedInterface(163,[144]).
+/** END operationProvidedRole, ID: '163', NAME: 'IAsyncVideoProcessor' */
+
+
+/** BEGIN operationRequiredRole, ID: '164', NAME: 'IFileManager' */
+description(164,'IFileManager','operationRequiredRole').
+operationRequiredRole(164).
+requiredInterface(164,[142]).
+/** END operationRequiredRole, ID: '164', NAME: 'IFileManager' */
+
+
+/** BEGIN operationRequiredRole, ID: '165', NAME: 'IVideoDecryptor' */
+description(165,'IVideoDecryptor','operationRequiredRole').
+operationRequiredRole(165).
+requiredInterface(165,[126]).
+/** END operationRequiredRole, ID: '165', NAME: 'IVideoDecryptor' */
+
+
+/** BEGIN operationRequiredRole, ID: '166', NAME: 'IVideoProcessor' */
+description(166,'IVideoProcessor','operationRequiredRole').
+operationRequiredRole(166).
+requiredInterface(166,[125]).
+/** END operationRequiredRole, ID: '166', NAME: 'IVideoProcessor' */
+
+/** END basicComponent, ID: '92', NAME: 'VideoProcessingManager' */
+
+
+/** BEGIN basicComponent, ID: '93', NAME: 'AnonymizationService' */
+description(93,'AnonymizationService','basicComponent').
+basicComponent(93).
+providedRoles(93,[167,168,169,170,171]).
+requiredRoles(93,[172,173,174,175]).
+
+/** BEGIN operationProvidedRole, ID: '167', NAME: 'Provided_VideoReceiving_AnonymizationService' */
+description(167,'Provided_VideoReceiving_AnonymizationService','operationProvidedRole').
+operationProvidedRole(167).
+providedInterface(167,[152]).
+/** END operationProvidedRole, ID: '167', NAME: 'Provided_VideoReceiving_AnonymizationService' */
+
+
+/** BEGIN operationProvidedRole, ID: '168', NAME: 'Provided_VideoHandling_AnonymizationService' */
+description(168,'Provided_VideoHandling_AnonymizationService','operationProvidedRole').
+operationProvidedRole(168).
+providedInterface(168,[120]).
+/** END operationProvidedRole, ID: '168', NAME: 'Provided_VideoHandling_AnonymizationService' */
+
+
+/** BEGIN operationProvidedRole, ID: '169', NAME: 'Provided_PersecutionInformationProvision_AnonymizationService' */
+description(169,'Provided_PersecutionInformationProvision_AnonymizationService','operationProvidedRole').
+operationProvidedRole(169).
+providedInterface(169,[148]).
+/** END operationProvidedRole, ID: '169', NAME: 'Provided_PersecutionInformationProvision_AnonymizationService' */
+
+
+/** BEGIN operationProvidedRole, ID: '170', NAME: 'Provided_JudgeAccess_AnonymizationService' */
+description(170,'Provided_JudgeAccess_AnonymizationService','operationProvidedRole').
+operationProvidedRole(170).
+providedInterface(170,[149]).
+/** END operationProvidedRole, ID: '170', NAME: 'Provided_JudgeAccess_AnonymizationService' */
+
+
+/** BEGIN operationProvidedRole, ID: '171', NAME: 'Provided_IUserManagement_AnonymizationService' */
+description(171,'Provided_IUserManagement_AnonymizationService','operationProvidedRole').
+operationProvidedRole(171).
+providedInterface(171,[119]).
+/** END operationProvidedRole, ID: '171', NAME: 'Provided_IUserManagement_AnonymizationService' */
+
+
+/** BEGIN operationRequiredRole, ID: '172', NAME: 'Required_IUserManagement_AnonymizationService' */
+description(172,'Required_IUserManagement_AnonymizationService','operationRequiredRole').
+operationRequiredRole(172).
+requiredInterface(172,[119]).
+/** END operationRequiredRole, ID: '172', NAME: 'Required_IUserManagement_AnonymizationService' */
+
+
+/** BEGIN operationRequiredRole, ID: '173', NAME: 'Required_IVideoService_AnonymizationService' */
+description(173,'Required_IVideoService_AnonymizationService','operationRequiredRole').
+operationRequiredRole(173).
+requiredInterface(173,[123]).
+/** END operationRequiredRole, ID: '173', NAME: 'Required_IVideoService_AnonymizationService' */
+
+
+/** BEGIN operationRequiredRole, ID: '174', NAME: 'Required_IPublicKeyProvider_AnonymizationService' */
+description(174,'Required_IPublicKeyProvider_AnonymizationService','operationRequiredRole').
+operationRequiredRole(174).
+requiredInterface(174,[130]).
+/** END operationRequiredRole, ID: '174', NAME: 'Required_IPublicKeyProvider_AnonymizationService' */
+
+
+/** BEGIN operationRequiredRole, ID: '175', NAME: 'Required_IUserIdProvider_AnonymizationService' */
+description(175,'Required_IUserIdProvider_AnonymizationService','operationRequiredRole').
+operationRequiredRole(175).
+requiredInterface(175,[121]).
+/** END operationRequiredRole, ID: '175', NAME: 'Required_IUserIdProvider_AnonymizationService' */
+
+/** END basicComponent, ID: '93', NAME: 'AnonymizationService' */
+
+
+/** BEGIN basicComponent, ID: '94', NAME: 'SettingsManager' */
+description(94,'SettingsManager','basicComponent').
+basicComponent(94).
+providedRoles(94,[176]).
+requiredRoles(94,[177]).
+
+/** BEGIN operationProvidedRole, ID: '176', NAME: 'OperationProvidedRole1' */
+description(176,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(176).
+providedInterface(176,[139]).
+/** END operationProvidedRole, ID: '176', NAME: 'OperationProvidedRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '177', NAME: 'OperationRequiredRole1' */
+description(177,'OperationRequiredRole1','operationRequiredRole').
+operationRequiredRole(177).
+requiredInterface(177,[136]).
+/** END operationRequiredRole, ID: '177', NAME: 'OperationRequiredRole1' */
+
+/** END basicComponent, ID: '94', NAME: 'SettingsManager' */
+
+
+/** BEGIN basicComponent, ID: '95', NAME: 'OpenCVAnonymizer' */
+description(95,'OpenCVAnonymizer','basicComponent').
+basicComponent(95).
+providedRoles(95,[178]).
+requiredRoles(95,[179]).
+
+/** BEGIN operationProvidedRole, ID: '178', NAME: 'OperationProvidedRole1' */
+description(178,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(178).
+providedInterface(178,[125]).
+/** END operationProvidedRole, ID: '178', NAME: 'OperationProvidedRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '179', NAME: 'OperationRequiredRole1' */
+description(179,'OperationRequiredRole1','operationRequiredRole').
+operationRequiredRole(179).
+requiredInterface(179,[125]).
+/** END operationRequiredRole, ID: '179', NAME: 'OperationRequiredRole1' */
+
+/** END basicComponent, ID: '95', NAME: 'OpenCVAnonymizer' */
+
+
+/** BEGIN basicComponent, ID: '96', NAME: 'IdentityProcessor' */
+description(96,'IdentityProcessor','basicComponent').
+basicComponent(96).
+providedRoles(96,[180]).
+requiredRoles(96,[]).
+
+/** BEGIN operationProvidedRole, ID: '180', NAME: 'OperationProvidedRole1' */
+description(180,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(180).
+providedInterface(180,[125]).
+/** END operationProvidedRole, ID: '180', NAME: 'OperationProvidedRole1' */
+
+/** END basicComponent, ID: '96', NAME: 'IdentityProcessor' */
+
+
+/** BEGIN basicComponent, ID: '97', NAME: 'VideoService' */
+description(97,'VideoService','basicComponent').
+basicComponent(97).
+providedRoles(97,[181]).
+requiredRoles(97,[182,183,184,185]).
+
+/** BEGIN operationProvidedRole, ID: '181', NAME: 'IVideoService' */
+description(181,'IVideoService','operationProvidedRole').
+operationProvidedRole(181).
+providedInterface(181,[123]).
+/** END operationProvidedRole, ID: '181', NAME: 'IVideoService' */
+
+
+/** BEGIN operationRequiredRole, ID: '182', NAME: 'IAsyncVideoProcessor' */
+description(182,'IAsyncVideoProcessor','operationRequiredRole').
+operationRequiredRole(182).
+requiredInterface(182,[144]).
+/** END operationRequiredRole, ID: '182', NAME: 'IAsyncVideoProcessor' */
+
+
+/** BEGIN operationRequiredRole, ID: '183', NAME: 'IFileManager' */
+description(183,'IFileManager','operationRequiredRole').
+operationRequiredRole(183).
+requiredInterface(183,[142]).
+/** END operationRequiredRole, ID: '183', NAME: 'IFileManager' */
+
+
+/** BEGIN operationRequiredRole, ID: '184', NAME: 'IFileHierachyManager' */
+description(184,'IFileHierachyManager','operationRequiredRole').
+operationRequiredRole(184).
+requiredInterface(184,[143]).
+/** END operationRequiredRole, ID: '184', NAME: 'IFileHierachyManager' */
+
+
+/** BEGIN operationRequiredRole, ID: '185', NAME: 'Required_AccessControl_VideoService' */
+description(185,'Required_AccessControl_VideoService','operationRequiredRole').
+operationRequiredRole(185).
+requiredInterface(185,[151]).
+/** END operationRequiredRole, ID: '185', NAME: 'Required_AccessControl_VideoService' */
+
+/** END basicComponent, ID: '97', NAME: 'VideoService' */
+
+
+/** BEGIN basicComponent, ID: '98', NAME: 'HybridDecryptor' */
+description(98,'HybridDecryptor','basicComponent').
+basicComponent(98).
+providedRoles(98,[186]).
+requiredRoles(98,[187,188,189]).
+
+/** BEGIN operationProvidedRole, ID: '186', NAME: 'OperationProvidedRole1' */
+description(186,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(186).
+providedInterface(186,[128]).
+/** END operationProvidedRole, ID: '186', NAME: 'OperationProvidedRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '187', NAME: 'OperationRequiredRole1' */
+description(187,'OperationRequiredRole1','operationRequiredRole').
+operationRequiredRole(187).
+requiredInterface(187,[133]).
+/** END operationRequiredRole, ID: '187', NAME: 'OperationRequiredRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '188', NAME: 'OperationRequiredRole2' */
+description(188,'OperationRequiredRole2','operationRequiredRole').
+operationRequiredRole(188).
+requiredInterface(188,[132]).
+/** END operationRequiredRole, ID: '188', NAME: 'OperationRequiredRole2' */
+
+
+/** BEGIN operationRequiredRole, ID: '189', NAME: 'OperationRequiredRole3' */
+description(189,'OperationRequiredRole3','operationRequiredRole').
+operationRequiredRole(189).
+requiredInterface(189,[141]).
+/** END operationRequiredRole, ID: '189', NAME: 'OperationRequiredRole3' */
+
+/** END basicComponent, ID: '98', NAME: 'HybridDecryptor' */
+
+
+/** BEGIN basicComponent, ID: '99', NAME: 'KeyStorage' */
+description(99,'KeyStorage','basicComponent').
+basicComponent(99).
+providedRoles(99,[190]).
+requiredRoles(99,[191]).
+
+/** BEGIN operationProvidedRole, ID: '190', NAME: 'OperationProvidedRole1' */
+description(190,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(190).
+providedInterface(190,[127]).
+/** END operationProvidedRole, ID: '190', NAME: 'OperationProvidedRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '191', NAME: 'OperationRequiredRole1' */
+description(191,'OperationRequiredRole1','operationRequiredRole').
+operationRequiredRole(191).
+requiredInterface(191,[142]).
+/** END operationRequiredRole, ID: '191', NAME: 'OperationRequiredRole1' */
+
+/** END basicComponent, ID: '99', NAME: 'KeyStorage' */
+
+
+/** BEGIN basicComponent, ID: '100', NAME: 'DoubleSecuredFileEncryptor' */
+description(100,'DoubleSecuredFileEncryptor','basicComponent').
+basicComponent(100).
+providedRoles(100,[192]).
+requiredRoles(100,[193,194]).
+
+/** BEGIN operationProvidedRole, ID: '192', NAME: 'OperationProvidedRole1' */
+description(192,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(192).
+providedInterface(192,[129]).
+/** END operationProvidedRole, ID: '192', NAME: 'OperationProvidedRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '193', NAME: 'OperationRequiredRole1' */
+description(193,'OperationRequiredRole1','operationRequiredRole').
+operationRequiredRole(193).
+requiredInterface(193,[134]).
+/** END operationRequiredRole, ID: '193', NAME: 'OperationRequiredRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '194', NAME: 'OperationRequiredRole2' */
+description(194,'OperationRequiredRole2','operationRequiredRole').
+operationRequiredRole(194).
+requiredInterface(194,[131]).
+/** END operationRequiredRole, ID: '194', NAME: 'OperationRequiredRole2' */
+
+/** END basicComponent, ID: '100', NAME: 'DoubleSecuredFileEncryptor' */
+
+
+/** BEGIN basicComponent, ID: '101', NAME: 'JavaCryptoRSA' */
+description(101,'JavaCryptoRSA','basicComponent').
+basicComponent(101).
+providedRoles(101,[195,196,197]).
+requiredRoles(101,[]).
+
+/** BEGIN operationProvidedRole, ID: '195', NAME: 'OperationProvidedRole1' */
+description(195,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(195).
+providedInterface(195,[132]).
+/** END operationProvidedRole, ID: '195', NAME: 'OperationProvidedRole1' */
+
+
+/** BEGIN operationProvidedRole, ID: '196', NAME: 'OperationProvidedRole2' */
+description(196,'OperationProvidedRole2','operationProvidedRole').
+operationProvidedRole(196).
+providedInterface(196,[131]).
+/** END operationProvidedRole, ID: '196', NAME: 'OperationProvidedRole2' */
+
+
+/** BEGIN operationProvidedRole, ID: '197', NAME: 'OperationProvidedRole3' */
+description(197,'OperationProvidedRole3','operationProvidedRole').
+operationProvidedRole(197).
+providedInterface(197,[141]).
+/** END operationProvidedRole, ID: '197', NAME: 'OperationProvidedRole3' */
+
+/** END basicComponent, ID: '101', NAME: 'JavaCryptoRSA' */
+
+
+/** BEGIN basicComponent, ID: '102', NAME: 'JavaCryptoAES' */
+description(102,'JavaCryptoAES','basicComponent').
+basicComponent(102).
+providedRoles(102,[198,199,200]).
+requiredRoles(102,[]).
+
+/** BEGIN operationProvidedRole, ID: '198', NAME: 'OperationProvidedRole1' */
+description(198,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(198).
+providedInterface(198,[133]).
+/** END operationProvidedRole, ID: '198', NAME: 'OperationProvidedRole1' */
+
+
+/** BEGIN operationProvidedRole, ID: '199', NAME: 'OperationProvidedRole2' */
+description(199,'OperationProvidedRole2','operationProvidedRole').
+operationProvidedRole(199).
+providedInterface(199,[134]).
+/** END operationProvidedRole, ID: '199', NAME: 'OperationProvidedRole2' */
+
+
+/** BEGIN operationProvidedRole, ID: '200', NAME: 'OperationProvidedRole3' */
+description(200,'OperationProvidedRole3','operationProvidedRole').
+operationProvidedRole(200).
+providedInterface(200,[141]).
+/** END operationProvidedRole, ID: '200', NAME: 'OperationProvidedRole3' */
+
+/** END basicComponent, ID: '102', NAME: 'JavaCryptoAES' */
+
+
+/** BEGIN basicComponent, ID: '103', NAME: 'VideoDecryptor' */
+description(103,'VideoDecryptor','basicComponent').
+basicComponent(103).
+providedRoles(103,[201,202]).
+requiredRoles(103,[203,204,205]).
+
+/** BEGIN operationProvidedRole, ID: '201', NAME: 'IVideoDecryptor' */
+description(201,'IVideoDecryptor','operationProvidedRole').
+operationProvidedRole(201).
+providedInterface(201,[126]).
+/** END operationProvidedRole, ID: '201', NAME: 'IVideoDecryptor' */
+
+
+/** BEGIN operationProvidedRole, ID: '202', NAME: 'OperationProvidedRole2' */
+description(202,'OperationProvidedRole2','operationProvidedRole').
+operationProvidedRole(202).
+providedInterface(202,[130]).
+/** END operationProvidedRole, ID: '202', NAME: 'OperationProvidedRole2' */
+
+
+/** BEGIN operationRequiredRole, ID: '203', NAME: 'OperationRequiredRole1' */
+description(203,'OperationRequiredRole1','operationRequiredRole').
+operationRequiredRole(203).
+requiredInterface(203,[127]).
+/** END operationRequiredRole, ID: '203', NAME: 'OperationRequiredRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '204', NAME: 'OperationRequiredRole2' */
+description(204,'OperationRequiredRole2','operationRequiredRole').
+operationRequiredRole(204).
+requiredInterface(204,[128]).
+/** END operationRequiredRole, ID: '204', NAME: 'OperationRequiredRole2' */
+
+
+/** BEGIN operationRequiredRole, ID: '205', NAME: 'IAssymetricDecryptor' */
+description(205,'IAssymetricDecryptor','operationRequiredRole').
+operationRequiredRole(205).
+requiredInterface(205,[132]).
+/** END operationRequiredRole, ID: '205', NAME: 'IAssymetricDecryptor' */
+
+/** END basicComponent, ID: '103', NAME: 'VideoDecryptor' */
+
+
+/** BEGIN basicComponent, ID: '104', NAME: 'VideoEncryptor' */
+description(104,'VideoEncryptor','basicComponent').
+basicComponent(104).
+providedRoles(104,[206]).
+requiredRoles(104,[207,208,209]).
+
+/** BEGIN operationProvidedRole, ID: '206', NAME: 'OperationProvidedRole1' */
+description(206,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(206).
+providedInterface(206,[135]).
+/** END operationProvidedRole, ID: '206', NAME: 'OperationProvidedRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '207', NAME: 'OperationRequiredRole1' */
+description(207,'OperationRequiredRole1','operationRequiredRole').
+operationRequiredRole(207).
+requiredInterface(207,[129]).
+/** END operationRequiredRole, ID: '207', NAME: 'OperationRequiredRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '208', NAME: 'OperationRequiredRole2' */
+description(208,'OperationRequiredRole2','operationRequiredRole').
+operationRequiredRole(208).
+requiredInterface(208,[130]).
+/** END operationRequiredRole, ID: '208', NAME: 'OperationRequiredRole2' */
+
+
+/** BEGIN operationRequiredRole, ID: '209', NAME: 'OperationRequiredRole3' */
+description(209,'OperationRequiredRole3','operationRequiredRole').
+operationRequiredRole(209).
+requiredInterface(209,[134]).
+/** END operationRequiredRole, ID: '209', NAME: 'OperationRequiredRole3' */
+
+/** END basicComponent, ID: '104', NAME: 'VideoEncryptor' */
+
+
+/** BEGIN basicComponent, ID: '105', NAME: 'SessionManager' */
+description(105,'SessionManager','basicComponent').
+basicComponent(105).
+providedRoles(105,[210]).
+requiredRoles(105,[211,212,213]).
+
+/** BEGIN operationProvidedRole, ID: '210', NAME: 'OperationProvidedRole1' */
+description(210,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(210).
+providedInterface(210,[124]).
+/** END operationProvidedRole, ID: '210', NAME: 'OperationProvidedRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '211', NAME: 'OperationRequiredRole1' */
+description(211,'OperationRequiredRole1','operationRequiredRole').
+operationRequiredRole(211).
+requiredInterface(211,[136]).
+/** END operationRequiredRole, ID: '211', NAME: 'OperationRequiredRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '212', NAME: 'OperationRequiredRole2' */
+description(212,'OperationRequiredRole2','operationRequiredRole').
+operationRequiredRole(212).
+requiredInterface(212,[138]).
+/** END operationRequiredRole, ID: '212', NAME: 'OperationRequiredRole2' */
+
+
+/** BEGIN operationRequiredRole, ID: '213', NAME: 'OperationRequiredRole3' */
+description(213,'OperationRequiredRole3','operationRequiredRole').
+operationRequiredRole(213).
+requiredInterface(213,[119]).
+/** END operationRequiredRole, ID: '213', NAME: 'OperationRequiredRole3' */
+
+/** END basicComponent, ID: '105', NAME: 'SessionManager' */
+
+
+/** BEGIN basicComponent, ID: '106', NAME: 'UserNetworkAdapter' */
+description(106,'UserNetworkAdapter','basicComponent').
+basicComponent(106).
+providedRoles(106,[214]).
+requiredRoles(106,[215]).
+
+/** BEGIN operationProvidedRole, ID: '214', NAME: 'OperationProvidedRole1' */
+description(214,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(214).
+providedInterface(214,[119]).
+/** END operationProvidedRole, ID: '214', NAME: 'OperationProvidedRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '215', NAME: 'OperationRequiredRole1' */
+description(215,'OperationRequiredRole1','operationRequiredRole').
+operationRequiredRole(215).
+requiredInterface(215,[119]).
+/** END operationRequiredRole, ID: '215', NAME: 'OperationRequiredRole1' */
+
+/** END basicComponent, ID: '106', NAME: 'UserNetworkAdapter' */
+
+
+/** BEGIN basicComponent, ID: '107', NAME: 'VideoNetworkAdapter' */
+description(107,'VideoNetworkAdapter','basicComponent').
+basicComponent(107).
+providedRoles(107,[216]).
+requiredRoles(107,[217,218]).
+
+/** BEGIN operationProvidedRole, ID: '216', NAME: 'OperationProvidedRole1' */
+description(216,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(216).
+providedInterface(216,[137]).
+/** END operationProvidedRole, ID: '216', NAME: 'OperationProvidedRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '217', NAME: 'OperationRequiredRole1' */
+description(217,'OperationRequiredRole1','operationRequiredRole').
+operationRequiredRole(217).
+requiredInterface(217,[120]).
+/** END operationRequiredRole, ID: '217', NAME: 'OperationRequiredRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '218', NAME: 'Required_VideoReceiving_VideoNetworkAdapter' */
+description(218,'Required_VideoReceiving_VideoNetworkAdapter','operationRequiredRole').
+operationRequiredRole(218).
+requiredInterface(218,[152]).
+/** END operationRequiredRole, ID: '218', NAME: 'Required_VideoReceiving_VideoNetworkAdapter' */
+
+/** END basicComponent, ID: '107', NAME: 'VideoNetworkAdapter' */
+
+
+/** BEGIN basicComponent, ID: '108', NAME: 'PreferencesStorage' */
+description(108,'PreferencesStorage','basicComponent').
+basicComponent(108).
+providedRoles(108,[219]).
+requiredRoles(108,[]).
+
+/** BEGIN operationProvidedRole, ID: '219', NAME: 'OperationProvidedRole1' */
+description(219,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(219).
+providedInterface(219,[136]).
+/** END operationProvidedRole, ID: '219', NAME: 'OperationProvidedRole1' */
+
+/** END basicComponent, ID: '108', NAME: 'PreferencesStorage' */
+
+
+/** BEGIN basicComponent, ID: '109', NAME: 'FileSystemManager' */
+description(109,'FileSystemManager','basicComponent').
+basicComponent(109).
+providedRoles(109,[220,221]).
+requiredRoles(109,[]).
+
+/** BEGIN operationProvidedRole, ID: '220', NAME: 'IFileHierachyManager' */
+description(220,'IFileHierachyManager','operationProvidedRole').
+operationProvidedRole(220).
+providedInterface(220,[143]).
+/** END operationProvidedRole, ID: '220', NAME: 'IFileHierachyManager' */
+
+
+/** BEGIN operationProvidedRole, ID: '221', NAME: 'IFileManager' */
+description(221,'IFileManager','operationProvidedRole').
+operationProvidedRole(221).
+providedInterface(221,[142]).
+/** END operationProvidedRole, ID: '221', NAME: 'IFileManager' */
+
+/** END basicComponent, ID: '109', NAME: 'FileSystemManager' */
+
+
+/** BEGIN basicComponent, ID: '110', NAME: 'OpenCVPythonAnonymizer' */
+description(110,'OpenCVPythonAnonymizer','basicComponent').
+basicComponent(110).
+providedRoles(110,[222]).
+requiredRoles(110,[223,224]).
+
+/** BEGIN operationProvidedRole, ID: '222', NAME: 'OperationProvidedRole1' */
+description(222,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(222).
+providedInterface(222,[125]).
+/** END operationProvidedRole, ID: '222', NAME: 'OperationProvidedRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '223', NAME: 'OperationRequiredRole1' */
+description(223,'OperationRequiredRole1','operationRequiredRole').
+operationRequiredRole(223).
+requiredInterface(223,[125]).
+/** END operationRequiredRole, ID: '223', NAME: 'OperationRequiredRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '224', NAME: 'TemporaryFileManager' */
+description(224,'TemporaryFileManager','operationRequiredRole').
+operationRequiredRole(224).
+requiredInterface(224,[142]).
+/** END operationRequiredRole, ID: '224', NAME: 'TemporaryFileManager' */
+
+/** END basicComponent, ID: '110', NAME: 'OpenCVPythonAnonymizer' */
+
+
+/** BEGIN basicComponent, ID: '111', NAME: 'LocalVideoManager' */
+description(111,'LocalVideoManager','basicComponent').
+basicComponent(111).
+providedRoles(111,[225,226]).
+requiredRoles(111,[227,228]).
+
+/** BEGIN operationProvidedRole, ID: '225', NAME: 'OperationProvidedRole1' */
+description(225,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(225).
+providedInterface(225,[138]).
+/** END operationProvidedRole, ID: '225', NAME: 'OperationProvidedRole1' */
+
+
+/** BEGIN operationProvidedRole, ID: '226', NAME: 'OperationProvidedRole2' */
+description(226,'OperationProvidedRole2','operationProvidedRole').
+operationProvidedRole(226).
+providedInterface(226,[140]).
+/** END operationProvidedRole, ID: '226', NAME: 'OperationProvidedRole2' */
+
+
+/** BEGIN operationRequiredRole, ID: '227', NAME: 'OperationRequiredRole1' */
+description(227,'OperationRequiredRole1','operationRequiredRole').
+operationRequiredRole(227).
+requiredInterface(227,[143]).
+/** END operationRequiredRole, ID: '227', NAME: 'OperationRequiredRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '228', NAME: 'OperationRequiredRole2' */
+description(228,'OperationRequiredRole2','operationRequiredRole').
+operationRequiredRole(228).
+requiredInterface(228,[135]).
+/** END operationRequiredRole, ID: '228', NAME: 'OperationRequiredRole2' */
+
+/** END basicComponent, ID: '111', NAME: 'LocalVideoManager' */
+
+
+/** BEGIN basicComponent, ID: '112', NAME: 'VideoUploadWrapper' */
+description(112,'VideoUploadWrapper','basicComponent').
+basicComponent(112).
+providedRoles(112,[229]).
+requiredRoles(112,[230,231,232]).
+
+/** BEGIN operationProvidedRole, ID: '229', NAME: 'OperationProvidedRole1' */
+description(229,'OperationProvidedRole1','operationProvidedRole').
+operationProvidedRole(229).
+providedInterface(229,[146]).
+/** END operationProvidedRole, ID: '229', NAME: 'OperationProvidedRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '230', NAME: 'OperationRequiredRole1' */
+description(230,'OperationRequiredRole1','operationRequiredRole').
+operationRequiredRole(230).
+requiredInterface(230,[137]).
+/** END operationRequiredRole, ID: '230', NAME: 'OperationRequiredRole1' */
+
+
+/** BEGIN operationRequiredRole, ID: '231', NAME: 'OperationRequiredRole2' */
+description(231,'OperationRequiredRole2','operationRequiredRole').
+operationRequiredRole(231).
+requiredInterface(231,[124]).
+/** END operationRequiredRole, ID: '231', NAME: 'OperationRequiredRole2' */
+
+
+/** BEGIN operationRequiredRole, ID: '232', NAME: 'OperationRequiredRole3' */
+description(232,'OperationRequiredRole3','operationRequiredRole').
+operationRequiredRole(232).
+requiredInterface(232,[140]).
+/** END operationRequiredRole, ID: '232', NAME: 'OperationRequiredRole3' */
+
+/** END basicComponent, ID: '112', NAME: 'VideoUploadWrapper' */
+
+
+/** BEGIN basicComponent, ID: '113', NAME: 'Webinterface' */
+description(113,'Webinterface','basicComponent').
+basicComponent(113).
+providedRoles(113,[]).
+requiredRoles(113,[233]).
+
+/** BEGIN operationRequiredRole, ID: '233', NAME: 'Required_IWebVideoServiceInformation_Webinterface' */
+description(233,'Required_IWebVideoServiceInformation_Webinterface','operationRequiredRole').
+operationRequiredRole(233).
+requiredInterface(233,[120]).
+/** END operationRequiredRole, ID: '233', NAME: 'Required_IWebVideoServiceInformation_Webinterface' */
+
+/** END basicComponent, ID: '113', NAME: 'Webinterface' */
+
+
+/** BEGIN basicComponent, ID: '114', NAME: 'PersecutionWebinterface' */
+description(114,'PersecutionWebinterface','basicComponent').
+basicComponent(114).
+providedRoles(114,[234,235,236]).
+requiredRoles(114,[237,238,239]).
+
+/** BEGIN operationProvidedRole, ID: '234', NAME: 'Provided_JudgeAccess_PersecutionWebinterface' */
+description(234,'Provided_JudgeAccess_PersecutionWebinterface','operationProvidedRole').
+operationProvidedRole(234).
+providedInterface(234,[149]).
+/** END operationProvidedRole, ID: '234', NAME: 'Provided_JudgeAccess_PersecutionWebinterface' */
+
+
+/** BEGIN operationProvidedRole, ID: '235', NAME: 'Provided_PersecutionInformationProvision_PersecutionWebinterface' */
+description(235,'Provided_PersecutionInformationProvision_PersecutionWebinterface','operationProvidedRole').
+operationProvidedRole(235).
+providedInterface(235,[148]).
+/** END operationProvidedRole, ID: '235', NAME: 'Provided_PersecutionInformationProvision_PersecutionWebinterface' */
+
+
+/** BEGIN operationProvidedRole, ID: '236', NAME: 'Provided_IUserManagement_PersecutionWebinterface' */
+description(236,'Provided_IUserManagement_PersecutionWebinterface','operationProvidedRole').
+operationProvidedRole(236).
+providedInterface(236,[119]).
+/** END operationProvidedRole, ID: '236', NAME: 'Provided_IUserManagement_PersecutionWebinterface' */
+
+
+/** BEGIN operationRequiredRole, ID: '237', NAME: 'Required_PersecutionInterface_PersecutionWebinterface' */
+description(237,'Required_PersecutionInterface_PersecutionWebinterface','operationRequiredRole').
+operationRequiredRole(237).
+requiredInterface(237,[148]).
+/** END operationRequiredRole, ID: '237', NAME: 'Required_PersecutionInterface_PersecutionWebinterface' */
+
+
+/** BEGIN operationRequiredRole, ID: '238', NAME: 'Required_JudgeAccess_PersecutionWebinterface' */
+description(238,'Required_JudgeAccess_PersecutionWebinterface','operationRequiredRole').
+operationRequiredRole(238).
+requiredInterface(238,[149]).
+/** END operationRequiredRole, ID: '238', NAME: 'Required_JudgeAccess_PersecutionWebinterface' */
+
+
+/** BEGIN operationRequiredRole, ID: '239', NAME: 'Required_IUserManagement_PersecutionWebinterface' */
+description(239,'Required_IUserManagement_PersecutionWebinterface','operationRequiredRole').
+operationRequiredRole(239).
+requiredInterface(239,[119]).
+/** END operationRequiredRole, ID: '239', NAME: 'Required_IUserManagement_PersecutionWebinterface' */
+
+/** END basicComponent, ID: '114', NAME: 'PersecutionWebinterface' */
+
+
+/** BEGIN basicComponent, ID: '115', NAME: 'SQLSanitizer' */
+description(115,'SQLSanitizer','basicComponent').
+basicComponent(115).
+providedRoles(115,[240]).
+requiredRoles(115,[]).
+
+/** BEGIN operationProvidedRole, ID: '240', NAME: 'Provided_SQLSanitizer_SQLSanitizer' */
+description(240,'Provided_SQLSanitizer_SQLSanitizer','operationProvidedRole').
+operationProvidedRole(240).
+providedInterface(240,[150]).
+/** END operationProvidedRole, ID: '240', NAME: 'Provided_SQLSanitizer_SQLSanitizer' */
+
+/** END basicComponent, ID: '115', NAME: 'SQLSanitizer' */
+
+
+/** BEGIN basicComponent, ID: '116', NAME: 'AccessControl' */
+description(116,'AccessControl','basicComponent').
+basicComponent(116).
+providedRoles(116,[241]).
+requiredRoles(116,[]).
+
+/** BEGIN operationProvidedRole, ID: '241', NAME: 'Provided_AccessControl_AccessControl' */
+description(241,'Provided_AccessControl_AccessControl','operationProvidedRole').
+operationProvidedRole(241).
+providedInterface(241,[151]).
+/** END operationProvidedRole, ID: '241', NAME: 'Provided_AccessControl_AccessControl' */
+
+/** END basicComponent, ID: '116', NAME: 'AccessControl' */
+
+
+/** BEGIN basicComponent, ID: '117', NAME: 'PasswordAuthenticator' */
+description(117,'PasswordAuthenticator','basicComponent').
+basicComponent(117).
+providedRoles(117,[242]).
+requiredRoles(117,[]).
+
+/** BEGIN operationProvidedRole, ID: '242', NAME: 'Provided_PasswordAuthentication_PasswordAuthenticator' */
+description(242,'Provided_PasswordAuthentication_PasswordAuthenticator','operationProvidedRole').
+operationProvidedRole(242).
+providedInterface(242,[147]).
+/** END operationProvidedRole, ID: '242', NAME: 'Provided_PasswordAuthentication_PasswordAuthenticator' */
+
+/** END basicComponent, ID: '117', NAME: 'PasswordAuthenticator' */
+
+
+/** BEGIN basicComponent, ID: '118', NAME: 'CryptographicHasher' */
+description(118,'CryptographicHasher','basicComponent').
+basicComponent(118).
+providedRoles(118,[243]).
+requiredRoles(118,[]).
+
+/** BEGIN operationProvidedRole, ID: '243', NAME: 'Provided_CryptographicHashing_CryptoraphicHasher' */
+description(243,'Provided_CryptographicHashing_CryptoraphicHasher','operationProvidedRole').
+operationProvidedRole(243).
+providedInterface(243,[153]).
+/** END operationProvidedRole, ID: '243', NAME: 'Provided_CryptographicHashing_CryptoraphicHasher' */
+
+/** END basicComponent, ID: '118', NAME: 'CryptographicHasher' */
+
+
+/** BEGIN operationInterface, ID: '119', NAME: 'IUserManagement' */
+description(119,'IUserManagement','operationInterface').
+operationInterface(119).
+parentInterfaces(119,[]).
+signatures(119,[244,245,246]).
+
+/** BEGIN operationSignature, ID: '244', NAME: 'createAccount' */
+description(244,'createAccount','operationSignature').
+operationSignature(244).
+parameters(244,[60,61]).
+returnType(244,[247]).
+
+/** BEGIN parameter, ID: '60', NAME: 'email' */
+description(60,'email','parameter').
+parameter(60).
+/** END parameter, ID: '60', NAME: 'email' */
+
+sizeOfParameter(248).
+sizeOf(248,60).
+
+/** BEGIN parameter, ID: '61', NAME: 'password' */
+description(61,'password','parameter').
+parameter(61).
+/** END parameter, ID: '61', NAME: 'password' */
+
+sizeOfParameter(249).
+sizeOf(249,61).
+/** END operationSignature, ID: '244', NAME: 'createAccount' */
+
+
+/** BEGIN operationSignature, ID: '245', NAME: 'deleteAccount' */
+description(245,'deleteAccount','operationSignature').
+operationSignature(245).
+parameters(245,[58]).
+returnType(245,[]).
+
+/** BEGIN parameter, ID: '58', NAME: 'authenticationToken' */
+description(58,'authenticationToken','parameter').
+parameter(58).
+/** END parameter, ID: '58', NAME: 'authenticationToken' */
+
+sizeOfParameter(250).
+sizeOf(250,58).
+/** END operationSignature, ID: '245', NAME: 'deleteAccount' */
+
+
+/** BEGIN operationSignature, ID: '246', NAME: 'login' */
+description(246,'login','operationSignature').
+operationSignature(246).
+parameters(246,[60,61]).
+returnType(246,[251]).
+
+/** BEGIN parameter, ID: '60', NAME: 'email' */
+description(60,'email','parameter').
+parameter(60).
+/** END parameter, ID: '60', NAME: 'email' */
+
+sizeOfParameter(248).
+sizeOf(248,60).
+
+/** BEGIN parameter, ID: '61', NAME: 'password' */
+description(61,'password','parameter').
+parameter(61).
+/** END parameter, ID: '61', NAME: 'password' */
+
+sizeOfParameter(249).
+sizeOf(249,61).
+/** END operationSignature, ID: '246', NAME: 'login' */
+
+/** END operationInterface, ID: '119', NAME: 'IUserManagement' */
+
+
+/** BEGIN operationInterface, ID: '120', NAME: 'VideoHandling' */
+description(120,'VideoHandling','operationInterface').
+operationInterface(120).
+parentInterfaces(120,[]).
+signatures(120,[252,253,254,255]).
+
+/** BEGIN operationSignature, ID: '252', NAME: 'getVideoIds' */
+description(252,'getVideoIds','operationSignature').
+operationSignature(252).
+parameters(252,[58]).
+returnType(252,[256]).
+
+/** BEGIN parameter, ID: '58', NAME: 'authenticationToken' */
+description(58,'authenticationToken','parameter').
+parameter(58).
+/** END parameter, ID: '58', NAME: 'authenticationToken' */
+
+sizeOfParameter(250).
+sizeOf(250,58).
+/** END operationSignature, ID: '252', NAME: 'getVideoIds' */
+
+
+/** BEGIN operationSignature, ID: '253', NAME: 'downloadVideo' */
+description(253,'downloadVideo','operationSignature').
+operationSignature(253).
+parameters(253,[56,58]).
+returnType(253,[257]).
+
+/** BEGIN parameter, ID: '56', NAME: 'videoId' */
+description(56,'videoId','parameter').
+parameter(56).
+/** END parameter, ID: '56', NAME: 'videoId' */
+
+sizeOfParameter(258).
+sizeOf(258,56).
+
+/** BEGIN parameter, ID: '58', NAME: 'authenticationToken' */
+description(58,'authenticationToken','parameter').
+parameter(58).
+/** END parameter, ID: '58', NAME: 'authenticationToken' */
+
+sizeOfParameter(250).
+sizeOf(250,58).
+/** END operationSignature, ID: '253', NAME: 'downloadVideo' */
+
+
+/** BEGIN operationSignature, ID: '254', NAME: 'getMetadata' */
+description(254,'getMetadata','operationSignature').
+operationSignature(254).
+parameters(254,[56,58]).
+returnType(254,[257]).
+
+/** BEGIN parameter, ID: '56', NAME: 'videoId' */
+description(56,'videoId','parameter').
+parameter(56).
+/** END parameter, ID: '56', NAME: 'videoId' */
+
+sizeOfParameter(258).
+sizeOf(258,56).
+
+/** BEGIN parameter, ID: '58', NAME: 'authenticationToken' */
+description(58,'authenticationToken','parameter').
+parameter(58).
+/** END parameter, ID: '58', NAME: 'authenticationToken' */
+
+sizeOfParameter(250).
+sizeOf(250,58).
+/** END operationSignature, ID: '254', NAME: 'getMetadata' */
+
+
+/** BEGIN operationSignature, ID: '255', NAME: 'deleteVideo' */
+description(255,'deleteVideo','operationSignature').
+operationSignature(255).
+parameters(255,[56,58]).
+returnType(255,[]).
+
+/** BEGIN parameter, ID: '56', NAME: 'videoId' */
+description(56,'videoId','parameter').
+parameter(56).
+/** END parameter, ID: '56', NAME: 'videoId' */
+
+sizeOfParameter(258).
+sizeOf(258,56).
+
+/** BEGIN parameter, ID: '58', NAME: 'authenticationToken' */
+description(58,'authenticationToken','parameter').
+parameter(58).
+/** END parameter, ID: '58', NAME: 'authenticationToken' */
+
+sizeOfParameter(250).
+sizeOf(250,58).
+/** END operationSignature, ID: '255', NAME: 'deleteVideo' */
+
+/** END operationInterface, ID: '120', NAME: 'VideoHandling' */
+
+
+/** BEGIN operationInterface, ID: '121', NAME: 'IUserIdProvider' */
+description(121,'IUserIdProvider','operationInterface').
+operationInterface(121).
+parentInterfaces(121,[]).
+signatures(121,[259]).
+
+/** BEGIN operationSignature, ID: '259', NAME: 'getUserId' */
+description(259,'getUserId','operationSignature').
+operationSignature(259).
+parameters(259,[58]).
+returnType(259,[260]).
+
+/** BEGIN parameter, ID: '58', NAME: 'authenticationToken' */
+description(58,'authenticationToken','parameter').
+parameter(58).
+/** END parameter, ID: '58', NAME: 'authenticationToken' */
+
+sizeOfParameter(250).
+sizeOf(250,58).
+/** END operationSignature, ID: '259', NAME: 'getUserId' */
+
+/** END operationInterface, ID: '121', NAME: 'IUserIdProvider' */
+
+
+/** BEGIN operationInterface, ID: '122', NAME: 'IUserDB' */
+description(122,'IUserDB','operationInterface').
+operationInterface(122).
+parentInterfaces(122,[]).
+signatures(122,[261,262,263,264]).
+
+/** BEGIN operationSignature, ID: '261', NAME: 'createUser' */
+description(261,'createUser','operationSignature').
+operationSignature(261).
+parameters(261,[60,61]).
+returnType(261,[]).
+
+/** BEGIN parameter, ID: '60', NAME: 'email' */
+description(60,'email','parameter').
+parameter(60).
+/** END parameter, ID: '60', NAME: 'email' */
+
+sizeOfParameter(248).
+sizeOf(248,60).
+
+/** BEGIN parameter, ID: '61', NAME: 'password' */
+description(61,'password','parameter').
+parameter(61).
+/** END parameter, ID: '61', NAME: 'password' */
+
+sizeOfParameter(249).
+sizeOf(249,61).
+/** END operationSignature, ID: '261', NAME: 'createUser' */
+
+
+/** BEGIN operationSignature, ID: '262', NAME: 'getUserIdByMail' */
+description(262,'getUserIdByMail','operationSignature').
+operationSignature(262).
+parameters(262,[60]).
+returnType(262,[260]).
+
+/** BEGIN parameter, ID: '60', NAME: 'email' */
+description(60,'email','parameter').
+parameter(60).
+/** END parameter, ID: '60', NAME: 'email' */
+
+sizeOfParameter(248).
+sizeOf(248,60).
+/** END operationSignature, ID: '262', NAME: 'getUserIdByMail' */
+
+
+/** BEGIN operationSignature, ID: '263', NAME: 'validatePassword' */
+description(263,'validatePassword','operationSignature').
+operationSignature(263).
+parameters(263,[59,61]).
+returnType(263,[247]).
+
+/** BEGIN parameter, ID: '59', NAME: 'userId' */
+description(59,'userId','parameter').
+parameter(59).
+/** END parameter, ID: '59', NAME: 'userId' */
+
+sizeOfParameter(265).
+sizeOf(265,59).
+
+/** BEGIN parameter, ID: '61', NAME: 'password' */
+description(61,'password','parameter').
+parameter(61).
+/** END parameter, ID: '61', NAME: 'password' */
+
+sizeOfParameter(249).
+sizeOf(249,61).
+/** END operationSignature, ID: '263', NAME: 'validatePassword' */
+
+
+/** BEGIN operationSignature, ID: '264', NAME: 'deleteAccount' */
+description(264,'deleteAccount','operationSignature').
+operationSignature(264).
+parameters(264,[59]).
+returnType(264,[]).
+
+/** BEGIN parameter, ID: '59', NAME: 'userId' */
+description(59,'userId','parameter').
+parameter(59).
+/** END parameter, ID: '59', NAME: 'userId' */
+
+sizeOfParameter(265).
+sizeOf(265,59).
+/** END operationSignature, ID: '264', NAME: 'deleteAccount' */
+
+/** END operationInterface, ID: '122', NAME: 'IUserDB' */
+
+
+/** BEGIN operationInterface, ID: '123', NAME: 'IVideoService' */
+description(123,'IVideoService','operationInterface').
+operationInterface(123).
+parentInterfaces(123,[]).
+signatures(123,[266,267,268,269,270]).
+
+/** BEGIN operationSignature, ID: '266', NAME: 'getVideoIds' */
+description(266,'getVideoIds','operationSignature').
+operationSignature(266).
+parameters(266,[59]).
+returnType(266,[256]).
+
+/** BEGIN parameter, ID: '59', NAME: 'userId' */
+description(59,'userId','parameter').
+parameter(59).
+/** END parameter, ID: '59', NAME: 'userId' */
+
+sizeOfParameter(265).
+sizeOf(265,59).
+/** END operationSignature, ID: '266', NAME: 'getVideoIds' */
+
+
+/** BEGIN operationSignature, ID: '267', NAME: 'postVideo' */
+description(267,'postVideo','operationSignature').
+operationSignature(267).
+parameters(267,[74,75,76,59]).
+returnType(267,[]).
+
+/** BEGIN parameter, ID: '74', NAME: 'encryptedVideo' */
+description(74,'encryptedVideo','parameter').
+parameter(74).
+/** END parameter, ID: '74', NAME: 'encryptedVideo' */
+
+sizeOfParameter(271).
+sizeOf(271,74).
+
+/** BEGIN parameter, ID: '75', NAME: 'encryptedMetadata' */
+description(75,'encryptedMetadata','parameter').
+parameter(75).
+/** END parameter, ID: '75', NAME: 'encryptedMetadata' */
+
+sizeOfParameter(272).
+sizeOf(272,75).
+
+/** BEGIN parameter, ID: '76', NAME: 'encryptedKeyData' */
+description(76,'encryptedKeyData','parameter').
+parameter(76).
+/** END parameter, ID: '76', NAME: 'encryptedKeyData' */
+
+sizeOfParameter(273).
+sizeOf(273,76).
+
+/** BEGIN parameter, ID: '59', NAME: 'userId' */
+description(59,'userId','parameter').
+parameter(59).
+/** END parameter, ID: '59', NAME: 'userId' */
+
+sizeOfParameter(265).
+sizeOf(265,59).
+/** END operationSignature, ID: '267', NAME: 'postVideo' */
+
+
+/** BEGIN operationSignature, ID: '268', NAME: 'getVideo' */
+description(268,'getVideo','operationSignature').
+operationSignature(268).
+parameters(268,[56,59]).
+returnType(268,[257]).
+
+/** BEGIN parameter, ID: '56', NAME: 'videoId' */
+description(56,'videoId','parameter').
+parameter(56).
+/** END parameter, ID: '56', NAME: 'videoId' */
+
+sizeOfParameter(258).
+sizeOf(258,56).
+
+/** BEGIN parameter, ID: '59', NAME: 'userId' */
+description(59,'userId','parameter').
+parameter(59).
+/** END parameter, ID: '59', NAME: 'userId' */
+
+sizeOfParameter(265).
+sizeOf(265,59).
+/** END operationSignature, ID: '268', NAME: 'getVideo' */
+
+
+/** BEGIN operationSignature, ID: '269', NAME: 'getMetadata' */
+description(269,'getMetadata','operationSignature').
+operationSignature(269).
+parameters(269,[56,59]).
+returnType(269,[257]).
+
+/** BEGIN parameter, ID: '56', NAME: 'videoId' */
+description(56,'videoId','parameter').
+parameter(56).
+/** END parameter, ID: '56', NAME: 'videoId' */
+
+sizeOfParameter(258).
+sizeOf(258,56).
+
+/** BEGIN parameter, ID: '59', NAME: 'userId' */
+description(59,'userId','parameter').
+parameter(59).
+/** END parameter, ID: '59', NAME: 'userId' */
+
+sizeOfParameter(265).
+sizeOf(265,59).
+/** END operationSignature, ID: '269', NAME: 'getMetadata' */
+
+
+/** BEGIN operationSignature, ID: '270', NAME: 'deleteVideo' */
+description(270,'deleteVideo','operationSignature').
+operationSignature(270).
+parameters(270,[56,59]).
+returnType(270,[]).
+
+/** BEGIN parameter, ID: '56', NAME: 'videoId' */
+description(56,'videoId','parameter').
+parameter(56).
+/** END parameter, ID: '56', NAME: 'videoId' */
+
+sizeOfParameter(258).
+sizeOf(258,56).
+
+/** BEGIN parameter, ID: '59', NAME: 'userId' */
+description(59,'userId','parameter').
+parameter(59).
+/** END parameter, ID: '59', NAME: 'userId' */
+
+sizeOfParameter(265).
+sizeOf(265,59).
+/** END operationSignature, ID: '270', NAME: 'deleteVideo' */
+
+/** END operationInterface, ID: '123', NAME: 'IVideoService' */
+
+
+/** BEGIN operationInterface, ID: '124', NAME: 'ISessionManager' */
+description(124,'ISessionManager','operationInterface').
+operationInterface(124).
+parentInterfaces(124,[]).
+signatures(124,[274,275,276,277]).
+
+/** BEGIN operationSignature, ID: '274', NAME: 'login' */
+description(274,'login','operationSignature').
+operationSignature(274).
+parameters(274,[60,61]).
+returnType(274,[247]).
+
+/** BEGIN parameter, ID: '60', NAME: 'email' */
+description(60,'email','parameter').
+parameter(60).
+/** END parameter, ID: '60', NAME: 'email' */
+
+sizeOfParameter(248).
+sizeOf(248,60).
+
+/** BEGIN parameter, ID: '61', NAME: 'password' */
+description(61,'password','parameter').
+parameter(61).
+/** END parameter, ID: '61', NAME: 'password' */
+
+sizeOfParameter(249).
+sizeOf(249,61).
+/** END operationSignature, ID: '274', NAME: 'login' */
+
+
+/** BEGIN operationSignature, ID: '275', NAME: 'hasActiveSession' */
+description(275,'hasActiveSession','operationSignature').
+operationSignature(275).
+parameters(275,[]).
+returnType(275,[247]).
+/** END operationSignature, ID: '275', NAME: 'hasActiveSession' */
+
+
+/** BEGIN operationSignature, ID: '276', NAME: 'getAuthenticationToken' */
+description(276,'getAuthenticationToken','operationSignature').
+operationSignature(276).
+parameters(276,[]).
+returnType(276,[251]).
+/** END operationSignature, ID: '276', NAME: 'getAuthenticationToken' */
+
+
+/** BEGIN operationSignature, ID: '277', NAME: 'logout' */
+description(277,'logout','operationSignature').
+operationSignature(277).
+parameters(277,[]).
+returnType(277,[]).
+/** END operationSignature, ID: '277', NAME: 'logout' */
+
+/** END operationInterface, ID: '124', NAME: 'ISessionManager' */
+
+
+/** BEGIN operationInterface, ID: '125', NAME: 'IVideoProcessor' */
+description(125,'IVideoProcessor','operationInterface').
+operationInterface(125).
+parentInterfaces(125,[]).
+signatures(125,[278]).
+
+/** BEGIN operationSignature, ID: '278', NAME: 'processVideo' */
+description(278,'processVideo','operationSignature').
+operationSignature(278).
+parameters(278,[62,63]).
+returnType(278,[247]).
+
+/** BEGIN parameter, ID: '62', NAME: 'inputVideo' */
+description(62,'inputVideo','parameter').
+parameter(62).
+/** END parameter, ID: '62', NAME: 'inputVideo' */
+
+sizeOfParameter(279).
+sizeOf(279,62).
+
+/** BEGIN parameter, ID: '63', NAME: 'outputVideo' */
+description(63,'outputVideo','parameter').
+parameter(63).
+/** END parameter, ID: '63', NAME: 'outputVideo' */
+
+sizeOfParameter(280).
+sizeOf(280,63).
+/** END operationSignature, ID: '278', NAME: 'processVideo' */
+
+/** END operationInterface, ID: '125', NAME: 'IVideoProcessor' */
+
+
+/** BEGIN operationInterface, ID: '126', NAME: 'IVideoDecryptor' */
+description(126,'IVideoDecryptor','operationInterface').
+operationInterface(126).
+parentInterfaces(126,[]).
+signatures(126,[281]).
+
+/** BEGIN operationSignature, ID: '281', NAME: 'decrypt' */
+description(281,'decrypt','operationSignature').
+operationSignature(281).
+parameters(281,[62,65,64,63,66]).
+returnType(281,[]).
+
+/** BEGIN parameter, ID: '62', NAME: 'inputVideo' */
+description(62,'inputVideo','parameter').
+parameter(62).
+/** END parameter, ID: '62', NAME: 'inputVideo' */
+
+sizeOfParameter(279).
+sizeOf(279,62).
+
+/** BEGIN parameter, ID: '65', NAME: 'inputMetadata' */
+description(65,'inputMetadata','parameter').
+parameter(65).
+/** END parameter, ID: '65', NAME: 'inputMetadata' */
+
+sizeOfParameter(282).
+sizeOf(282,65).
+
+/** BEGIN parameter, ID: '64', NAME: 'keyData' */
+description(64,'keyData','parameter').
+parameter(64).
+/** END parameter, ID: '64', NAME: 'keyData' */
+
+sizeOfParameter(283).
+sizeOf(283,64).
+
+/** BEGIN parameter, ID: '63', NAME: 'outputVideo' */
+description(63,'outputVideo','parameter').
+parameter(63).
+/** END parameter, ID: '63', NAME: 'outputVideo' */
+
+sizeOfParameter(280).
+sizeOf(280,63).
+
+/** BEGIN parameter, ID: '66', NAME: 'outputMetadata' */
+description(66,'outputMetadata','parameter').
+parameter(66).
+/** END parameter, ID: '66', NAME: 'outputMetadata' */
+
+sizeOfParameter(284).
+sizeOf(284,66).
+/** END operationSignature, ID: '281', NAME: 'decrypt' */
+
+/** END operationInterface, ID: '126', NAME: 'IVideoDecryptor' */
+
+
+/** BEGIN operationInterface, ID: '127', NAME: 'IKeyStorage' */
+description(127,'IKeyStorage','operationInterface').
+operationInterface(127).
+parentInterfaces(127,[]).
+signatures(127,[285,286]).
+
+/** BEGIN operationSignature, ID: '285', NAME: 'storeKey' */
+description(285,'storeKey','operationSignature').
+operationSignature(285).
+parameters(285,[67,68]).
+returnType(285,[]).
+
+/** BEGIN parameter, ID: '67', NAME: 'id' */
+description(67,'id','parameter').
+parameter(67).
+/** END parameter, ID: '67', NAME: 'id' */
+
+sizeOfParameter(287).
+sizeOf(287,67).
+
+/** BEGIN parameter, ID: '68', NAME: 'value' */
+description(68,'value','parameter').
+parameter(68).
+/** END parameter, ID: '68', NAME: 'value' */
+
+sizeOfParameter(288).
+sizeOf(288,68).
+/** END operationSignature, ID: '285', NAME: 'storeKey' */
+
+
+/** BEGIN operationSignature, ID: '286', NAME: 'loadKey' */
+description(286,'loadKey','operationSignature').
+operationSignature(286).
+parameters(286,[67]).
+returnType(286,[289]).
+
+/** BEGIN parameter, ID: '67', NAME: 'id' */
+description(67,'id','parameter').
+parameter(67).
+/** END parameter, ID: '67', NAME: 'id' */
+
+sizeOfParameter(287).
+sizeOf(287,67).
+/** END operationSignature, ID: '286', NAME: 'loadKey' */
+
+/** END operationInterface, ID: '127', NAME: 'IKeyStorage' */
+
+
+/** BEGIN operationInterface, ID: '128', NAME: 'Decryptor' */
+description(128,'Decryptor','operationInterface').
+operationInterface(128).
+parentInterfaces(128,[]).
+signatures(128,[290,291]).
+
+/** BEGIN operationSignature, ID: '290', NAME: 'decryptKey' */
+description(290,'decryptKey','operationSignature').
+operationSignature(290).
+parameters(290,[69,70]).
+returnType(290,[289]).
+
+/** BEGIN parameter, ID: '69', NAME: 'key' */
+description(69,'key','parameter').
+parameter(69).
+/** END parameter, ID: '69', NAME: 'key' */
+
+sizeOfParameter(292).
+sizeOf(292,69).
+
+/** BEGIN parameter, ID: '70', NAME: 'privateKey' */
+description(70,'privateKey','parameter').
+parameter(70).
+/** END parameter, ID: '70', NAME: 'privateKey' */
+
+sizeOfParameter(293).
+sizeOf(293,70).
+/** END operationSignature, ID: '290', NAME: 'decryptKey' */
+
+
+/** BEGIN operationSignature, ID: '291', NAME: 'decrypt' */
+description(291,'decrypt','operationSignature').
+operationSignature(291).
+parameters(291,[71,69,72]).
+returnType(291,[]).
+
+/** BEGIN parameter, ID: '71', NAME: 'inputFile' */
+description(71,'inputFile','parameter').
+parameter(71).
+/** END parameter, ID: '71', NAME: 'inputFile' */
+
+sizeOfParameter(294).
+sizeOf(294,71).
+
+/** BEGIN parameter, ID: '69', NAME: 'key' */
+description(69,'key','parameter').
+parameter(69).
+/** END parameter, ID: '69', NAME: 'key' */
+
+sizeOfParameter(292).
+sizeOf(292,69).
+
+/** BEGIN parameter, ID: '72', NAME: 'outputFile' */
+description(72,'outputFile','parameter').
+parameter(72).
+/** END parameter, ID: '72', NAME: 'outputFile' */
+
+sizeOfParameter(295).
+sizeOf(295,72).
+/** END operationSignature, ID: '291', NAME: 'decrypt' */
+
+/** END operationInterface, ID: '128', NAME: 'Decryptor' */
+
+
+/** BEGIN operationInterface, ID: '129', NAME: 'IFileEncryptor' */
+description(129,'IFileEncryptor','operationInterface').
+operationInterface(129).
+parentInterfaces(129,[]).
+signatures(129,[296,297,298]).
+
+/** BEGIN operationSignature, ID: '296', NAME: 'generateKey' */
+description(296,'generateKey','operationSignature').
+operationSignature(296).
+parameters(296,[]).
+returnType(296,[289]).
+/** END operationSignature, ID: '296', NAME: 'generateKey' */
+
+
+/** BEGIN operationSignature, ID: '297', NAME: 'encryptFile' */
+description(297,'encryptFile','operationSignature').
+operationSignature(297).
+parameters(297,[71,69,72]).
+returnType(297,[]).
+
+/** BEGIN parameter, ID: '71', NAME: 'inputFile' */
+description(71,'inputFile','parameter').
+parameter(71).
+/** END parameter, ID: '71', NAME: 'inputFile' */
+
+sizeOfParameter(294).
+sizeOf(294,71).
+
+/** BEGIN parameter, ID: '69', NAME: 'key' */
+description(69,'key','parameter').
+parameter(69).
+/** END parameter, ID: '69', NAME: 'key' */
+
+sizeOfParameter(292).
+sizeOf(292,69).
+
+/** BEGIN parameter, ID: '72', NAME: 'outputFile' */
+description(72,'outputFile','parameter').
+parameter(72).
+/** END parameter, ID: '72', NAME: 'outputFile' */
+
+sizeOfParameter(295).
+sizeOf(295,72).
+/** END operationSignature, ID: '297', NAME: 'encryptFile' */
+
+
+/** BEGIN operationSignature, ID: '298', NAME: 'encryptKey' */
+description(298,'encryptKey','operationSignature').
+operationSignature(298).
+parameters(298,[69,73]).
+returnType(298,[299]).
+
+/** BEGIN parameter, ID: '69', NAME: 'key' */
+description(69,'key','parameter').
+parameter(69).
+/** END parameter, ID: '69', NAME: 'key' */
+
+sizeOfParameter(292).
+sizeOf(292,69).
+
+/** BEGIN parameter, ID: '73', NAME: 'publicKey' */
+description(73,'publicKey','parameter').
+parameter(73).
+/** END parameter, ID: '73', NAME: 'publicKey' */
+
+sizeOfParameter(300).
+sizeOf(300,73).
+/** END operationSignature, ID: '298', NAME: 'encryptKey' */
+
+/** END operationInterface, ID: '129', NAME: 'IFileEncryptor' */
+
+
+/** BEGIN operationInterface, ID: '130', NAME: 'IPublicKeyProvider' */
+description(130,'IPublicKeyProvider','operationInterface').
+operationInterface(130).
+parentInterfaces(130,[]).
+signatures(130,[301]).
+
+/** BEGIN operationSignature, ID: '301', NAME: 'getPublicKey' */
+description(301,'getPublicKey','operationSignature').
+operationSignature(301).
+parameters(301,[]).
+returnType(301,[289]).
+/** END operationSignature, ID: '301', NAME: 'getPublicKey' */
+
+/** END operationInterface, ID: '130', NAME: 'IPublicKeyProvider' */
+
+
+/** BEGIN operationInterface, ID: '131', NAME: 'IAsymmetricEncryptor' */
+description(131,'IAsymmetricEncryptor','operationInterface').
+operationInterface(131).
+parentInterfaces(131,[]).
+signatures(131,[302]).
+
+/** BEGIN operationSignature, ID: '302', NAME: 'encryptKey' */
+description(302,'encryptKey','operationSignature').
+operationSignature(302).
+parameters(302,[69,73]).
+returnType(302,[289]).
+
+/** BEGIN parameter, ID: '69', NAME: 'key' */
+description(69,'key','parameter').
+parameter(69).
+/** END parameter, ID: '69', NAME: 'key' */
+
+sizeOfParameter(292).
+sizeOf(292,69).
+
+/** BEGIN parameter, ID: '73', NAME: 'publicKey' */
+description(73,'publicKey','parameter').
+parameter(73).
+/** END parameter, ID: '73', NAME: 'publicKey' */
+
+sizeOfParameter(300).
+sizeOf(300,73).
+/** END operationSignature, ID: '302', NAME: 'encryptKey' */
+
+/** END operationInterface, ID: '131', NAME: 'IAsymmetricEncryptor' */
+
+
+/** BEGIN operationInterface, ID: '132', NAME: 'IAsymmetricDecryptor' */
+description(132,'IAsymmetricDecryptor','operationInterface').
+operationInterface(132).
+parentInterfaces(132,[]).
+signatures(132,[303,304]).
+
+/** BEGIN operationSignature, ID: '303', NAME: 'generateAsymmetricKeyPair' */
+description(303,'generateAsymmetricKeyPair','operationSignature').
+operationSignature(303).
+parameters(303,[]).
+returnType(303,[305]).
+/** END operationSignature, ID: '303', NAME: 'generateAsymmetricKeyPair' */
+
+
+/** BEGIN operationSignature, ID: '304', NAME: 'decryptKey' */
+description(304,'decryptKey','operationSignature').
+operationSignature(304).
+parameters(304,[69,77,70]).
+returnType(304,[289]).
+
+/** BEGIN parameter, ID: '69', NAME: 'key' */
+description(69,'key','parameter').
+parameter(69).
+/** END parameter, ID: '69', NAME: 'key' */
+
+sizeOfParameter(292).
+sizeOf(292,69).
+
+/** BEGIN parameter, ID: '77', NAME: 'keyAlgorithm' */
+description(77,'keyAlgorithm','parameter').
+parameter(77).
+/** END parameter, ID: '77', NAME: 'keyAlgorithm' */
+
+sizeOfParameter(306).
+sizeOf(306,77).
+
+/** BEGIN parameter, ID: '70', NAME: 'privateKey' */
+description(70,'privateKey','parameter').
+parameter(70).
+/** END parameter, ID: '70', NAME: 'privateKey' */
+
+sizeOfParameter(293).
+sizeOf(293,70).
+/** END operationSignature, ID: '304', NAME: 'decryptKey' */
+
+/** END operationInterface, ID: '132', NAME: 'IAsymmetricDecryptor' */
+
+
+/** BEGIN operationInterface, ID: '133', NAME: 'ISymmetricDecryptor' */
+description(133,'ISymmetricDecryptor','operationInterface').
+operationInterface(133).
+parentInterfaces(133,[]).
+signatures(133,[307]).
+
+/** BEGIN operationSignature, ID: '307', NAME: 'decryptFile' */
+description(307,'decryptFile','operationSignature').
+operationSignature(307).
+parameters(307,[71,69]).
+returnType(307,[257]).
+
+/** BEGIN parameter, ID: '71', NAME: 'inputFile' */
+description(71,'inputFile','parameter').
+parameter(71).
+/** END parameter, ID: '71', NAME: 'inputFile' */
+
+sizeOfParameter(294).
+sizeOf(294,71).
+
+/** BEGIN parameter, ID: '69', NAME: 'key' */
+description(69,'key','parameter').
+parameter(69).
+/** END parameter, ID: '69', NAME: 'key' */
+
+sizeOfParameter(292).
+sizeOf(292,69).
+/** END operationSignature, ID: '307', NAME: 'decryptFile' */
+
+/** END operationInterface, ID: '133', NAME: 'ISymmetricDecryptor' */
+
+
+/** BEGIN operationInterface, ID: '134', NAME: 'ISymmetricEncryptor' */
+description(134,'ISymmetricEncryptor','operationInterface').
+operationInterface(134).
+parentInterfaces(134,[]).
+signatures(134,[308,309]).
+
+/** BEGIN operationSignature, ID: '308', NAME: 'generateSymmetricKey' */
+description(308,'generateSymmetricKey','operationSignature').
+operationSignature(308).
+parameters(308,[]).
+returnType(308,[289]).
+/** END operationSignature, ID: '308', NAME: 'generateSymmetricKey' */
+
+
+/** BEGIN operationSignature, ID: '309', NAME: 'encryptFile' */
+description(309,'encryptFile','operationSignature').
+operationSignature(309).
+parameters(309,[71,69]).
+returnType(309,[257]).
+
+/** BEGIN parameter, ID: '71', NAME: 'inputFile' */
+description(71,'inputFile','parameter').
+parameter(71).
+/** END parameter, ID: '71', NAME: 'inputFile' */
+
+sizeOfParameter(294).
+sizeOf(294,71).
+
+/** BEGIN parameter, ID: '69', NAME: 'key' */
+description(69,'key','parameter').
+parameter(69).
+/** END parameter, ID: '69', NAME: 'key' */
+
+sizeOfParameter(292).
+sizeOf(292,69).
+/** END operationSignature, ID: '309', NAME: 'encryptFile' */
+
+/** END operationInterface, ID: '134', NAME: 'ISymmetricEncryptor' */
+
+
+/** BEGIN operationInterface, ID: '135', NAME: 'IVideoEncryptor' */
+description(135,'IVideoEncryptor','operationInterface').
+operationInterface(135).
+parentInterfaces(135,[]).
+signatures(135,[310]).
+
+/** BEGIN operationSignature, ID: '310', NAME: 'encrypt' */
+description(310,'encrypt','operationSignature').
+operationSignature(310).
+parameters(310,[62,65,63,66]).
+returnType(310,[]).
+
+/** BEGIN parameter, ID: '62', NAME: 'inputVideo' */
+description(62,'inputVideo','parameter').
+parameter(62).
+/** END parameter, ID: '62', NAME: 'inputVideo' */
+
+sizeOfParameter(279).
+sizeOf(279,62).
+
+/** BEGIN parameter, ID: '65', NAME: 'inputMetadata' */
+description(65,'inputMetadata','parameter').
+parameter(65).
+/** END parameter, ID: '65', NAME: 'inputMetadata' */
+
+sizeOfParameter(282).
+sizeOf(282,65).
+
+/** BEGIN parameter, ID: '63', NAME: 'outputVideo' */
+description(63,'outputVideo','parameter').
+parameter(63).
+/** END parameter, ID: '63', NAME: 'outputVideo' */
+
+sizeOfParameter(280).
+sizeOf(280,63).
+
+/** BEGIN parameter, ID: '66', NAME: 'outputMetadata' */
+description(66,'outputMetadata','parameter').
+parameter(66).
+/** END parameter, ID: '66', NAME: 'outputMetadata' */
+
+sizeOfParameter(284).
+sizeOf(284,66).
+/** END operationSignature, ID: '310', NAME: 'encrypt' */
+
+/** END operationInterface, ID: '135', NAME: 'IVideoEncryptor' */
+
+
+/** BEGIN operationInterface, ID: '136', NAME: 'ISimpleValueStorage' */
+description(136,'ISimpleValueStorage','operationInterface').
+operationInterface(136).
+parentInterfaces(136,[]).
+signatures(136,[311,312]).
+
+/** BEGIN operationSignature, ID: '311', NAME: 'putString' */
+description(311,'putString','operationSignature').
+operationSignature(311).
+parameters(311,[69,68]).
+returnType(311,[]).
+
+/** BEGIN parameter, ID: '69', NAME: 'key' */
+description(69,'key','parameter').
+parameter(69).
+/** END parameter, ID: '69', NAME: 'key' */
+
+sizeOfParameter(292).
+sizeOf(292,69).
+
+/** BEGIN parameter, ID: '68', NAME: 'value' */
+description(68,'value','parameter').
+parameter(68).
+/** END parameter, ID: '68', NAME: 'value' */
+
+sizeOfParameter(288).
+sizeOf(288,68).
+/** END operationSignature, ID: '311', NAME: 'putString' */
+
+
+/** BEGIN operationSignature, ID: '312', NAME: 'getString' */
+description(312,'getString','operationSignature').
+operationSignature(312).
+parameters(312,[69]).
+returnType(312,[251]).
+
+/** BEGIN parameter, ID: '69', NAME: 'key' */
+description(69,'key','parameter').
+parameter(69).
+/** END parameter, ID: '69', NAME: 'key' */
+
+sizeOfParameter(292).
+sizeOf(292,69).
+/** END operationSignature, ID: '312', NAME: 'getString' */
+
+/** END operationInterface, ID: '136', NAME: 'ISimpleValueStorage' */
+
+
+/** BEGIN operationInterface, ID: '137', NAME: 'IClientVideoUpload' */
+description(137,'IClientVideoUpload','operationInterface').
+operationInterface(137).
+parentInterfaces(137,[]).
+signatures(137,[313]).
+
+/** BEGIN operationSignature, ID: '313', NAME: 'uploadVideo' */
+description(313,'uploadVideo','operationSignature').
+operationSignature(313).
+parameters(313,[74,75,314,58]).
+returnType(313,[]).
+
+/** BEGIN parameter, ID: '74', NAME: 'encryptedVideo' */
+description(74,'encryptedVideo','parameter').
+parameter(74).
+/** END parameter, ID: '74', NAME: 'encryptedVideo' */
+
+sizeOfParameter(271).
+sizeOf(271,74).
+
+/** BEGIN parameter, ID: '75', NAME: 'encryptedMetadata' */
+description(75,'encryptedMetadata','parameter').
+parameter(75).
+/** END parameter, ID: '75', NAME: 'encryptedMetadata' */
+
+sizeOfParameter(272).
+sizeOf(272,75).
+
+/** BEGIN parameter, ID: '314', NAME: 'encryptedKey' */
+description(314,'encryptedKey','parameter').
+parameter(314).
+/** END parameter, ID: '314', NAME: 'encryptedKey' */
+
+sizeOfParameter(315).
+sizeOf(315,314).
+
+/** BEGIN parameter, ID: '58', NAME: 'authenticationToken' */
+description(58,'authenticationToken','parameter').
+parameter(58).
+/** END parameter, ID: '58', NAME: 'authenticationToken' */
+
+sizeOfParameter(250).
+sizeOf(250,58).
+/** END operationSignature, ID: '313', NAME: 'uploadVideo' */
+
+/** END operationInterface, ID: '137', NAME: 'IClientVideoUpload' */
+
+
+/** BEGIN operationInterface, ID: '138', NAME: 'ILocalVideoManager' */
+description(138,'ILocalVideoManager','operationInterface').
+operationInterface(138).
+parentInterfaces(138,[]).
+signatures(138,[316,317,318,319]).
+
+/** BEGIN operationSignature, ID: '316', NAME: 'storeVideo' */
+description(316,'storeVideo','operationSignature').
+operationSignature(316).
+parameters(316,[79,78]).
+returnType(316,[]).
+
+/** BEGIN parameter, ID: '79', NAME: 'video' */
+description(79,'video','parameter').
+parameter(79).
+/** END parameter, ID: '79', NAME: 'video' */
+
+sizeOfParameter(320).
+sizeOf(320,79).
+
+/** BEGIN parameter, ID: '78', NAME: 'metadata' */
+description(78,'metadata','parameter').
+parameter(78).
+/** END parameter, ID: '78', NAME: 'metadata' */
+
+sizeOfParameter(321).
+sizeOf(321,78).
+/** END operationSignature, ID: '316', NAME: 'storeVideo' */
+
+
+/** BEGIN operationSignature, ID: '317', NAME: 'getLocallyStoredVideoIds' */
+description(317,'getLocallyStoredVideoIds','operationSignature').
+operationSignature(317).
+parameters(317,[]).
+returnType(317,[256]).
+/** END operationSignature, ID: '317', NAME: 'getLocallyStoredVideoIds' */
+
+
+/** BEGIN operationSignature, ID: '318', NAME: 'deleteContentForVideo' */
+description(318,'deleteContentForVideo','operationSignature').
+operationSignature(318).
+parameters(318,[56]).
+returnType(318,[]).
+
+/** BEGIN parameter, ID: '56', NAME: 'videoId' */
+description(56,'videoId','parameter').
+parameter(56).
+/** END parameter, ID: '56', NAME: 'videoId' */
+
+sizeOfParameter(258).
+sizeOf(258,56).
+/** END operationSignature, ID: '318', NAME: 'deleteContentForVideo' */
+
+
+/** BEGIN operationSignature, ID: '319', NAME: 'getMetadata' */
+description(319,'getMetadata','operationSignature').
+operationSignature(319).
+parameters(319,[56]).
+returnType(319,[257]).
+
+/** BEGIN parameter, ID: '56', NAME: 'videoId' */
+description(56,'videoId','parameter').
+parameter(56).
+/** END parameter, ID: '56', NAME: 'videoId' */
+
+sizeOfParameter(258).
+sizeOf(258,56).
+/** END operationSignature, ID: '319', NAME: 'getMetadata' */
+
+/** END operationInterface, ID: '138', NAME: 'ILocalVideoManager' */
+
+
+/** BEGIN operationInterface, ID: '139', NAME: 'ISettingsManager' */
+description(139,'ISettingsManager','operationInterface').
+operationInterface(139).
+parentInterfaces(139,[]).
+signatures(139,[322,323]).
+
+/** BEGIN operationSignature, ID: '322', NAME: 'storeSettings' */
+description(322,'storeSettings','operationSignature').
+operationSignature(322).
+parameters(322,[80]).
+returnType(322,[]).
+
+/** BEGIN parameter, ID: '80', NAME: 'settings' */
+description(80,'settings','parameter').
+parameter(80).
+/** END parameter, ID: '80', NAME: 'settings' */
+
+sizeOfParameter(324).
+sizeOf(324,80).
+/** END operationSignature, ID: '322', NAME: 'storeSettings' */
+
+
+/** BEGIN operationSignature, ID: '323', NAME: 'loadSettings' */
+description(323,'loadSettings','operationSignature').
+operationSignature(323).
+parameters(323,[]).
+returnType(323,[325]).
+/** END operationSignature, ID: '323', NAME: 'loadSettings' */
+
+/** END operationInterface, ID: '139', NAME: 'ISettingsManager' */
+
+
+/** BEGIN operationInterface, ID: '140', NAME: 'IVideoDetailsProvider' */
+description(140,'IVideoDetailsProvider','operationInterface').
+operationInterface(140).
+parentInterfaces(140,[]).
+signatures(140,[326,327,328]).
+
+/** BEGIN operationSignature, ID: '326', NAME: 'getEncryptedKey' */
+description(326,'getEncryptedKey','operationSignature').
+operationSignature(326).
+parameters(326,[56]).
+returnType(326,[289]).
+
+/** BEGIN parameter, ID: '56', NAME: 'videoId' */
+description(56,'videoId','parameter').
+parameter(56).
+/** END parameter, ID: '56', NAME: 'videoId' */
+
+sizeOfParameter(258).
+sizeOf(258,56).
+/** END operationSignature, ID: '326', NAME: 'getEncryptedKey' */
+
+
+/** BEGIN operationSignature, ID: '327', NAME: 'getEncryptedVideo' */
+description(327,'getEncryptedVideo','operationSignature').
+operationSignature(327).
+parameters(327,[56]).
+returnType(327,[257]).
+
+/** BEGIN parameter, ID: '56', NAME: 'videoId' */
+description(56,'videoId','parameter').
+parameter(56).
+/** END parameter, ID: '56', NAME: 'videoId' */
+
+sizeOfParameter(258).
+sizeOf(258,56).
+/** END operationSignature, ID: '327', NAME: 'getEncryptedVideo' */
+
+
+/** BEGIN operationSignature, ID: '328', NAME: 'getEncryptedMetadata' */
+description(328,'getEncryptedMetadata','operationSignature').
+operationSignature(328).
+parameters(328,[56]).
+returnType(328,[257]).
+
+/** BEGIN parameter, ID: '56', NAME: 'videoId' */
+description(56,'videoId','parameter').
+parameter(56).
+/** END parameter, ID: '56', NAME: 'videoId' */
+
+sizeOfParameter(258).
+sizeOf(258,56).
+/** END operationSignature, ID: '328', NAME: 'getEncryptedMetadata' */
+
+/** END operationInterface, ID: '140', NAME: 'IVideoDetailsProvider' */
+
+
+/** BEGIN operationInterface, ID: '141', NAME: 'IKeyConsumer' */
+description(141,'IKeyConsumer','operationInterface').
+operationInterface(141).
+parentInterfaces(141,[]).
+signatures(141,[329]).
+
+/** BEGIN operationSignature, ID: '329', NAME: 'keyAlgorithm' */
+description(329,'keyAlgorithm','operationSignature').
+operationSignature(329).
+parameters(329,[]).
+returnType(329,[251]).
+/** END operationSignature, ID: '329', NAME: 'keyAlgorithm' */
+
+/** END operationInterface, ID: '141', NAME: 'IKeyConsumer' */
+
+
+/** BEGIN operationInterface, ID: '142', NAME: 'IFileManager' */
+description(142,'IFileManager','operationInterface').
+operationInterface(142).
+parentInterfaces(142,[]).
+signatures(142,[330,331,332]).
+
+/** BEGIN operationSignature, ID: '330', NAME: 'getOrCreateFile' */
+description(330,'getOrCreateFile','operationSignature').
+operationSignature(330).
+parameters(330,[81]).
+returnType(330,[257]).
+
+/** BEGIN parameter, ID: '81', NAME: 'name' */
+description(81,'name','parameter').
+parameter(81).
+/** END parameter, ID: '81', NAME: 'name' */
+
+sizeOfParameter(333).
+sizeOf(333,81).
+/** END operationSignature, ID: '330', NAME: 'getOrCreateFile' */
+
+
+/** BEGIN operationSignature, ID: '331', NAME: 'getExisitingFile' */
+description(331,'getExisitingFile','operationSignature').
+operationSignature(331).
+parameters(331,[81]).
+returnType(331,[257]).
+
+/** BEGIN parameter, ID: '81', NAME: 'name' */
+description(81,'name','parameter').
+parameter(81).
+/** END parameter, ID: '81', NAME: 'name' */
+
+sizeOfParameter(333).
+sizeOf(333,81).
+/** END operationSignature, ID: '331', NAME: 'getExisitingFile' */
+
+
+/** BEGIN operationSignature, ID: '332', NAME: 'deleteFile' */
+description(332,'deleteFile','operationSignature').
+operationSignature(332).
+parameters(332,[82]).
+returnType(332,[]).
+
+/** BEGIN parameter, ID: '82', NAME: 'file' */
+description(82,'file','parameter').
+parameter(82).
+/** END parameter, ID: '82', NAME: 'file' */
+
+sizeOfParameter(334).
+sizeOf(334,82).
+/** END operationSignature, ID: '332', NAME: 'deleteFile' */
+
+/** END operationInterface, ID: '142', NAME: 'IFileManager' */
+
+
+/** BEGIN operationInterface, ID: '143', NAME: 'IFileHierarchyManager' */
+description(143,'IFileHierarchyManager','operationInterface').
+operationInterface(143).
+parentInterfaces(143,[]).
+signatures(143,[335,336,337,338,339]).
+
+/** BEGIN operationSignature, ID: '335', NAME: 'getOrCreateFile' */
+description(335,'getOrCreateFile','operationSignature').
+operationSignature(335).
+parameters(335,[81,83]).
+returnType(335,[257]).
+
+/** BEGIN parameter, ID: '81', NAME: 'name' */
+description(81,'name','parameter').
+parameter(81).
+/** END parameter, ID: '81', NAME: 'name' */
+
+sizeOfParameter(333).
+sizeOf(333,81).
+
+/** BEGIN parameter, ID: '83', NAME: 'directoryPath' */
+description(83,'directoryPath','parameter').
+parameter(83).
+/** END parameter, ID: '83', NAME: 'directoryPath' */
+
+sizeOfParameter(340).
+sizeOf(340,83).
+/** END operationSignature, ID: '335', NAME: 'getOrCreateFile' */
+
+
+/** BEGIN operationSignature, ID: '336', NAME: 'getExistingFile' */
+description(336,'getExistingFile','operationSignature').
+operationSignature(336).
+parameters(336,[81,83]).
+returnType(336,[257]).
+
+/** BEGIN parameter, ID: '81', NAME: 'name' */
+description(81,'name','parameter').
+parameter(81).
+/** END parameter, ID: '81', NAME: 'name' */
+
+sizeOfParameter(333).
+sizeOf(333,81).
+
+/** BEGIN parameter, ID: '83', NAME: 'directoryPath' */
+description(83,'directoryPath','parameter').
+parameter(83).
+/** END parameter, ID: '83', NAME: 'directoryPath' */
+
+sizeOfParameter(340).
+sizeOf(340,83).
+/** END operationSignature, ID: '336', NAME: 'getExistingFile' */
+
+
+/** BEGIN operationSignature, ID: '337', NAME: 'createDirectory' */
+description(337,'createDirectory','operationSignature').
+operationSignature(337).
+parameters(337,[83]).
+returnType(337,[]).
+
+/** BEGIN parameter, ID: '83', NAME: 'directoryPath' */
+description(83,'directoryPath','parameter').
+parameter(83).
+/** END parameter, ID: '83', NAME: 'directoryPath' */
+
+sizeOfParameter(340).
+sizeOf(340,83).
+/** END operationSignature, ID: '337', NAME: 'createDirectory' */
+
+
+/** BEGIN operationSignature, ID: '338', NAME: 'getAllFilesInDirectory' */
+description(338,'getAllFilesInDirectory','operationSignature').
+operationSignature(338).
+parameters(338,[83]).
+returnType(338,[341]).
+
+/** BEGIN parameter, ID: '83', NAME: 'directoryPath' */
+description(83,'directoryPath','parameter').
+parameter(83).
+/** END parameter, ID: '83', NAME: 'directoryPath' */
+
+sizeOfParameter(340).
+sizeOf(340,83).
+/** END operationSignature, ID: '338', NAME: 'getAllFilesInDirectory' */
+
+
+/** BEGIN operationSignature, ID: '339', NAME: 'deleteFile' */
+description(339,'deleteFile','operationSignature').
+operationSignature(339).
+parameters(339,[82]).
+returnType(339,[]).
+
+/** BEGIN parameter, ID: '82', NAME: 'file' */
+description(82,'file','parameter').
+parameter(82).
+/** END parameter, ID: '82', NAME: 'file' */
+
+sizeOfParameter(334).
+sizeOf(334,82).
+/** END operationSignature, ID: '339', NAME: 'deleteFile' */
+
+/** END operationInterface, ID: '143', NAME: 'IFileHierarchyManager' */
+
+
+/** BEGIN operationInterface, ID: '144', NAME: 'IAsyncVideoProcessor' */
+description(144,'IAsyncVideoProcessor','operationInterface').
+operationInterface(144).
+parentInterfaces(144,[]).
+signatures(144,[342]).
+
+/** BEGIN operationSignature, ID: '342', NAME: 'processVideo' */
+description(342,'processVideo','operationSignature').
+operationSignature(342).
+parameters(342,[74,75,76,63,66]).
+returnType(342,[]).
+
+/** BEGIN parameter, ID: '74', NAME: 'encryptedVideo' */
+description(74,'encryptedVideo','parameter').
+parameter(74).
+/** END parameter, ID: '74', NAME: 'encryptedVideo' */
+
+sizeOfParameter(271).
+sizeOf(271,74).
+
+/** BEGIN parameter, ID: '75', NAME: 'encryptedMetadata' */
+description(75,'encryptedMetadata','parameter').
+parameter(75).
+/** END parameter, ID: '75', NAME: 'encryptedMetadata' */
+
+sizeOfParameter(272).
+sizeOf(272,75).
+
+/** BEGIN parameter, ID: '76', NAME: 'encryptedKeyData' */
+description(76,'encryptedKeyData','parameter').
+parameter(76).
+/** END parameter, ID: '76', NAME: 'encryptedKeyData' */
+
+sizeOfParameter(273).
+sizeOf(273,76).
+
+/** BEGIN parameter, ID: '63', NAME: 'outputVideo' */
+description(63,'outputVideo','parameter').
+parameter(63).
+/** END parameter, ID: '63', NAME: 'outputVideo' */
+
+sizeOfParameter(280).
+sizeOf(280,63).
+
+/** BEGIN parameter, ID: '66', NAME: 'outputMetadata' */
+description(66,'outputMetadata','parameter').
+parameter(66).
+/** END parameter, ID: '66', NAME: 'outputMetadata' */
+
+sizeOfParameter(284).
+sizeOf(284,66).
+/** END operationSignature, ID: '342', NAME: 'processVideo' */
+
+/** END operationInterface, ID: '144', NAME: 'IAsyncVideoProcessor' */
+
+
+/** BEGIN operationInterface, ID: '145', NAME: 'IUserSessionDB' */
+description(145,'IUserSessionDB','operationInterface').
+operationInterface(145).
+parentInterfaces(145,[]).
+signatures(145,[343,344]).
+
+/** BEGIN operationSignature, ID: '343', NAME: 'storeAuthenticationToken' */
+description(343,'storeAuthenticationToken','operationSignature').
+operationSignature(343).
+parameters(343,[58,59]).
+returnType(343,[]).
+
+/** BEGIN parameter, ID: '58', NAME: 'authenticationToken' */
+description(58,'authenticationToken','parameter').
+parameter(58).
+/** END parameter, ID: '58', NAME: 'authenticationToken' */
+
+sizeOfParameter(250).
+sizeOf(250,58).
+
+/** BEGIN parameter, ID: '59', NAME: 'userId' */
+description(59,'userId','parameter').
+parameter(59).
+/** END parameter, ID: '59', NAME: 'userId' */
+
+sizeOfParameter(265).
+sizeOf(265,59).
+/** END operationSignature, ID: '343', NAME: 'storeAuthenticationToken' */
+
+
+/** BEGIN operationSignature, ID: '344', NAME: 'deleteTokensForUserId' */
+description(344,'deleteTokensForUserId','operationSignature').
+operationSignature(344).
+parameters(344,[59]).
+returnType(344,[]).
+
+/** BEGIN parameter, ID: '59', NAME: 'userId' */
+description(59,'userId','parameter').
+parameter(59).
+/** END parameter, ID: '59', NAME: 'userId' */
+
+sizeOfParameter(265).
+sizeOf(265,59).
+/** END operationSignature, ID: '344', NAME: 'deleteTokensForUserId' */
+
+/** END operationInterface, ID: '145', NAME: 'IUserSessionDB' */
+
+
+/** BEGIN operationInterface, ID: '146', NAME: 'IVideoUploadWrapper' */
+description(146,'IVideoUploadWrapper','operationInterface').
+operationInterface(146).
+parentInterfaces(146,[]).
+signatures(146,[345]).
+
+/** BEGIN operationSignature, ID: '345', NAME: 'uploadVideo' */
+description(345,'uploadVideo','operationSignature').
+operationSignature(345).
+parameters(345,[56]).
+returnType(345,[]).
+
+/** BEGIN parameter, ID: '56', NAME: 'videoId' */
+description(56,'videoId','parameter').
+parameter(56).
+/** END parameter, ID: '56', NAME: 'videoId' */
+
+sizeOfParameter(258).
+sizeOf(258,56).
+/** END operationSignature, ID: '345', NAME: 'uploadVideo' */
+
+/** END operationInterface, ID: '146', NAME: 'IVideoUploadWrapper' */
+
+
+/** BEGIN operationInterface, ID: '147', NAME: 'PasswordAuthentication' */
+description(147,'PasswordAuthentication','operationInterface').
+operationInterface(147).
+parentInterfaces(147,[]).
+signatures(147,[346]).
+
+/** BEGIN operationSignature, ID: '346', NAME: 'authenticatePassword' */
+description(346,'authenticatePassword','operationSignature').
+operationSignature(346).
+parameters(346,[347,59,61]).
+returnType(346,[247]).
+
+/** BEGIN parameter, ID: '347', NAME: 'connection' */
+description(347,'connection','parameter').
+parameter(347).
+/** END parameter, ID: '347', NAME: 'connection' */
+
+sizeOfParameter(348).
+sizeOf(348,347).
+
+/** BEGIN parameter, ID: '59', NAME: 'userId' */
+description(59,'userId','parameter').
+parameter(59).
+/** END parameter, ID: '59', NAME: 'userId' */
+
+sizeOfParameter(265).
+sizeOf(265,59).
+
+/** BEGIN parameter, ID: '61', NAME: 'password' */
+description(61,'password','parameter').
+parameter(61).
+/** END parameter, ID: '61', NAME: 'password' */
+
+sizeOfParameter(249).
+sizeOf(249,61).
+/** END operationSignature, ID: '346', NAME: 'authenticatePassword' */
+
+/** END operationInterface, ID: '147', NAME: 'PasswordAuthentication' */
+
+
+/** BEGIN operationInterface, ID: '148', NAME: 'PersecutionInformationProvision' */
+description(148,'PersecutionInformationProvision','operationInterface').
+operationInterface(148).
+parentInterfaces(148,[]).
+signatures(148,[349,350,351]).
+
+/** BEGIN operationSignature, ID: '349', NAME: 'getMetaData' */
+description(349,'getMetaData','operationSignature').
+operationSignature(349).
+parameters(349,[56,57,58]).
+returnType(349,[257]).
+
+/** BEGIN parameter, ID: '56', NAME: 'videoId' */
+description(56,'videoId','parameter').
+parameter(56).
+/** END parameter, ID: '56', NAME: 'videoId' */
+
+sizeOfParameter(258).
+sizeOf(258,56).
+
+/** BEGIN parameter, ID: '57', NAME: 'targetUserId' */
+description(57,'targetUserId','parameter').
+parameter(57).
+/** END parameter, ID: '57', NAME: 'targetUserId' */
+
+sizeOfParameter(352).
+sizeOf(352,57).
+
+/** BEGIN parameter, ID: '58', NAME: 'authenticationToken' */
+description(58,'authenticationToken','parameter').
+parameter(58).
+/** END parameter, ID: '58', NAME: 'authenticationToken' */
+
+sizeOfParameter(250).
+sizeOf(250,58).
+/** END operationSignature, ID: '349', NAME: 'getMetaData' */
+
+
+/** BEGIN operationSignature, ID: '350', NAME: 'getAllVideoIds' */
+description(350,'getAllVideoIds','operationSignature').
+operationSignature(350).
+parameters(350,[]).
+returnType(350,[256]).
+/** END operationSignature, ID: '350', NAME: 'getAllVideoIds' */
+
+
+/** BEGIN operationSignature, ID: '351', NAME: 'getUserIdForVideoId' */
+description(351,'getUserIdForVideoId','operationSignature').
+operationSignature(351).
+parameters(351,[56,58]).
+returnType(351,[260]).
+
+/** BEGIN parameter, ID: '56', NAME: 'videoId' */
+description(56,'videoId','parameter').
+parameter(56).
+/** END parameter, ID: '56', NAME: 'videoId' */
+
+sizeOfParameter(258).
+sizeOf(258,56).
+
+/** BEGIN parameter, ID: '58', NAME: 'authenticationToken' */
+description(58,'authenticationToken','parameter').
+parameter(58).
+/** END parameter, ID: '58', NAME: 'authenticationToken' */
+
+sizeOfParameter(250).
+sizeOf(250,58).
+/** END operationSignature, ID: '351', NAME: 'getUserIdForVideoId' */
+
+/** END operationInterface, ID: '148', NAME: 'PersecutionInformationProvision' */
+
+
+/** BEGIN operationInterface, ID: '149', NAME: 'JudgeAccess' */
+description(149,'JudgeAccess','operationInterface').
+operationInterface(149).
+parentInterfaces(149,[]).
+signatures(149,[353]).
+
+/** BEGIN operationSignature, ID: '353', NAME: 'downloadConfidentialVideo' */
+description(353,'downloadConfidentialVideo','operationSignature').
+operationSignature(353).
+parameters(353,[56,59,58]).
+returnType(353,[257]).
+
+/** BEGIN parameter, ID: '56', NAME: 'videoId' */
+description(56,'videoId','parameter').
+parameter(56).
+/** END parameter, ID: '56', NAME: 'videoId' */
+
+sizeOfParameter(258).
+sizeOf(258,56).
+
+/** BEGIN parameter, ID: '59', NAME: 'userId' */
+description(59,'userId','parameter').
+parameter(59).
+/** END parameter, ID: '59', NAME: 'userId' */
+
+sizeOfParameter(265).
+sizeOf(265,59).
+
+/** BEGIN parameter, ID: '58', NAME: 'authenticationToken' */
+description(58,'authenticationToken','parameter').
+parameter(58).
+/** END parameter, ID: '58', NAME: 'authenticationToken' */
+
+sizeOfParameter(250).
+sizeOf(250,58).
+/** END operationSignature, ID: '353', NAME: 'downloadConfidentialVideo' */
+
+/** END operationInterface, ID: '149', NAME: 'JudgeAccess' */
+
+
+/** BEGIN operationInterface, ID: '150', NAME: 'SQLSanitizer' */
+description(150,'SQLSanitizer','operationInterface').
+operationInterface(150).
+parentInterfaces(150,[]).
+signatures(150,[354]).
+
+/** BEGIN operationSignature, ID: '354', NAME: 'sanitize' */
+description(354,'sanitize','operationSignature').
+operationSignature(354).
+parameters(354,[355]).
+returnType(354,[251]).
+
+/** BEGIN parameter, ID: '355', NAME: 'toBeSanitized' */
+description(355,'toBeSanitized','parameter').
+parameter(355).
+/** END parameter, ID: '355', NAME: 'toBeSanitized' */
+
+sizeOfParameter(356).
+sizeOf(356,355).
+/** END operationSignature, ID: '354', NAME: 'sanitize' */
+
+/** END operationInterface, ID: '150', NAME: 'SQLSanitizer' */
+
+
+/** BEGIN operationInterface, ID: '151', NAME: 'AccessControl' */
+description(151,'AccessControl','operationInterface').
+operationInterface(151).
+parentInterfaces(151,[]).
+signatures(151,[357,358]).
+
+/** BEGIN operationSignature, ID: '357', NAME: 'hasPermission' */
+description(357,'hasPermission','operationSignature').
+operationSignature(357).
+parameters(357,[59,359]).
+returnType(357,[247]).
+
+/** BEGIN parameter, ID: '59', NAME: 'userId' */
+description(59,'userId','parameter').
+parameter(59).
+/** END parameter, ID: '59', NAME: 'userId' */
+
+sizeOfParameter(265).
+sizeOf(265,59).
+
+/** BEGIN parameter, ID: '359', NAME: 'permissionName' */
+description(359,'permissionName','parameter').
+parameter(359).
+/** END parameter, ID: '359', NAME: 'permissionName' */
+
+sizeOfParameter(360).
+sizeOf(360,359).
+/** END operationSignature, ID: '357', NAME: 'hasPermission' */
+
+
+/** BEGIN operationSignature, ID: '358', NAME: 'canAccessUnanonymized' */
+description(358,'canAccessUnanonymized','operationSignature').
+operationSignature(358).
+parameters(358,[59]).
+returnType(358,[247]).
+
+/** BEGIN parameter, ID: '59', NAME: 'userId' */
+description(59,'userId','parameter').
+parameter(59).
+/** END parameter, ID: '59', NAME: 'userId' */
+
+sizeOfParameter(265).
+sizeOf(265,59).
+/** END operationSignature, ID: '358', NAME: 'canAccessUnanonymized' */
+
+/** END operationInterface, ID: '151', NAME: 'AccessControl' */
+
+
+/** BEGIN operationInterface, ID: '152', NAME: 'VideoReceiving' */
+description(152,'VideoReceiving','operationInterface').
+operationInterface(152).
+parentInterfaces(152,[]).
+signatures(152,[361]).
+
+/** BEGIN operationSignature, ID: '361', NAME: 'receiveVideo' */
+description(361,'receiveVideo','operationSignature').
+operationSignature(361).
+parameters(361,[74,75,314,58]).
+returnType(361,[]).
+
+/** BEGIN parameter, ID: '74', NAME: 'encryptedVideo' */
+description(74,'encryptedVideo','parameter').
+parameter(74).
+/** END parameter, ID: '74', NAME: 'encryptedVideo' */
+
+sizeOfParameter(271).
+sizeOf(271,74).
+
+/** BEGIN parameter, ID: '75', NAME: 'encryptedMetadata' */
+description(75,'encryptedMetadata','parameter').
+parameter(75).
+/** END parameter, ID: '75', NAME: 'encryptedMetadata' */
+
+sizeOfParameter(272).
+sizeOf(272,75).
+
+/** BEGIN parameter, ID: '314', NAME: 'encryptedKey' */
+description(314,'encryptedKey','parameter').
+parameter(314).
+/** END parameter, ID: '314', NAME: 'encryptedKey' */
+
+sizeOfParameter(315).
+sizeOf(315,314).
+
+/** BEGIN parameter, ID: '58', NAME: 'authenticationToken' */
+description(58,'authenticationToken','parameter').
+parameter(58).
+/** END parameter, ID: '58', NAME: 'authenticationToken' */
+
+sizeOfParameter(250).
+sizeOf(250,58).
+/** END operationSignature, ID: '361', NAME: 'receiveVideo' */
+
+/** END operationInterface, ID: '152', NAME: 'VideoReceiving' */
+
+
+/** BEGIN operationInterface, ID: '153', NAME: 'CryptographicHashing' */
+description(153,'CryptographicHashing','operationInterface').
+operationInterface(153).
+parentInterfaces(153,[]).
+signatures(153,[362]).
+
+/** BEGIN operationSignature, ID: '362', NAME: 'hash' */
+description(362,'hash','operationSignature').
+operationSignature(362).
+parameters(362,[363,364]).
+returnType(362,[251]).
+
+/** BEGIN parameter, ID: '363', NAME: 'input' */
+description(363,'input','parameter').
+parameter(363).
+/** END parameter, ID: '363', NAME: 'input' */
+
+sizeOfParameter(365).
+sizeOf(365,363).
+
+/** BEGIN parameter, ID: '364', NAME: 'salt' */
+description(364,'salt','parameter').
+parameter(364).
+/** END parameter, ID: '364', NAME: 'salt' */
+
+sizeOfParameter(366).
+sizeOf(366,364).
+/** END operationSignature, ID: '362', NAME: 'hash' */
+
+/** END operationInterface, ID: '153', NAME: 'CryptographicHashing' */
+
+
+/** BEGIN collectionDataType, ID: '256', NAME: 'IntCollection' */
+description(256,'IntCollection','collectionDataType').
+collectionDataType(256).
+/** END collectionDataType, ID: '256', NAME: 'IntCollection' */
+
+
+/** BEGIN collectionDataType, ID: '299', NAME: 'Data' */
+description(299,'Data','collectionDataType').
+collectionDataType(299).
+/** END collectionDataType, ID: '299', NAME: 'Data' */
+
+
+/** BEGIN compositeDataType, ID: '367', NAME: 'Response' */
+description(367,'Response','compositeDataType').
+compositeDataType(367).
+/** END compositeDataType, ID: '367', NAME: 'Response' */
+
+
+/** BEGIN compositeDataType, ID: '257', NAME: 'File' */
+description(257,'File','compositeDataType').
+compositeDataType(257).
+/** END compositeDataType, ID: '257', NAME: 'File' */
+
+
+/** BEGIN collectionDataType, ID: '289', NAME: 'Key' */
+description(289,'Key','collectionDataType').
+collectionDataType(289).
+/** END collectionDataType, ID: '289', NAME: 'Key' */
+
+
+/** BEGIN compositeDataType, ID: '305', NAME: 'KeyPair' */
+description(305,'KeyPair','compositeDataType').
+compositeDataType(305).
+/** END compositeDataType, ID: '305', NAME: 'KeyPair' */
+
+
+/** BEGIN collectionDataType, ID: '341', NAME: 'FileCollection' */
+description(341,'FileCollection','collectionDataType').
+collectionDataType(341).
+/** END collectionDataType, ID: '341', NAME: 'FileCollection' */
+
+
+/** BEGIN compositeDataType, ID: '325', NAME: 'Settings' */
+description(325,'Settings','compositeDataType').
+compositeDataType(325).
+/** END compositeDataType, ID: '325', NAME: 'Settings' */
+
+
+/** BEGIN compositeDataType, ID: '368', NAME: 'Connection' */
+description(368,'Connection','compositeDataType').
+compositeDataType(368).
+/** END compositeDataType, ID: '368', NAME: 'Connection' */
+
+
+/** BEGIN collectionDataType, ID: '369', NAME: 'ByteCollection' */
+description(369,'ByteCollection','collectionDataType').
+collectionDataType(369).
+/** END collectionDataType, ID: '369', NAME: 'ByteCollection' */
+
+/** END repository, ID: '89', NAME: 'PCC' */
+

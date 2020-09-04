@@ -1,0 +1,61 @@
+<resources>
+    <!-- APP NAVIGATION AND TITLES -->
+    <string name="app_name">Privacy Crash Cam</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="recorded">Videos</string>
+    <string name="settings">Settings</string>
+    <string name="legal">Legal Information</string>
+    <string name="camera">Camera</string>
+    <string name="logout">Log out</string>
+
+    <!-- SETTINGS VIEW -->
+    <string name="resTitle">Quality</string>
+    <string name="resHigh">High</string>
+    <string name="resMedium">Medium</string>
+    <string name="resLow">Low</string>
+    <string name="framesTitle">Frames</string>
+    <string name="bufferSizeTitle">Buffer Size</string>
+    <string name="bufferSizeValue">%1$d sec</string>
+
+    <!-- LEGAL -->
+    <string name="copyright">© PSE Team\n\n\nGiorgio Groß\nJosh Romanowski\nDavid Laubenstein\nFabian Wenzel\nChristoph Hörtnagl</string>
+    <string name="licenses_title">Licenses</string>
+    <string name="legal_title">Legal Information</string>
+
+    <!-- WELCOME TEXTS -->
+    <string name="welcome_text">Welcome</string>
+    <string name="welcome_description">The Privacy Crash Cam will allow you to use your
+        Phone as a Dash Cam while respecting the rights of other people. To use this app you need
+        to allow access to the camera, your microphone and your device storage as otherwise not
+        videos can be recorded.</string>
+
+    <!-- VIDEO LIST -->
+    <string name="meta_info_title">Info</string>
+    <string name="meta_info">
+        Date:%1$s
+        Trigger Type:%2$s
+        G-Force (x,y,z):%3$s</string>
+    <string name="video_upload_success">Video uploaded :)</string>
+    <string name="upload_wait">Please wait until pending uploads have finished</string>
+
+    <!-- ERROR MESSAGES -->
+    <string name="error_no_camera">Your device has no camera</string>
+    <string name="error_camera_unavailable">There was a problem with your camera</string>
+    <string name="error_recorder">Cannot record videos</string>
+    <string name="error_undefined">An error occurred</string>
+    <string name="grant_permission">ALLOW AND START</string>
+    <string name="error_memory">Could not access device storage</string>
+    <string name="error_no_connection">No internet connection found</string>
+    <string name="error_sensor">Cannot access acceleration sensor</string>
+    <string name="error_account">Please log in another time to update your password</string>
+
+    <!-- LOGIN VIEWS -->
+    <string name="mail">Mail</string>
+    <string name="password">Password</string>
+    <string name="et_mail">test@example.com</string>
+    <string name="et_password">your password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+</resources>

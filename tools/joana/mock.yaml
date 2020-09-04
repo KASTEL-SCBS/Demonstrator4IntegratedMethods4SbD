@@ -1,0 +1,50 @@
+# Just a mock
+entry_point_method: void Basic.bla(int)
+tag: bla
+found_flows: true
+only_direct_flow: false
+flow:
+  -
+    type: illegal
+    attacker_level: low
+    source:
+      kind: edu.kit.joana.api.sdg.sdgmethod
+      class: Basic
+      name: bla
+      selector: bla(I)V
+      return: void
+      parameters:
+        - int
+    sink:
+      kind: edu.kit.joana.api.sdg.sdgformalparameter
+      method:
+        class: Basic
+        name: blub
+        selector: blub(I)V
+        return: void
+        parameters:
+          - int
+      index: 1
+      type: java.lang.Object
+  -
+    type: illegal
+    attacker_level: low
+    source:
+      kind: edu.kit.joana.api.sdg.sdgmethod
+      class: Basic
+      name: bla
+      selector: bla(I)V
+      return: void
+      parameters:
+        - int
+    sink:
+      kind: edu.kit.joana.api.sdg.sdgformalparameter
+      method:
+        class: Basic
+        name: blub
+        selector: blub(I)V
+        return: void
+        parameters:
+          - int
+      index: 1
+      type: int

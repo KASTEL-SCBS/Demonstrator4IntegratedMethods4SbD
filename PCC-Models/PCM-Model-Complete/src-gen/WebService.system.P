@@ -1,0 +1,351 @@
+
+/** BEGIN system, ID: '450', NAME: 'IWebService' */
+description(450,'IWebService','system').
+system(450).
+assemblyContexts(450,[451,452,453,454,455,456,457,458,459,460]).
+connectors(450,[461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483]).
+providedRoles(450,[484,485,486,487,488,489,490]).
+requiredRoles(450,[]).
+
+/** BEGIN assemblyContext, ID: '451', NAME: 'Assembly_JavaRSA+AESFileDecryptor' */
+description(451,'Assembly_JavaRSA+AESFileDecryptor','assemblyContext').
+assemblyContext(451).
+encapsulatedComponent(451,[]).
+/** END assemblyContext, ID: '451', NAME: 'Assembly_JavaRSA+AESFileDecryptor' */
+
+
+/** BEGIN assemblyContext, ID: '452', NAME: 'Assembly_VideoProcessingManager' */
+description(452,'Assembly_VideoProcessingManager','assemblyContext').
+assemblyContext(452).
+encapsulatedComponent(452,[92]).
+/** END assemblyContext, ID: '452', NAME: 'Assembly_VideoProcessingManager' */
+
+
+/** BEGIN assemblyContext, ID: '453', NAME: 'Assembly_UserService' */
+description(453,'Assembly_UserService','assemblyContext').
+assemblyContext(453).
+encapsulatedComponent(453,[90]).
+/** END assemblyContext, ID: '453', NAME: 'Assembly_UserService' */
+
+
+/** BEGIN assemblyContext, ID: '454', NAME: 'Assembly_UserSqlDB' */
+description(454,'Assembly_UserSqlDB','assemblyContext').
+assemblyContext(454).
+encapsulatedComponent(454,[91]).
+/** END assemblyContext, ID: '454', NAME: 'Assembly_UserSqlDB' */
+
+
+/** BEGIN assemblyContext, ID: '455', NAME: 'Assembly_OpenCVVideoChain' */
+description(455,'Assembly_OpenCVVideoChain','assemblyContext').
+assemblyContext(455).
+encapsulatedComponent(455,[]).
+/** END assemblyContext, ID: '455', NAME: 'Assembly_OpenCVVideoChain' */
+
+
+/** BEGIN assemblyContext, ID: '456', NAME: 'Assembly_VideoFilesManager' */
+description(456,'Assembly_VideoFilesManager','assemblyContext').
+assemblyContext(456).
+encapsulatedComponent(456,[109]).
+/** END assemblyContext, ID: '456', NAME: 'Assembly_VideoFilesManager' */
+
+
+/** BEGIN assemblyContext, ID: '457', NAME: 'Assembly_VideoService' */
+description(457,'Assembly_VideoService','assemblyContext').
+assemblyContext(457).
+encapsulatedComponent(457,[97]).
+/** END assemblyContext, ID: '457', NAME: 'Assembly_VideoService' */
+
+
+/** BEGIN assemblyContext, ID: '458', NAME: 'Assembly_KeyManager' */
+description(458,'Assembly_KeyManager','assemblyContext').
+assemblyContext(458).
+encapsulatedComponent(458,[109]).
+/** END assemblyContext, ID: '458', NAME: 'Assembly_KeyManager' */
+
+
+/** BEGIN assemblyContext, ID: '459', NAME: 'Assembly_TemporaryFileManager' */
+description(459,'Assembly_TemporaryFileManager','assemblyContext').
+assemblyContext(459).
+encapsulatedComponent(459,[109]).
+/** END assemblyContext, ID: '459', NAME: 'Assembly_TemporaryFileManager' */
+
+
+/** BEGIN assemblyContext, ID: '460', NAME: 'Assembly_AnonymizationService <AnonymizationService>' */
+description(460,'Assembly_AnonymizationService <AnonymizationService>','assemblyContext').
+assemblyContext(460).
+encapsulatedComponent(460,[93]).
+/** END assemblyContext, ID: '460', NAME: 'Assembly_AnonymizationService <AnonymizationService>' */
+
+
+/** BEGIN assemblyConnector, ID: '461', NAME: 'newAssemblyConnector' */
+description(461,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(461).
+requiringAssemblyContext(461,[457]).
+providingAssemblyContext(461,[455]).
+providedRole(461,[491]).
+requiredRole(461,[]).
+/** END assemblyConnector, ID: '461', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN providedDelegationConnector, ID: '462', NAME: 'newProvidedDelegationConnector' */
+description(462,'newProvidedDelegationConnector','providedDelegationConnector').
+providedDelegationConnector(462).
+innerProvidedRole(462,[492]).
+outerProvidedRole(462,[486]).
+assemblyContext(462,[]).
+/** END providedDelegationConnector, ID: '462', NAME: 'newProvidedDelegationConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '463', NAME: 'newAssemblyConnector' */
+description(463,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(463).
+requiringAssemblyContext(463,[457]).
+providingAssemblyContext(463,[451]).
+providedRole(463,[493]).
+requiredRole(463,[]).
+/** END assemblyConnector, ID: '463', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '464', NAME: 'newAssemblyConnector' */
+description(464,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(464).
+requiringAssemblyContext(464,[]).
+providingAssemblyContext(464,[457]).
+providedRole(464,[181]).
+requiredRole(464,[494]).
+/** END assemblyConnector, ID: '464', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '465', NAME: 'newAssemblyConnector' */
+description(465,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(465).
+requiringAssemblyContext(465,[]).
+providingAssemblyContext(465,[451]).
+providedRole(465,[495]).
+requiredRole(465,[496]).
+/** END assemblyConnector, ID: '465', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN providedDelegationConnector, ID: '466', NAME: 'newProvidedDelegationConnector' */
+description(466,'newProvidedDelegationConnector','providedDelegationConnector').
+providedDelegationConnector(466).
+innerProvidedRole(466,[497]).
+outerProvidedRole(466,[484]).
+assemblyContext(466,[]).
+/** END providedDelegationConnector, ID: '466', NAME: 'newProvidedDelegationConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '467', NAME: 'newAssemblyConnector' */
+description(467,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(467).
+requiringAssemblyContext(467,[]).
+providingAssemblyContext(467,[453]).
+providedRole(467,[155]).
+requiredRole(467,[498]).
+/** END assemblyConnector, ID: '467', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '468', NAME: 'newAssemblyConnector' */
+description(468,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(468).
+requiringAssemblyContext(468,[]).
+providingAssemblyContext(468,[453]).
+providedRole(468,[154]).
+requiredRole(468,[499]).
+/** END assemblyConnector, ID: '468', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '469', NAME: 'newAssemblyConnector' */
+description(469,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(469).
+requiringAssemblyContext(469,[453]).
+providingAssemblyContext(469,[454]).
+providedRole(469,[159]).
+requiredRole(469,[156]).
+/** END assemblyConnector, ID: '469', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN providedDelegationConnector, ID: '470', NAME: 'newProvidedDelegationConnector' */
+description(470,'newProvidedDelegationConnector','providedDelegationConnector').
+providedDelegationConnector(470).
+innerProvidedRole(470,[500]).
+outerProvidedRole(470,[485]).
+assemblyContext(470,[]).
+/** END providedDelegationConnector, ID: '470', NAME: 'newProvidedDelegationConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '471', NAME: 'newAssemblyConnector' */
+description(471,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(471).
+requiringAssemblyContext(471,[451]).
+providingAssemblyContext(471,[458]).
+providedRole(471,[221]).
+requiredRole(471,[501]).
+/** END assemblyConnector, ID: '471', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '472', NAME: 'newAssemblyConnector' */
+description(472,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(472).
+requiringAssemblyContext(472,[453]).
+providingAssemblyContext(472,[454]).
+providedRole(472,[160]).
+requiredRole(472,[157]).
+/** END assemblyConnector, ID: '472', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '473', NAME: 'newAssemblyConnector' */
+description(473,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(473).
+requiringAssemblyContext(473,[457]).
+providingAssemblyContext(473,[456]).
+providedRole(473,[220]).
+requiredRole(473,[184]).
+/** END assemblyConnector, ID: '473', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '474', NAME: 'newAssemblyConnector' */
+description(474,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(474).
+requiringAssemblyContext(474,[457]).
+providingAssemblyContext(474,[459]).
+providedRole(474,[221]).
+requiredRole(474,[183]).
+/** END assemblyConnector, ID: '474', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '475', NAME: 'newAssemblyConnector' */
+description(475,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(475).
+requiringAssemblyContext(475,[457]).
+providingAssemblyContext(475,[452]).
+providedRole(475,[163]).
+requiredRole(475,[182]).
+/** END assemblyConnector, ID: '475', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '476', NAME: 'newAssemblyConnector' */
+description(476,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(476).
+requiringAssemblyContext(476,[452]).
+providingAssemblyContext(476,[459]).
+providedRole(476,[221]).
+requiredRole(476,[164]).
+/** END assemblyConnector, ID: '476', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '477', NAME: 'newAssemblyConnector' */
+description(477,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(477).
+requiringAssemblyContext(477,[452]).
+providingAssemblyContext(477,[451]).
+providedRole(477,[493]).
+requiredRole(477,[165]).
+/** END assemblyConnector, ID: '477', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN assemblyConnector, ID: '478', NAME: 'newAssemblyConnector' */
+description(478,'newAssemblyConnector','assemblyConnector').
+assemblyConnector(478).
+requiringAssemblyContext(478,[452]).
+providingAssemblyContext(478,[455]).
+providedRole(478,[491]).
+requiredRole(478,[166]).
+/** END assemblyConnector, ID: '478', NAME: 'newAssemblyConnector' */
+
+
+/** BEGIN providedDelegationConnector, ID: '479', NAME: 'ProvDelegation Provided_PersecutionInformationProvision -> Provided_PersecutionInformationProvision_AnonymizationService' */
+description(479,'ProvDelegation Provided_PersecutionInformationProvision -> Provided_PersecutionInformationProvision_AnonymizationService','providedDelegationConnector').
+providedDelegationConnector(479).
+innerProvidedRole(479,[169]).
+outerProvidedRole(479,[488]).
+assemblyContext(479,[460]).
+/** END providedDelegationConnector, ID: '479', NAME: 'ProvDelegation Provided_PersecutionInformationProvision -> Provided_PersecutionInformationProvision_AnonymizationService' */
+
+
+/** BEGIN providedDelegationConnector, ID: '480', NAME: 'ProvDelegation Provided_VideoReceiving -> Provided_VideoReceiving_AnonymizationService' */
+description(480,'ProvDelegation Provided_VideoReceiving -> Provided_VideoReceiving_AnonymizationService','providedDelegationConnector').
+providedDelegationConnector(480).
+innerProvidedRole(480,[167]).
+outerProvidedRole(480,[489]).
+assemblyContext(480,[460]).
+/** END providedDelegationConnector, ID: '480', NAME: 'ProvDelegation Provided_VideoReceiving -> Provided_VideoReceiving_AnonymizationService' */
+
+
+/** BEGIN providedDelegationConnector, ID: '481', NAME: 'ProvDelegation Provided_JudgeAccess -> Provided_JudgeAccess_AnonymizationService' */
+description(481,'ProvDelegation Provided_JudgeAccess -> Provided_JudgeAccess_AnonymizationService','providedDelegationConnector').
+providedDelegationConnector(481).
+innerProvidedRole(481,[170]).
+outerProvidedRole(481,[487]).
+assemblyContext(481,[460]).
+/** END providedDelegationConnector, ID: '481', NAME: 'ProvDelegation Provided_JudgeAccess -> Provided_JudgeAccess_AnonymizationService' */
+
+
+/** BEGIN providedDelegationConnector, ID: '482', NAME: 'ProvDelegation IUserManagement -> Provided_IUserManagement_AnonymizationService' */
+description(482,'ProvDelegation IUserManagement -> Provided_IUserManagement_AnonymizationService','providedDelegationConnector').
+providedDelegationConnector(482).
+innerProvidedRole(482,[171]).
+outerProvidedRole(482,[485]).
+assemblyContext(482,[460]).
+/** END providedDelegationConnector, ID: '482', NAME: 'ProvDelegation IUserManagement -> Provided_IUserManagement_AnonymizationService' */
+
+
+/** BEGIN providedDelegationConnector, ID: '483', NAME: 'ProvDelegation Provided_VideoHandling -> Provided_VideoHandling_AnonymizationService' */
+description(483,'ProvDelegation Provided_VideoHandling -> Provided_VideoHandling_AnonymizationService','providedDelegationConnector').
+providedDelegationConnector(483).
+innerProvidedRole(483,[168]).
+outerProvidedRole(483,[490]).
+assemblyContext(483,[460]).
+/** END providedDelegationConnector, ID: '483', NAME: 'ProvDelegation Provided_VideoHandling -> Provided_VideoHandling_AnonymizationService' */
+
+
+/** BEGIN operationProvidedRole, ID: '484', NAME: 'IWebVideoService' */
+description(484,'IWebVideoService','operationProvidedRole').
+operationProvidedRole(484).
+providedInterface(484,[120]).
+/** END operationProvidedRole, ID: '484', NAME: 'IWebVideoService' */
+
+
+/** BEGIN operationProvidedRole, ID: '485', NAME: 'IUserManagement' */
+description(485,'IUserManagement','operationProvidedRole').
+operationProvidedRole(485).
+providedInterface(485,[119]).
+/** END operationProvidedRole, ID: '485', NAME: 'IUserManagement' */
+
+
+/** BEGIN operationProvidedRole, ID: '486', NAME: 'IPublicKeyProvider' */
+description(486,'IPublicKeyProvider','operationProvidedRole').
+operationProvidedRole(486).
+providedInterface(486,[130]).
+/** END operationProvidedRole, ID: '486', NAME: 'IPublicKeyProvider' */
+
+
+/** BEGIN operationProvidedRole, ID: '487', NAME: 'Provided_JudgeAccess' */
+description(487,'Provided_JudgeAccess','operationProvidedRole').
+operationProvidedRole(487).
+providedInterface(487,[149]).
+/** END operationProvidedRole, ID: '487', NAME: 'Provided_JudgeAccess' */
+
+
+/** BEGIN operationProvidedRole, ID: '488', NAME: 'Provided_PersecutionInformationProvision' */
+description(488,'Provided_PersecutionInformationProvision','operationProvidedRole').
+operationProvidedRole(488).
+providedInterface(488,[148]).
+/** END operationProvidedRole, ID: '488', NAME: 'Provided_PersecutionInformationProvision' */
+
+
+/** BEGIN operationProvidedRole, ID: '489', NAME: 'Provided_VideoReceiving' */
+description(489,'Provided_VideoReceiving','operationProvidedRole').
+operationProvidedRole(489).
+providedInterface(489,[152]).
+/** END operationProvidedRole, ID: '489', NAME: 'Provided_VideoReceiving' */
+
+
+/** BEGIN operationProvidedRole, ID: '490', NAME: 'Provided_VideoHandling' */
+description(490,'Provided_VideoHandling','operationProvidedRole').
+operationProvidedRole(490).
+providedInterface(490,[120]).
+/** END operationProvidedRole, ID: '490', NAME: 'Provided_VideoHandling' */
+
+/** END system, ID: '450', NAME: 'IWebService' */
+

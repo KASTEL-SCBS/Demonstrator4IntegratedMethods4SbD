@@ -1,0 +1,2 @@
+# Referenced at C:\Users\Frederik Reiche\git\pcc-imp-app\PrivacyCrashCam\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:21
+-keep class android.support.multidex.MultiDexApplication { <init>(); }

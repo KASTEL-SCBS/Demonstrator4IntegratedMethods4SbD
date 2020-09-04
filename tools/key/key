@@ -1,0 +1,19 @@
+#! /bin/sh
+
+if [ "$#" != 2 ] ; then
+  echo "Usage: ./key RELATIVE_PATH_TO_KEY_DIRECTORY PATH_TO_PROOF_FILE"
+  exit 1
+fi
+
+# Load proof in KeY. If loading succeeds and proof is closed, return success.
+if output=$(java -jar key-2.7-exe.jar --auto-loadonly "$1") ; then
+    numOpenGoals=$( echo "$output" | tail -n1 | grep -Eo '[0-9]+$')
+    if [ $numOpenGoals -eq 0 ] ; then
+        exit 0
+    else
+        echo "Proof is not closed"
+        exit $numOpenGoals
+    fi
+else
+    exit 1
+fi

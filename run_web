@@ -1,0 +1,5 @@
+#!/bin/sh
+cd "$(dirname "$0")"
+bash -c "cd pcc-imp-webinterface; mvn jetty:run" & 
+bash -c "cd pcc-imp-webinterface-prosecution; mvn jetty:run" & 
+bash -c "cd pcc-imp-webservice;  java -jar target/pcc-service-1.0-SNAPSHOT-jar-with-dependencies.jar" &

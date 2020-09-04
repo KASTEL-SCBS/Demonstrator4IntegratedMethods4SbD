@@ -1,0 +1,423 @@
+
+/** BEGIN confidentialitySpecification, ID: '1', NAME: 'null' */
+description(1,'null','confidentialitySpecification').
+confidentialitySpecification(1).
+dataIdentifier(1,[2,3,4]).
+dataSetMaps(1,[]).
+parametersAndDataPairs(1,[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39]).
+addedServiceParameters(1,[]).
+specificationParameterAssignments(1,[]).
+specificationParameterEquations(1,[]).
+locations(1,[40,41,42]).
+tamperProtections(1,[43,44,45,46,47,48]).
+locationsAndTamperProtectionsPairs(1,[49,50,51,52,53,54,55]).
+
+/** BEGIN dataSet, ID: '2', NAME: 'Userdata' */
+description(2,'Userdata','dataSet').
+dataSet(2).
+/** END dataSet, ID: '2', NAME: 'Userdata' */
+
+
+/** BEGIN dataSet, ID: '3', NAME: 'PersecutionData' */
+description(3,'PersecutionData','dataSet').
+dataSet(3).
+/** END dataSet, ID: '3', NAME: 'PersecutionData' */
+
+
+/** BEGIN dataSet, ID: '4', NAME: 'JudgeData' */
+description(4,'JudgeData','dataSet').
+dataSet(4).
+/** END dataSet, ID: '4', NAME: 'JudgeData' */
+
+
+/** BEGIN parametersAndDataPair, ID: '5', NAME: 'RETURN2Userdata' */
+description(5,'RETURN2Userdata','parametersAndDataPair').
+parametersAndDataPair(5).
+parameterSources(5,[return]).
+dataTargets(5,[2]).
+/** END parametersAndDataPair, ID: '5', NAME: 'RETURN2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '6', NAME: 'CALLRETURN2Persecutiondata' */
+description(6,'CALLRETURN2Persecutiondata','parametersAndDataPair').
+parametersAndDataPair(6).
+parameterSources(6,[call,return]).
+dataTargets(6,[3]).
+/** END parametersAndDataPair, ID: '6', NAME: 'CALLRETURN2Persecutiondata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '7', NAME: 'VideoidTargetuseridAuthenticationtokenCALLRETURN2Persecutiondata' */
+description(7,'VideoidTargetuseridAuthenticationtokenCALLRETURN2Persecutiondata','parametersAndDataPair').
+parametersAndDataPair(7).
+parameterSources(7,[56,57,58,call,return]).
+dataTargets(7,[3]).
+/** END parametersAndDataPair, ID: '7', NAME: 'VideoidTargetuseridAuthenticationtokenCALLRETURN2Persecutiondata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '8', NAME: 'VideoidAuthenticationtokenUseridCALLSizeof(*)RETURN2Judgedata' */
+description(8,'VideoidAuthenticationtokenUseridCALLSizeof(*)RETURN2Judgedata','parametersAndDataPair').
+parametersAndDataPair(8).
+parameterSources(8,[56,58,59,call,sizeOf(*),return]).
+dataTargets(8,[4]).
+/** END parametersAndDataPair, ID: '8', NAME: 'VideoidAuthenticationtokenUseridCALLSizeof(*)RETURN2Judgedata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '9', NAME: 'RETURN2Judgedata' */
+description(9,'RETURN2Judgedata','parametersAndDataPair').
+parametersAndDataPair(9).
+parameterSources(9,[return]).
+dataTargets(9,[4]).
+/** END parametersAndDataPair, ID: '9', NAME: 'RETURN2Judgedata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '10', NAME: 'CALLSizeof(*)2Userdata' */
+description(10,'CALLSizeof(*)2Userdata','parametersAndDataPair').
+parametersAndDataPair(10).
+parameterSources(10,[call,sizeOf(*)]).
+dataTargets(10,[2]).
+/** END parametersAndDataPair, ID: '10', NAME: 'CALLSizeof(*)2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '11', NAME: 'Email2Userdata' */
+description(11,'Email2Userdata','parametersAndDataPair').
+parametersAndDataPair(11).
+parameterSources(11,[60]).
+dataTargets(11,[2]).
+/** END parametersAndDataPair, ID: '11', NAME: 'Email2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '12', NAME: 'Authenticationtoken2Userdata' */
+description(12,'Authenticationtoken2Userdata','parametersAndDataPair').
+parametersAndDataPair(12).
+parameterSources(12,[58]).
+dataTargets(12,[2]).
+/** END parametersAndDataPair, ID: '12', NAME: 'Authenticationtoken2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '13', NAME: 'Password2Userdata' */
+description(13,'Password2Userdata','parametersAndDataPair').
+parametersAndDataPair(13).
+parameterSources(13,[61]).
+dataTargets(13,[2]).
+/** END parametersAndDataPair, ID: '13', NAME: 'Password2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '14', NAME: 'InputvideoOutputvideo2Userdata' */
+description(14,'InputvideoOutputvideo2Userdata','parametersAndDataPair').
+parametersAndDataPair(14).
+parameterSources(14,[62,63]).
+dataTargets(14,[2]).
+/** END parametersAndDataPair, ID: '14', NAME: 'InputvideoOutputvideo2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '15', NAME: 'Videoid2Userdata' */
+description(15,'Videoid2Userdata','parametersAndDataPair').
+parametersAndDataPair(15).
+parameterSources(15,[56]).
+dataTargets(15,[2]).
+/** END parametersAndDataPair, ID: '15', NAME: 'Videoid2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '16', NAME: 'Keydata2Userdata' */
+description(16,'Keydata2Userdata','parametersAndDataPair').
+parametersAndDataPair(16).
+parameterSources(16,[64]).
+dataTargets(16,[2]).
+/** END parametersAndDataPair, ID: '16', NAME: 'Keydata2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '17', NAME: 'InputmetadataOutputmetadata2Userdata' */
+description(17,'InputmetadataOutputmetadata2Userdata','parametersAndDataPair').
+parametersAndDataPair(17).
+parameterSources(17,[65,66]).
+dataTargets(17,[2]).
+/** END parametersAndDataPair, ID: '17', NAME: 'InputmetadataOutputmetadata2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '18', NAME: 'Id2Userdata' */
+description(18,'Id2Userdata','parametersAndDataPair').
+parametersAndDataPair(18).
+parameterSources(18,[67]).
+dataTargets(18,[2]).
+/** END parametersAndDataPair, ID: '18', NAME: 'Id2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '19', NAME: 'Value2Userdata' */
+description(19,'Value2Userdata','parametersAndDataPair').
+parametersAndDataPair(19).
+parameterSources(19,[68]).
+dataTargets(19,[2]).
+/** END parametersAndDataPair, ID: '19', NAME: 'Value2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '20', NAME: 'Key2Userdata' */
+description(20,'Key2Userdata','parametersAndDataPair').
+parametersAndDataPair(20).
+parameterSources(20,[69]).
+dataTargets(20,[2]).
+/** END parametersAndDataPair, ID: '20', NAME: 'Key2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '21', NAME: 'Privatekey2Userdata' */
+description(21,'Privatekey2Userdata','parametersAndDataPair').
+parametersAndDataPair(21).
+parameterSources(21,[70]).
+dataTargets(21,[2]).
+/** END parametersAndDataPair, ID: '21', NAME: 'Privatekey2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '22', NAME: 'InputfileOutputfile2Userdata' */
+description(22,'InputfileOutputfile2Userdata','parametersAndDataPair').
+parametersAndDataPair(22).
+parameterSources(22,[71,72]).
+dataTargets(22,[2]).
+/** END parametersAndDataPair, ID: '22', NAME: 'InputfileOutputfile2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '23', NAME: 'Publickey2Userdata' */
+description(23,'Publickey2Userdata','parametersAndDataPair').
+parametersAndDataPair(23).
+parameterSources(23,[73]).
+dataTargets(23,[2]).
+/** END parametersAndDataPair, ID: '23', NAME: 'Publickey2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '24', NAME: 'EncryptedvideoEncryptedmetadataEncryptedkeydata2Userdata' */
+description(24,'EncryptedvideoEncryptedmetadataEncryptedkeydata2Userdata','parametersAndDataPair').
+parametersAndDataPair(24).
+parameterSources(24,[74,75,76]).
+dataTargets(24,[2]).
+/** END parametersAndDataPair, ID: '24', NAME: 'EncryptedvideoEncryptedmetadataEncryptedkeydata2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '25', NAME: 'Keyalgorithm2Userdata' */
+description(25,'Keyalgorithm2Userdata','parametersAndDataPair').
+parametersAndDataPair(25).
+parameterSources(25,[77]).
+dataTargets(25,[2]).
+/** END parametersAndDataPair, ID: '25', NAME: 'Keyalgorithm2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '26', NAME: 'Userid2Userdata' */
+description(26,'Userid2Userdata','parametersAndDataPair').
+parametersAndDataPair(26).
+parameterSources(26,[59]).
+dataTargets(26,[2]).
+/** END parametersAndDataPair, ID: '26', NAME: 'Userid2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '27', NAME: 'Metadata2Userdata' */
+description(27,'Metadata2Userdata','parametersAndDataPair').
+parametersAndDataPair(27).
+parameterSources(27,[78]).
+dataTargets(27,[2]).
+/** END parametersAndDataPair, ID: '27', NAME: 'Metadata2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '28', NAME: 'Video2Userdata' */
+description(28,'Video2Userdata','parametersAndDataPair').
+parametersAndDataPair(28).
+parameterSources(28,[79]).
+dataTargets(28,[2]).
+/** END parametersAndDataPair, ID: '28', NAME: 'Video2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '29', NAME: 'Settings2Userdata' */
+description(29,'Settings2Userdata','parametersAndDataPair').
+parametersAndDataPair(29).
+parameterSources(29,[80]).
+dataTargets(29,[2]).
+/** END parametersAndDataPair, ID: '29', NAME: 'Settings2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '30', NAME: 'Name2Userdata' */
+description(30,'Name2Userdata','parametersAndDataPair').
+parametersAndDataPair(30).
+parameterSources(30,[81]).
+dataTargets(30,[2]).
+/** END parametersAndDataPair, ID: '30', NAME: 'Name2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '31', NAME: 'File2Userdata' */
+description(31,'File2Userdata','parametersAndDataPair').
+parametersAndDataPair(31).
+parameterSources(31,[82]).
+dataTargets(31,[2]).
+/** END parametersAndDataPair, ID: '31', NAME: 'File2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '32', NAME: 'Directorypath2Userdata' */
+description(32,'Directorypath2Userdata','parametersAndDataPair').
+parametersAndDataPair(32).
+parameterSources(32,[83]).
+dataTargets(32,[2]).
+/** END parametersAndDataPair, ID: '32', NAME: 'Directorypath2Userdata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '33', NAME: 'Authenticationtoken2Persecutiondata' */
+description(33,'Authenticationtoken2Persecutiondata','parametersAndDataPair').
+parametersAndDataPair(33).
+parameterSources(33,[58]).
+dataTargets(33,[3]).
+/** END parametersAndDataPair, ID: '33', NAME: 'Authenticationtoken2Persecutiondata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '34', NAME: 'Videoid2Persecutiondata' */
+description(34,'Videoid2Persecutiondata','parametersAndDataPair').
+parametersAndDataPair(34).
+parameterSources(34,[56]).
+dataTargets(34,[3]).
+/** END parametersAndDataPair, ID: '34', NAME: 'Videoid2Persecutiondata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '35', NAME: 'Sizeof(*)2Persecutiondata' */
+description(35,'Sizeof(*)2Persecutiondata','parametersAndDataPair').
+parametersAndDataPair(35).
+parameterSources(35,[sizeOf(*)]).
+dataTargets(35,[3]).
+/** END parametersAndDataPair, ID: '35', NAME: 'Sizeof(*)2Persecutiondata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '36', NAME: 'CALL2Persecutiondata' */
+description(36,'CALL2Persecutiondata','parametersAndDataPair').
+parametersAndDataPair(36).
+parameterSources(36,[call]).
+dataTargets(36,[3]).
+/** END parametersAndDataPair, ID: '36', NAME: 'CALL2Persecutiondata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '37', NAME: 'CALLSIZEOF(*)RETURN2Judgedata' */
+description(37,'CALLSIZEOF(*)RETURN2Judgedata','parametersAndDataPair').
+parametersAndDataPair(37).
+parameterSources(37,[call,84,return]).
+dataTargets(37,[4]).
+/** END parametersAndDataPair, ID: '37', NAME: 'CALLSIZEOF(*)RETURN2Judgedata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '38', NAME: 'EmailPassword2Persecutiondata' */
+description(38,'EmailPassword2Persecutiondata','parametersAndDataPair').
+parametersAndDataPair(38).
+parameterSources(38,[60,61]).
+dataTargets(38,[3]).
+/** END parametersAndDataPair, ID: '38', NAME: 'EmailPassword2Persecutiondata' */
+
+
+/** BEGIN parametersAndDataPair, ID: '39', NAME: 'Userid2Persecutiondata' */
+description(39,'Userid2Persecutiondata','parametersAndDataPair').
+parametersAndDataPair(39).
+parameterSources(39,[59]).
+dataTargets(39,[3]).
+/** END parametersAndDataPair, ID: '39', NAME: 'Userid2Persecutiondata' */
+
+
+/** BEGIN location, ID: '40', NAME: 'Prosecution Office' */
+description(40,'Prosecution Office','location').
+location(40).
+/** END location, ID: '40', NAME: 'Prosecution Office' */
+
+
+/** BEGIN location, ID: '41', NAME: 'Transport Authortity Office' */
+description(41,'Transport Authortity Office','location').
+location(41).
+/** END location, ID: '41', NAME: 'Transport Authortity Office' */
+
+
+/** BEGIN location, ID: '42', NAME: 'User Space' */
+description(42,'User Space','location').
+location(42).
+/** END location, ID: '42', NAME: 'User Space' */
+
+
+/** BEGIN tamperProtection, ID: '43', NAME: 'Lock' */
+description(43,'Lock','tamperProtection').
+tamperProtection(43).
+/** END tamperProtection, ID: '43', NAME: 'Lock' */
+
+
+/** BEGIN tamperProtection, ID: '44', NAME: 'Sealed' */
+description(44,'Sealed','tamperProtection').
+tamperProtection(44).
+/** END tamperProtection, ID: '44', NAME: 'Sealed' */
+
+
+/** BEGIN tamperProtection, ID: '45', NAME: 'Burrowed' */
+description(45,'Burrowed','tamperProtection').
+tamperProtection(45).
+/** END tamperProtection, ID: '45', NAME: 'Burrowed' */
+
+
+/** BEGIN tamperProtection, ID: '46', NAME: 'Wireless Security' */
+description(46,'Wireless Security','tamperProtection').
+tamperProtection(46).
+/** END tamperProtection, ID: '46', NAME: 'Wireless Security' */
+
+
+/** BEGIN tamperProtection, ID: '47', NAME: 'Peek-Guard' */
+description(47,'Peek-Guard','tamperProtection').
+tamperProtection(47).
+/** END tamperProtection, ID: '47', NAME: 'Peek-Guard' */
+
+
+/** BEGIN tamperProtection, ID: '48', NAME: 'Key-Card' */
+description(48,'Key-Card','tamperProtection').
+tamperProtection(48).
+/** END tamperProtection, ID: '48', NAME: 'Key-Card' */
+
+
+/** BEGIN locationsAndTamperProtectionsPair, ID: '49', NAME: 'l=[User Space] - t=[Wireless Security]' */
+description(49,'l=[User Space] - t=[Wireless Security]','locationsAndTamperProtectionsPair').
+locationsAndTamperProtectionsPair(49).
+locations(49,[42]).
+tamperProtections(49,[46]).
+/** END locationsAndTamperProtectionsPair, ID: '49', NAME: 'l=[User Space] - t=[Wireless Security]' */
+
+
+/** BEGIN locationsAndTamperProtectionsPair, ID: '50', NAME: 'l=[User Space] - t=[]' */
+description(50,'l=[User Space] - t=[]','locationsAndTamperProtectionsPair').
+locationsAndTamperProtectionsPair(50).
+locations(50,[42]).
+tamperProtections(50,[]).
+/** END locationsAndTamperProtectionsPair, ID: '50', NAME: 'l=[User Space] - t=[]' */
+
+
+/** BEGIN locationsAndTamperProtectionsPair, ID: '51', NAME: 'l=[User Space] - t=[Peek-Guard]' */
+description(51,'l=[User Space] - t=[Peek-Guard]','locationsAndTamperProtectionsPair').
+locationsAndTamperProtectionsPair(51).
+locations(51,[42]).
+tamperProtections(51,[47]).
+/** END locationsAndTamperProtectionsPair, ID: '51', NAME: 'l=[User Space] - t=[Peek-Guard]' */
+
+
+/** BEGIN locationsAndTamperProtectionsPair, ID: '52', NAME: 'l=[Prosecution Office, Transport Authortity Office] - t=[Burrowed]' */
+description(52,'l=[Prosecution Office, Transport Authortity Office] - t=[Burrowed]','locationsAndTamperProtectionsPair').
+locationsAndTamperProtectionsPair(52).
+locations(52,[40,41]).
+tamperProtections(52,[45]).
+/** END locationsAndTamperProtectionsPair, ID: '52', NAME: 'l=[Prosecution Office, Transport Authortity Office] - t=[Burrowed]' */
+
+
+/** BEGIN locationsAndTamperProtectionsPair, ID: '53', NAME: 'l=[Prosecution Office] - t=[Lock]' */
+description(53,'l=[Prosecution Office] - t=[Lock]','locationsAndTamperProtectionsPair').
+locationsAndTamperProtectionsPair(53).
+locations(53,[40]).
+tamperProtections(53,[43]).
+/** END locationsAndTamperProtectionsPair, ID: '53', NAME: 'l=[Prosecution Office] - t=[Lock]' */
+
+
+/** BEGIN locationsAndTamperProtectionsPair, ID: '54', NAME: 'l=[Prosecution Office] - t=[]' */
+description(54,'l=[Prosecution Office] - t=[]','locationsAndTamperProtectionsPair').
+locationsAndTamperProtectionsPair(54).
+locations(54,[40]).
+tamperProtections(54,[]).
+/** END locationsAndTamperProtectionsPair, ID: '54', NAME: 'l=[Prosecution Office] - t=[]' */
+
+
+/** BEGIN locationsAndTamperProtectionsPair, ID: '55', NAME: 'l=[Transport Authortity Office] - t=[Sealed, Key-Card]' */
+description(55,'l=[Transport Authortity Office] - t=[Sealed, Key-Card]','locationsAndTamperProtectionsPair').
+locationsAndTamperProtectionsPair(55).
+locations(55,[41]).
+tamperProtections(55,[44,48]).
+/** END locationsAndTamperProtectionsPair, ID: '55', NAME: 'l=[Transport Authortity Office] - t=[Sealed, Key-Card]' */
+
+/** END confidentialitySpecification, ID: '1', NAME: 'null' */
+

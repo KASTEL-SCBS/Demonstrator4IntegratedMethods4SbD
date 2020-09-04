@@ -1,0 +1,6 @@
+[submodule "tools/haskalladio"]
+	path = tools/haskalladio
+	url = https://github.com/KASTEL-SCBS/haskalladio
+[submodule "tools/joana/annotation_adder_src"]
+	path = tools/joana/annotation_adder_src
+	url = https://git.scc.kit.edu/gp1285/joana-annotation-generator

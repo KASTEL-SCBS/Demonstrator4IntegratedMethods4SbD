@@ -1,0 +1,42 @@
+
+/** BEGIN resourceEnvironment, ID: '502', NAME: 'Default' */
+description(502,'Default','resourceEnvironment').
+resourceEnvironment(502).
+linkingResources(502,[503,504]).
+resourceContainer(502,[505,506,507]).
+
+/** BEGIN linkingResource, ID: '503', NAME: 'Internet' */
+description(503,'Internet','linkingResource').
+linkingResource(503).
+connectedResourceContainers(503,[505,506]).
+communicationLinkResourceSpecifications(503,[]).
+/** END linkingResource, ID: '503', NAME: 'Internet' */
+
+
+/** BEGIN linkingResource, ID: '504', NAME: 'PrivatePhoneConnection' */
+description(504,'PrivatePhoneConnection','linkingResource').
+linkingResource(504).
+connectedResourceContainers(504,[507,506]).
+communicationLinkResourceSpecifications(504,[]).
+/** END linkingResource, ID: '504', NAME: 'PrivatePhoneConnection' */
+
+
+/** BEGIN resourceContainer, ID: '505', NAME: 'Persecution Office Terminal' */
+description(505,'Persecution Office Terminal','resourceContainer').
+resourceContainer(505).
+/** END resourceContainer, ID: '505', NAME: 'Persecution Office Terminal' */
+
+
+/** BEGIN resourceContainer, ID: '506', NAME: 'Driversoffice Server' */
+description(506,'Driversoffice Server','resourceContainer').
+resourceContainer(506).
+/** END resourceContainer, ID: '506', NAME: 'Driversoffice Server' */
+
+
+/** BEGIN resourceContainer, ID: '507', NAME: 'Private Phone' */
+description(507,'Private Phone','resourceContainer').
+resourceContainer(507).
+/** END resourceContainer, ID: '507', NAME: 'Private Phone' */
+
+/** END resourceEnvironment, ID: '502', NAME: 'Default' */
+

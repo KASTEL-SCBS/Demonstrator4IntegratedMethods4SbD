@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_photo_camera_black_36dp"
+            android:title="@string/camera" />
+        <item
+            android:id="@+id/nav_recorded"
+            android:icon="@drawable/ic_video_library_black_36dp"
+            android:title="@string/recorded" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_36dp"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/nav_legal"
+            android:icon="@drawable/ic_info_black_36dp"
+            android:title="@string/legal" />
+    </group>
+
+</menu>

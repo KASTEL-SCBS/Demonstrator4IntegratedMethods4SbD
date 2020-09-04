@@ -1,0 +1,31 @@
+
+/** BEGIN adversaries, ID: '85', NAME: 'null' */
+description(85,'null','adversaries').
+adversaries(85).
+adversaries(85,[86,87,88]).
+
+/** BEGIN adversary, ID: '86', NAME: 'Officer' */
+description(86,'Officer','adversary').
+adversary(86).
+mayKnowData(86,[3]).
+locationsAndTamperProtectionsPairs(86,[53]).
+/** END adversary, ID: '86', NAME: 'Officer' */
+
+
+/** BEGIN adversary, ID: '87', NAME: 'Judge' */
+description(87,'Judge','adversary').
+adversary(87).
+mayKnowData(87,[4,3]).
+locationsAndTamperProtectionsPairs(87,[53]).
+/** END adversary, ID: '87', NAME: 'Judge' */
+
+
+/** BEGIN adversary, ID: '88', NAME: 'User' */
+description(88,'User','adversary').
+adversary(88).
+mayKnowData(88,[2]).
+locationsAndTamperProtectionsPairs(88,[50]).
+/** END adversary, ID: '88', NAME: 'User' */
+
+/** END adversaries, ID: '85', NAME: 'null' */
+

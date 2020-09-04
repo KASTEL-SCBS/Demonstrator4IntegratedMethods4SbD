@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    defaultConfig {
+        applicationId "de.pcc.privacycrashcam"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            testCoverageEnabled = true;
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    // testing configuration
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+    sourceSets {
+        test {
+            resources.srcDirs += ['src/test/resources']
+        }
+        androidTest {
+            resources.srcDirs += ['src/androidTest/resources']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // android modules
+    implementation 'com.android.support:appcompat-v7:23.4.0'
+    implementation 'com.android.support:design:23.4.0'
+    implementation 'com.googlecode.mp4parser:isoparser:1.0.1'
+    // jersey modules
+    implementation ('org.glassfish.jersey.core:jersey-client:2.25.1') {
+        exclude group: 'javax.inject', module: 'javax.inject'
+    }
+    implementation ('org.glassfish.jersey.media:jersey-media-multipart:2.25') {
+        exclude group: 'javax.inject', module: 'javax.inject'
+    }
+    implementation 'org.javassist:javassist:3.20.0-GA'
+    // testing
+    testImplementation 'org.javassist:javassist:3.20.0-GA'
+    testImplementation 'junit:junit:4.12'
+    testImplementation ('org.powermock:powermock-api-mockito:1.6.2') {
+        exclude module: 'hamcrest-core'
+        exclude module: 'objenesis'
+    }
+    testImplementation ('org.powermock:powermock-module-junit4:1.6.2') {
+        exclude module: 'hamcrest-core'
+        exclude module: 'objenesis'
+    }
+    // required for instrumented tests
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    androidTestImplementation 'com.linkedin.dexmaker:dexmaker-mockito:2.2.0'
+    androidTestImplementation 'com.android.support:support-annotations:23.4.0'
+    androidTestImplementation 'com.android.support.test:runner:0.5'
+}

@@ -1,0 +1,35 @@
+#! /bin/sh
+DIRNAME="$(dirname "$0")"
+
+. "$DIRNAME/util.sh"
+
+if [ "$#" -lt 2 ] || [ "$#" -gt 4 ] || ( [ "$4" != "" ] && [ "$4" != "-i" ]) ; then
+  echo "Usage: ./joana CLASS_PATH TAG_TO_ANALYZE [output file, '-' is the default and stdout] [-i for interactive shell]"
+  exit 1
+fi
+
+correct_java_version()
+
+out="$3"
+
+if [ "$3" = "" ] ; then
+  out="-"
+fi
+
+totalMemKB=$(free --kilo |awk '/^Mem:/{print $4}')
+
+# Percentage of memory to use for Java heap
+usagePercent=95
+
+# heap size in KB
+heapKB=$(($totalMemKB*$usagePercent/100))
+
+# heap size in MB
+heapMB=$(($heapKB/1024))
+
+tag=$2
+
+java -Xmx${heapMB}m -jar $DIRNAME/joana.jar "classPath $1" \
+  "sdgOptions uninitializedFieldTypeRegexp '.*'" \
+  "run \"$tag\" --out=\"$out\"" $4
+

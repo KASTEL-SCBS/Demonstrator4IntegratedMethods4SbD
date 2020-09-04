@@ -1,0 +1,9 @@
+#!/bin/sh
+cd "$(dirname "$0")"
+echo "Ignore all errors"
+yes | sudo apt install postgresql
+sudo -u postgres -- createuser $USER
+sudo -u postgres -- psql -c "ALTER USER \"$USER\" PASSWORD 'pccdata';"
+sudo -u postgres -- dropdb PrivacyCrashCam
+sudo -u postgres -- createdb -O $USER PrivacyCrashCam 
+psql -d PrivacyCrashCam -a -f pcc-imp-webservice/src/test/resources/postgres/createTables.sql

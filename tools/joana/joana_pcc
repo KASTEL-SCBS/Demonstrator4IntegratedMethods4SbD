@@ -1,0 +1,19 @@
+#! /bin/sh
+DIRNAME="$(dirname "$0")"
+
+. "$DIRNAME/util.sh"
+
+if [ "$#" -lt 2 ] || [ "$#" -gt 4 ] || ( [ "$4" != "" ] && [ "$4" != "-i" ] ) ; then
+  echo "Usage: ./joana BUILD_FOLDER TAG_TO_ANALYZE [output file, '-' is the default and stdout] [-i for interactive shell]"
+  echo "BUILD_FOLDER has to contain the annotated and build project, with a sub folder `pcc-imp-webservice`"
+  exit 1
+fi
+
+correct_java_version()
+echo $# > /dev/null
+
+BUILD_FOLDER=$1
+TAG=$2
+OUT=$3
+INTERACTIVE=$4
+sh "$DIRNAME/joana" "$BUILD_FOLDER/pcc-imp-webservice/target/pcc-service-1.0-SNAPSHOT-jar-with-dependencies.jar" "$TAG" "$OUT" $INTERACTIVE

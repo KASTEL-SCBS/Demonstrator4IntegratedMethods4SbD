@@ -1,0 +1,183 @@
+
+/** BEGIN allocation, ID: '508', NAME: 'Default' */
+description(508,'Default','allocation').
+allocation(508).
+allocationContexts(508,[509,510,511,512,513,514,515,516,517,518,519,520,521,522,523,524,525,526,527,528,529,530]).
+
+/** BEGIN allocationContext, ID: '509', NAME: 'Allocation_Assembly_WebService <WebService>' */
+description(509,'Allocation_Assembly_WebService <WebService>','allocationContext').
+allocationContext(509).
+resourceContainer(509,[506]).
+assemblyContext_AllocationContext(509,[531]).
+/** END allocationContext, ID: '509', NAME: 'Allocation_Assembly_WebService <WebService>' */
+
+
+/** BEGIN allocationContext, ID: '510', NAME: 'Allocation_Assembly_UserService <UserService>' */
+description(510,'Allocation_Assembly_UserService <UserService>','allocationContext').
+allocationContext(510).
+resourceContainer(510,[506]).
+assemblyContext_AllocationContext(510,[453]).
+/** END allocationContext, ID: '510', NAME: 'Allocation_Assembly_UserService <UserService>' */
+
+
+/** BEGIN allocationContext, ID: '511', NAME: 'Allocation_Assembly_UserSqlDB <UserSQLDB>' */
+description(511,'Allocation_Assembly_UserSqlDB <UserSQLDB>','allocationContext').
+allocationContext(511).
+resourceContainer(511,[506]).
+assemblyContext_AllocationContext(511,[454]).
+/** END allocationContext, ID: '511', NAME: 'Allocation_Assembly_UserSqlDB <UserSQLDB>' */
+
+
+/** BEGIN allocationContext, ID: '512', NAME: 'Allocation_Assembly_OpenCVVideoChain <OpenCVVideoChain>' */
+description(512,'Allocation_Assembly_OpenCVVideoChain <OpenCVVideoChain>','allocationContext').
+allocationContext(512).
+resourceContainer(512,[506]).
+assemblyContext_AllocationContext(512,[455]).
+/** END allocationContext, ID: '512', NAME: 'Allocation_Assembly_OpenCVVideoChain <OpenCVVideoChain>' */
+
+
+/** BEGIN allocationContext, ID: '513', NAME: 'Allocation_Assembly_UserNetworkAdapter <UserNetworkAdapter>' */
+description(513,'Allocation_Assembly_UserNetworkAdapter <UserNetworkAdapter>','allocationContext').
+allocationContext(513).
+resourceContainer(513,[507]).
+assemblyContext_AllocationContext(513,[373]).
+/** END allocationContext, ID: '513', NAME: 'Allocation_Assembly_UserNetworkAdapter <UserNetworkAdapter>' */
+
+
+/** BEGIN allocationContext, ID: '514', NAME: 'Allocation_Assembly_JavaRSA+AESFileEncryptor <JavaRSA_AESFileEncryptor>' */
+description(514,'Allocation_Assembly_JavaRSA+AESFileEncryptor <JavaRSA_AESFileEncryptor>','allocationContext').
+allocationContext(514).
+resourceContainer(514,[507]).
+assemblyContext_AllocationContext(514,[372]).
+/** END allocationContext, ID: '514', NAME: 'Allocation_Assembly_JavaRSA+AESFileEncryptor <JavaRSA_AESFileEncryptor>' */
+
+
+/** BEGIN allocationContext, ID: '515', NAME: 'Allocation_Assembly_SessionManager <SessionManager>' */
+description(515,'Allocation_Assembly_SessionManager <SessionManager>','allocationContext').
+allocationContext(515).
+resourceContainer(515,[507]).
+assemblyContext_AllocationContext(515,[375]).
+/** END allocationContext, ID: '515', NAME: 'Allocation_Assembly_SessionManager <SessionManager>' */
+
+
+/** BEGIN allocationContext, ID: '516', NAME: 'Allocation_Assembly_VideoFilesManager <FileSystemManager>' */
+description(516,'Allocation_Assembly_VideoFilesManager <FileSystemManager>','allocationContext').
+allocationContext(516).
+resourceContainer(516,[506]).
+assemblyContext_AllocationContext(516,[456]).
+/** END allocationContext, ID: '516', NAME: 'Allocation_Assembly_VideoFilesManager <FileSystemManager>' */
+
+
+/** BEGIN allocationContext, ID: '517', NAME: 'Allocation_Assembly_VideoService <VideoService>' */
+description(517,'Allocation_Assembly_VideoService <VideoService>','allocationContext').
+allocationContext(517).
+resourceContainer(517,[506]).
+assemblyContext_AllocationContext(517,[457]).
+/** END allocationContext, ID: '517', NAME: 'Allocation_Assembly_VideoService <VideoService>' */
+
+
+/** BEGIN allocationContext, ID: '518', NAME: 'Allocation_Assembly_KeyManager <FileSystemManager>' */
+description(518,'Allocation_Assembly_KeyManager <FileSystemManager>','allocationContext').
+allocationContext(518).
+resourceContainer(518,[506]).
+assemblyContext_AllocationContext(518,[458]).
+/** END allocationContext, ID: '518', NAME: 'Allocation_Assembly_KeyManager <FileSystemManager>' */
+
+
+/** BEGIN allocationContext, ID: '519', NAME: 'Allocation_Assembly_TemporaryFileManager <FileSystemManager>' */
+description(519,'Allocation_Assembly_TemporaryFileManager <FileSystemManager>','allocationContext').
+allocationContext(519).
+resourceContainer(519,[506]).
+assemblyContext_AllocationContext(519,[459]).
+/** END allocationContext, ID: '519', NAME: 'Allocation_Assembly_TemporaryFileManager <FileSystemManager>' */
+
+
+/** BEGIN allocationContext, ID: '520', NAME: 'Allocation_Assembly_VideoProcessingManager <VideoProcessingManager>' */
+description(520,'Allocation_Assembly_VideoProcessingManager <VideoProcessingManager>','allocationContext').
+allocationContext(520).
+resourceContainer(520,[506]).
+assemblyContext_AllocationContext(520,[452]).
+/** END allocationContext, ID: '520', NAME: 'Allocation_Assembly_VideoProcessingManager <VideoProcessingManager>' */
+
+
+/** BEGIN allocationContext, ID: '521', NAME: 'Allocation_Assembly_VideoNetworkAdapter <VideoNetworkAdapter>' */
+description(521,'Allocation_Assembly_VideoNetworkAdapter <VideoNetworkAdapter>','allocationContext').
+allocationContext(521).
+resourceContainer(521,[507]).
+assemblyContext_AllocationContext(521,[371]).
+/** END allocationContext, ID: '521', NAME: 'Allocation_Assembly_VideoNetworkAdapter <VideoNetworkAdapter>' */
+
+
+/** BEGIN allocationContext, ID: '522', NAME: 'Allocation_Assembly_FileSystemManager <FileSystemManager>' */
+description(522,'Allocation_Assembly_FileSystemManager <FileSystemManager>','allocationContext').
+allocationContext(522).
+resourceContainer(522,[507]).
+assemblyContext_AllocationContext(522,[374]).
+/** END allocationContext, ID: '522', NAME: 'Allocation_Assembly_FileSystemManager <FileSystemManager>' */
+
+
+/** BEGIN allocationContext, ID: '523', NAME: 'Allocation_Assembly_SettingsManager <SettingsManager>' */
+description(523,'Allocation_Assembly_SettingsManager <SettingsManager>','allocationContext').
+allocationContext(523).
+resourceContainer(523,[507]).
+assemblyContext_AllocationContext(523,[377]).
+/** END allocationContext, ID: '523', NAME: 'Allocation_Assembly_SettingsManager <SettingsManager>' */
+
+
+/** BEGIN allocationContext, ID: '524', NAME: 'Allocation_Assembly_PreferencesStorage <PreferencesStorage>' */
+description(524,'Allocation_Assembly_PreferencesStorage <PreferencesStorage>','allocationContext').
+allocationContext(524).
+resourceContainer(524,[507]).
+assemblyContext_AllocationContext(524,[376]).
+/** END allocationContext, ID: '524', NAME: 'Allocation_Assembly_PreferencesStorage <PreferencesStorage>' */
+
+
+/** BEGIN allocationContext, ID: '525', NAME: 'Allocation_Assembly_TemporaryFileManager <FileSystemManager>' */
+description(525,'Allocation_Assembly_TemporaryFileManager <FileSystemManager>','allocationContext').
+allocationContext(525).
+resourceContainer(525,[507]).
+assemblyContext_AllocationContext(525,[379]).
+/** END allocationContext, ID: '525', NAME: 'Allocation_Assembly_TemporaryFileManager <FileSystemManager>' */
+
+
+/** BEGIN allocationContext, ID: '526', NAME: 'Allocation_Assembly_LocalVideoManager <LocalVideoManager>' */
+description(526,'Allocation_Assembly_LocalVideoManager <LocalVideoManager>','allocationContext').
+allocationContext(526).
+resourceContainer(526,[507]).
+assemblyContext_AllocationContext(526,[378]).
+/** END allocationContext, ID: '526', NAME: 'Allocation_Assembly_LocalVideoManager <LocalVideoManager>' */
+
+
+/** BEGIN allocationContext, ID: '527', NAME: 'Allocation_Assembly_VideoUploadWrapper <VideoUploadWrapper>' */
+description(527,'Allocation_Assembly_VideoUploadWrapper <VideoUploadWrapper>','allocationContext').
+allocationContext(527).
+resourceContainer(527,[506]).
+assemblyContext_AllocationContext(527,[380]).
+/** END allocationContext, ID: '527', NAME: 'Allocation_Assembly_VideoUploadWrapper <VideoUploadWrapper>' */
+
+
+/** BEGIN allocationContext, ID: '528', NAME: 'Allocation_Assembly_JavaRSA+AESFileDecryptor <JavaRSA_AESFileDecryptor>' */
+description(528,'Allocation_Assembly_JavaRSA+AESFileDecryptor <JavaRSA_AESFileDecryptor>','allocationContext').
+allocationContext(528).
+resourceContainer(528,[506]).
+assemblyContext_AllocationContext(528,[451]).
+/** END allocationContext, ID: '528', NAME: 'Allocation_Assembly_JavaRSA+AESFileDecryptor <JavaRSA_AESFileDecryptor>' */
+
+
+/** BEGIN allocationContext, ID: '529', NAME: 'Allocation_Assembly_PersecutionWebinterface <PersecutionWebinterface>' */
+description(529,'Allocation_Assembly_PersecutionWebinterface <PersecutionWebinterface>','allocationContext').
+allocationContext(529).
+resourceContainer(529,[505]).
+assemblyContext_AllocationContext(529,[410]).
+/** END allocationContext, ID: '529', NAME: 'Allocation_Assembly_PersecutionWebinterface <PersecutionWebinterface>' */
+
+
+/** BEGIN allocationContext, ID: '530', NAME: 'Allocation_Assembly_Webinterface <Webinterface>' */
+description(530,'Allocation_Assembly_Webinterface <Webinterface>','allocationContext').
+allocationContext(530).
+resourceContainer(530,[507]).
+assemblyContext_AllocationContext(530,[532]).
+/** END allocationContext, ID: '530', NAME: 'Allocation_Assembly_Webinterface <Webinterface>' */
+
+/** END allocation, ID: '508', NAME: 'Default' */
+

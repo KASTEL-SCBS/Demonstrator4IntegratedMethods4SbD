@@ -1,0 +1,277 @@
+WORLD:
+adversary(80,Officer)
+|
++- attacker(adversary(80,Officer))
+|
+`- isInSecureWithRespectTo(adversary(80,Officer),)
+   |
+   +- observableServices(adversary(80,Officer),operationSignature(334,getConfidentialVideo),assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess)),)
+   |  |
+   |  `- requiredInterfacesAccessibleTo(adversary(80,Officer),operationInterface(141,JudgeAccess),assemblyContext(383,Assembly_PersecutionWebinterface),)
+   |     |
+   |     +- containersPhysicalAccessibleBy(adversary(80,Officer),resourceContainer(433,Persecution Office Terminal),location(35,Prosecution Office))
+   |     |  |
+   |     |  +- location(resourceContainer(433,Persecution Office Terminal),location(35,Prosecution Office),tamperProtection(38,Lock))
+   |     |  |
+   |     |  `- locationsAccessibleBy(adversary(80,Officer),location(35,Prosecution Office))
+   |     |     |
+   |     |     `- attacker(adversary(80,Officer))
+   |     |
+   |     `- requiredInterfacesOn(resourceContainer(433,Persecution Office Terminal),operationInterface(141,JudgeAccess),assemblyContext(383,Assembly_PersecutionWebinterface))
+   |        |
+   |        `- requires(basicComponent(108,PersecutionWebinterface),operationInterface(141,JudgeAccess))
+   |
+   `- isInSecureWithRespectToService(adversary(80,Officer),operationSignature(334,getConfidentialVideo),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+      |
+      `- serviceForbiddenToBeObservedBy(adversary(80,Officer),operationSignature(334,getConfidentialVideo),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+         |
+         `- not serviceAllowedToBeObservedBy(adversary(80,Officer),operationSignature(334,getConfidentialVideo),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+            |
+            +- includesCall(operationSignature(334,getConfidentialVideo),dataSet(4,JudgeData),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),operationSignature(334,getConfidentialVideo),dataSet(4,JudgeData),list(parameter(51,videoId),parameter(53,authenticationToken),parameter(54,userId),call,sizeOf(*),return),)
+            |
+            `- not mayknow(adversary(80,Officer),dataSet(4,JudgeData))
+               |
+               `- mayKnowData(adversary(80,Officer),list(dataSet(3,PersecutionData)))
+
+adversary(80,Officer)
+|
++- attacker(adversary(80,Officer))
+|
+`- isInSecureWithRespectTo(adversary(80,Officer),)
+   |
+   +- accessibleParameters(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(51,videoId))),assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess)),)
+   |  |
+   |  +- requiredInterfacesAccessibleTo(adversary(80,Officer),operationInterface(141,JudgeAccess),assemblyContext(383,Assembly_PersecutionWebinterface),)
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(80,Officer),resourceContainer(433,Persecution Office Terminal),location(35,Prosecution Office))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(433,Persecution Office Terminal),location(35,Prosecution Office),tamperProtection(38,Lock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(80,Officer),location(35,Prosecution Office))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(80,Officer))
+   |  |  |
+   |  |  `- requiredInterfacesOn(resourceContainer(433,Persecution Office Terminal),operationInterface(141,JudgeAccess),assemblyContext(383,Assembly_PersecutionWebinterface))
+   |  |     |
+   |  |     `- requires(basicComponent(108,PersecutionWebinterface),operationInterface(141,JudgeAccess))
+   |  |
+   |  `- hasParameter(operationSignature(334,getConfidentialVideo),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(51,videoId))))
+   |
+   `- isInSecureWithRespectToParameter(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(51,videoId))),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(51,videoId))),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(51,videoId))),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+            |
+            +- includes(parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(51,videoId))),dataSet(4,JudgeData),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+            |  |
+            |  +- hasParameter(operationSignature(334,getConfidentialVideo),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(51,videoId))))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),operationSignature(334,getConfidentialVideo),dataSet(4,JudgeData),list(parameter(51,videoId),parameter(53,authenticationToken),parameter(54,userId),call,sizeOf(*),return),)
+            |
+            `- not mayknow(adversary(80,Officer),dataSet(4,JudgeData))
+               |
+               `- mayKnowData(adversary(80,Officer),list(dataSet(3,PersecutionData)))
+
+adversary(80,Officer)
+|
++- attacker(adversary(80,Officer))
+|
+`- isInSecureWithRespectTo(adversary(80,Officer),)
+   |
+   +- accessibleParameters(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(54,userId))),assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess)),)
+   |  |
+   |  +- requiredInterfacesAccessibleTo(adversary(80,Officer),operationInterface(141,JudgeAccess),assemblyContext(383,Assembly_PersecutionWebinterface),)
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(80,Officer),resourceContainer(433,Persecution Office Terminal),location(35,Prosecution Office))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(433,Persecution Office Terminal),location(35,Prosecution Office),tamperProtection(38,Lock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(80,Officer),location(35,Prosecution Office))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(80,Officer))
+   |  |  |
+   |  |  `- requiredInterfacesOn(resourceContainer(433,Persecution Office Terminal),operationInterface(141,JudgeAccess),assemblyContext(383,Assembly_PersecutionWebinterface))
+   |  |     |
+   |  |     `- requires(basicComponent(108,PersecutionWebinterface),operationInterface(141,JudgeAccess))
+   |  |
+   |  `- hasParameter(operationSignature(334,getConfidentialVideo),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(54,userId))))
+   |
+   `- isInSecureWithRespectToParameter(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(54,userId))),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(54,userId))),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(54,userId))),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+            |
+            +- includes(parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(54,userId))),dataSet(4,JudgeData),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+            |  |
+            |  +- hasParameter(operationSignature(334,getConfidentialVideo),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(54,userId))))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),operationSignature(334,getConfidentialVideo),dataSet(4,JudgeData),list(parameter(51,videoId),parameter(53,authenticationToken),parameter(54,userId),call,sizeOf(*),return),)
+            |
+            `- not mayknow(adversary(80,Officer),dataSet(4,JudgeData))
+               |
+               `- mayKnowData(adversary(80,Officer),list(dataSet(3,PersecutionData)))
+
+adversary(80,Officer)
+|
++- attacker(adversary(80,Officer))
+|
+`- isInSecureWithRespectTo(adversary(80,Officer),)
+   |
+   +- accessibleParameters(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(53,authenticationToken))),assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess)),)
+   |  |
+   |  +- requiredInterfacesAccessibleTo(adversary(80,Officer),operationInterface(141,JudgeAccess),assemblyContext(383,Assembly_PersecutionWebinterface),)
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(80,Officer),resourceContainer(433,Persecution Office Terminal),location(35,Prosecution Office))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(433,Persecution Office Terminal),location(35,Prosecution Office),tamperProtection(38,Lock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(80,Officer),location(35,Prosecution Office))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(80,Officer))
+   |  |  |
+   |  |  `- requiredInterfacesOn(resourceContainer(433,Persecution Office Terminal),operationInterface(141,JudgeAccess),assemblyContext(383,Assembly_PersecutionWebinterface))
+   |  |     |
+   |  |     `- requires(basicComponent(108,PersecutionWebinterface),operationInterface(141,JudgeAccess))
+   |  |
+   |  `- hasParameter(operationSignature(334,getConfidentialVideo),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(53,authenticationToken))))
+   |
+   `- isInSecureWithRespectToParameter(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(53,authenticationToken))),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(53,authenticationToken))),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(53,authenticationToken))),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+            |
+            +- includes(parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(53,authenticationToken))),dataSet(4,JudgeData),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+            |  |
+            |  +- hasParameter(operationSignature(334,getConfidentialVideo),parm(operationSignature(334,getConfidentialVideo),sizeOf(parameter(53,authenticationToken))))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),operationSignature(334,getConfidentialVideo),dataSet(4,JudgeData),list(parameter(51,videoId),parameter(53,authenticationToken),parameter(54,userId),call,sizeOf(*),return),)
+            |
+            `- not mayknow(adversary(80,Officer),dataSet(4,JudgeData))
+               |
+               `- mayKnowData(adversary(80,Officer),list(dataSet(3,PersecutionData)))
+
+adversary(80,Officer)
+|
++- attacker(adversary(80,Officer))
+|
+`- isInSecureWithRespectTo(adversary(80,Officer),)
+   |
+   +- accessibleParameters(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),parameter(51,videoId)),assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess)),)
+   |  |
+   |  +- requiredInterfacesAccessibleTo(adversary(80,Officer),operationInterface(141,JudgeAccess),assemblyContext(383,Assembly_PersecutionWebinterface),)
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(80,Officer),resourceContainer(433,Persecution Office Terminal),location(35,Prosecution Office))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(433,Persecution Office Terminal),location(35,Prosecution Office),tamperProtection(38,Lock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(80,Officer),location(35,Prosecution Office))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(80,Officer))
+   |  |  |
+   |  |  `- requiredInterfacesOn(resourceContainer(433,Persecution Office Terminal),operationInterface(141,JudgeAccess),assemblyContext(383,Assembly_PersecutionWebinterface))
+   |  |     |
+   |  |     `- requires(basicComponent(108,PersecutionWebinterface),operationInterface(141,JudgeAccess))
+   |  |
+   |  `- hasParameter(operationSignature(334,getConfidentialVideo),parm(operationSignature(334,getConfidentialVideo),parameter(51,videoId)))
+   |
+   `- isInSecureWithRespectToParameter(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),parameter(51,videoId)),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),parameter(51,videoId)),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),parameter(51,videoId)),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+            |
+            +- includes(parm(operationSignature(334,getConfidentialVideo),parameter(51,videoId)),dataSet(4,JudgeData),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+            |  |
+            |  +- hasParameter(operationSignature(334,getConfidentialVideo),parm(operationSignature(334,getConfidentialVideo),parameter(51,videoId)))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),operationSignature(334,getConfidentialVideo),dataSet(4,JudgeData),list(parameter(51,videoId),parameter(53,authenticationToken),parameter(54,userId),call,sizeOf(*),return),)
+            |
+            `- not mayknow(adversary(80,Officer),dataSet(4,JudgeData))
+               |
+               `- mayKnowData(adversary(80,Officer),list(dataSet(3,PersecutionData)))
+
+adversary(80,Officer)
+|
++- attacker(adversary(80,Officer))
+|
+`- isInSecureWithRespectTo(adversary(80,Officer),)
+   |
+   +- accessibleParameters(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),parameter(54,userId)),assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess)),)
+   |  |
+   |  +- requiredInterfacesAccessibleTo(adversary(80,Officer),operationInterface(141,JudgeAccess),assemblyContext(383,Assembly_PersecutionWebinterface),)
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(80,Officer),resourceContainer(433,Persecution Office Terminal),location(35,Prosecution Office))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(433,Persecution Office Terminal),location(35,Prosecution Office),tamperProtection(38,Lock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(80,Officer),location(35,Prosecution Office))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(80,Officer))
+   |  |  |
+   |  |  `- requiredInterfacesOn(resourceContainer(433,Persecution Office Terminal),operationInterface(141,JudgeAccess),assemblyContext(383,Assembly_PersecutionWebinterface))
+   |  |     |
+   |  |     `- requires(basicComponent(108,PersecutionWebinterface),operationInterface(141,JudgeAccess))
+   |  |
+   |  `- hasParameter(operationSignature(334,getConfidentialVideo),parm(operationSignature(334,getConfidentialVideo),parameter(54,userId)))
+   |
+   `- isInSecureWithRespectToParameter(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),parameter(54,userId)),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),parameter(54,userId)),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),parameter(54,userId)),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+            |
+            +- includes(parm(operationSignature(334,getConfidentialVideo),parameter(54,userId)),dataSet(4,JudgeData),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+            |  |
+            |  +- hasParameter(operationSignature(334,getConfidentialVideo),parm(operationSignature(334,getConfidentialVideo),parameter(54,userId)))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),operationSignature(334,getConfidentialVideo),dataSet(4,JudgeData),list(parameter(51,videoId),parameter(53,authenticationToken),parameter(54,userId),call,sizeOf(*),return),)
+            |
+            `- not mayknow(adversary(80,Officer),dataSet(4,JudgeData))
+               |
+               `- mayKnowData(adversary(80,Officer),list(dataSet(3,PersecutionData)))
+
+adversary(80,Officer)
+|
++- attacker(adversary(80,Officer))
+|
+`- isInSecureWithRespectTo(adversary(80,Officer),)
+   |
+   +- accessibleParameters(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),parameter(53,authenticationToken)),assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess)),)
+   |  |
+   |  +- requiredInterfacesAccessibleTo(adversary(80,Officer),operationInterface(141,JudgeAccess),assemblyContext(383,Assembly_PersecutionWebinterface),)
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(80,Officer),resourceContainer(433,Persecution Office Terminal),location(35,Prosecution Office))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(433,Persecution Office Terminal),location(35,Prosecution Office),tamperProtection(38,Lock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(80,Officer),location(35,Prosecution Office))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(80,Officer))
+   |  |  |
+   |  |  `- requiredInterfacesOn(resourceContainer(433,Persecution Office Terminal),operationInterface(141,JudgeAccess),assemblyContext(383,Assembly_PersecutionWebinterface))
+   |  |     |
+   |  |     `- requires(basicComponent(108,PersecutionWebinterface),operationInterface(141,JudgeAccess))
+   |  |
+   |  `- hasParameter(operationSignature(334,getConfidentialVideo),parm(operationSignature(334,getConfidentialVideo),parameter(53,authenticationToken)))
+   |
+   `- isInSecureWithRespectToParameter(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),parameter(53,authenticationToken)),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),parameter(53,authenticationToken)),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(80,Officer),parm(operationSignature(334,getConfidentialVideo),parameter(53,authenticationToken)),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+            |
+            +- includes(parm(operationSignature(334,getConfidentialVideo),parameter(53,authenticationToken)),dataSet(4,JudgeData),tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),)
+            |  |
+            |  +- hasParameter(operationSignature(334,getConfidentialVideo),parm(operationSignature(334,getConfidentialVideo),parameter(53,authenticationToken)))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(383,Assembly_PersecutionWebinterface),required(operationInterface(141,JudgeAccess))),operationSignature(334,getConfidentialVideo),dataSet(4,JudgeData),list(parameter(51,videoId),parameter(53,authenticationToken),parameter(54,userId),call,sizeOf(*),return),)
+            |
+            `- not mayknow(adversary(80,Officer),dataSet(4,JudgeData))
+               |
+               `- mayKnowData(adversary(80,Officer),list(dataSet(3,PersecutionData)))
+
